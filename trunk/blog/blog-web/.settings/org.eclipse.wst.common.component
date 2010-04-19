@@ -1,0 +1,17 @@
+<project-modules id="moduleCoreId" project-version="2.0">
+  <wb-module deploy-name="blog-web">
+    <property name="context-root" value="blog-web"/>
+    <wb-resource deploy-path="/" source-path="src/main/webapp"/>
+    <property name="java-output-path" value="/target/classes"/>
+    <dependent-module archiveName="blog-common.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/blog-common/blog-common">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="blog-persist.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/blog-persist/blog-persist">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="blog-service.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/blog-service/blog-service">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/resources"/>
+  </wb-module>
+</project-modules>
