@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.blog</groupId>
+  <artifactId>blog-parent</artifactId>
+  <name>blog-parent</name>
+  <packaging>pom</packaging>
+  <version>1.0.0-SNAPSHOT</version>
+  
+  <developers>
+		<developer>
+			<id>rolyer</id>
+			<name>rolyer</name>
+			<email>rolyer.live@gmail.com</email>
+		</developer>
+	</developers>
+	
+	<!-- 软件配置管理（版本控制软件），如cvs、svn。
+	<scm>
+		<connection>
+			scm:svn://127.0.0.1/simple-parent/trunk
+		</connection>
+	</scm>
+	-->
+  
+  <modules>  
+	<module>blog-common</module> 
+	<module>blog-persist</module> 
+	<module>blog-service</module>
+	<module>blog-web</module>
+	<module>blog-test</module>
+  </modules>
+
+  <dependencyManagement>
+   <dependencies>
+	<dependency>
+	  <groupId>com.blog</groupId>
+	  <artifactId>blog-common</artifactId>
+	  <version>1.0.0-SNAPSHOT</version>
+	</dependency>
+	<dependency>
+	  <groupId>com.blog</groupId>
+	  <artifactId>blog-persist</artifactId>
+	  <version>1.0.0-SNAPSHOT</version>
+	</dependency>
+	<dependency>
+	  <groupId>com.blog</groupId>
+	  <artifactId>blog-service</artifactId>
+	  <version>1.0.0-SNAPSHOT</version>
+	</dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+	  <version>4.0</version>
+      <scope>test</scope>
+    </dependency>
+   </dependencies>
+  </dependencyManagement>
+  
+</project>
