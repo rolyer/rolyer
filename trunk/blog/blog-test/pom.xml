@@ -1,28 +1,46 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <parent>
-	<artifactId>blog-parent</artifactId>
-	<groupId>com.blog</groupId>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<parent>
+		<artifactId>blog-parent</artifactId>
+		<groupId>com.rolyer</groupId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.rolyer</groupId>
+	<artifactId>blog-test</artifactId>
+	<name>blog-test</name>
+	<packaging>jar</packaging>
 	<version>1.0.0-SNAPSHOT</version>
-  </parent>
 
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.blog</groupId>
-  <artifactId>blog-test</artifactId>
-  <name>blog-test</name>
-  <packaging>jar</packaging>
-  <version>1.0.0-SNAPSHOT</version>
+	<dependencies>
+		<dependency>
+			<groupId>com.rolyer</groupId>
+			<artifactId>blog-persist</artifactId>
+		</dependency>
 
-  <dependencies>
-    <dependency>
-      <groupId>com.blog</groupId>
-      <artifactId>blog-persist</artifactId>
-    </dependency>
-
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>
+				log4j
+			</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+		</dependency>
+	</dependencies>
 </project>
