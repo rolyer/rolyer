@@ -20,8 +20,6 @@ import com.rolyer.blog.persist.user.UserDAO;
 public class UserDaoImpl extends SqlMapClientDaoSupport implements UserDAO{
 
 	public Integer insertOneUser(UserDO user) {
-		// TODO Auto-generated method stub
-		return null;
+		return (Integer) getSqlMapClientTemplate().insert("sqlMapUser.insertOneUser", user);
 	}
-
 }

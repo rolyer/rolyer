@@ -23,8 +23,8 @@ public class UserDO implements java.io.Serializable {
 	private Integer id;				//编号
 	private String account;			//账号
 	private String password;		//密码
-	private Date gmt_created;		//创建时间
-	private Date gmt_modified;		//修改时间
+	private Date gmtCreated;		//创建时间
+	private Date gmtModified;		//修改时间
 	
 	/**
 	 * @return the id
@@ -63,27 +63,27 @@ public class UserDO implements java.io.Serializable {
 		this.password = password;
 	}
 	/**
-	 * @return the gmt_created
+	 * @return the gmtCreated
 	 */
-	public Date getGmt_created() {
-		return gmt_created;
+	public Date getGmtCreated() {
+		return gmtCreated;
 	}
 	/**
-	 * @param gmtCreated the gmt_created to set
+	 * @param gmtCreated the gmtCreated to set
 	 */
-	public void setGmt_created(Date gmtCreated) {
-		gmt_created = gmtCreated;
+	public void setGmtCreated(Date gmtCreated) {
+		this.gmtCreated = gmtCreated;
 	}
 	/**
-	 * @return the gmt_modified
+	 * @return the gmtModified
 	 */
-	public Date getGmt_modified() {
-		return gmt_modified;
+	public Date getGmtModified() {
+		return gmtModified;
 	}
 	/**
-	 * @param gmtModified the gmt_modified to set
+	 * @param gmtModified the gmtModified to set
 	 */
-	public void setGmt_modified(Date gmtModified) {
-		gmt_modified = gmtModified;
+	public void setGmtModified(Date gmtModified) {
+		this.gmtModified = gmtModified;
 	}
 }
