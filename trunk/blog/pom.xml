@@ -3,7 +3,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.blog</groupId>
+  <groupId>com.rolyer</groupId>
   <artifactId>blog-parent</artifactId>
   <name>blog-parent</name>
   <packaging>pom</packaging>
@@ -44,17 +44,17 @@
   <dependencyManagement>
    <dependencies>
 	<dependency>
-	  <groupId>com.blog</groupId>
+	  <groupId>com.rolyer</groupId>
 	  <artifactId>blog-common</artifactId>
 	  <version>1.0.0-SNAPSHOT</version>
 	</dependency>
 	<dependency>
-	  <groupId>com.blog</groupId>
+	  <groupId>com.rolyer</groupId>
 	  <artifactId>blog-persist</artifactId>
 	  <version>1.0.0-SNAPSHOT</version>
 	</dependency>
 	<dependency>
-	  <groupId>com.blog</groupId>
+	  <groupId>com.rolyer</groupId>
 	  <artifactId>blog-service</artifactId>
 	  <version>1.0.0-SNAPSHOT</version>
 	</dependency>
