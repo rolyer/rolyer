@@ -20,10 +20,6 @@ public class BaseServiceTestCase extends AbstractDependencyInjectionSpringContex
 		return new String[] {"spring-persist-test.xml","spring-service.xml"};
 	}
 
-	public void test_dmeo(){
-
-	}
-
 	public void onSetUp(){
 		try{
 			connection = ((SqlMapClient) sqlMapClient.getObject()).getDataSource().getConnection();
