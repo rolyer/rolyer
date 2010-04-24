@@ -5,6 +5,7 @@
  */
 package com.rolyer.blog.persist.user.impl;
 
+import java.sql.SQLException;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,9 +23,10 @@ public class UserDaoImplTest extends BaseDaoTestCase{
 	@Autowired
 	private UserDAO userDAO;
 	
-	public void test_insert_one_user(){
+	public void test_insert_one_user() throws SQLException{
+		clean();
 		Integer ipm=userDAO.insertOneUser(getUserDO());
-		assertEquals("the id is "+ipm.toString(), 2, ipm.intValue());
+		assertTrue("the id is "+ipm.toString(), ipm.intValue()>0);
 	}
 	
 	public UserDO getUserDO() {
@@ -36,4 +38,13 @@ public class UserDaoImplTest extends BaseDaoTestCase{
 		
 		return user;
 	}
+	
+	/**
+	 * 清理数据
+	 * @throws SQLException
+	 */
+	public void clean() throws SQLException{
+		connection.prepareStatement("delete from user where id>1").execute();
+	}
+	
 }
