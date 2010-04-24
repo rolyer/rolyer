@@ -22,7 +22,7 @@ DROP TABLE IF EXISTS `user`;
 
 CREATE TABLE `user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(20) DEFAULT NULL,
+  `account` varchar(20) DEFAULT NULL,
   `password` varchar(100) DEFAULT NULL,
   `gmt_created` datetime DEFAULT NULL,
   `gmt_modified` datetime DEFAULT NULL,
@@ -31,7 +31,7 @@ CREATE TABLE `user` (
 
 /*Data for the table `user` */
 
-insert  into `user`(`id`,`name`,`password`,`gmt_created`,`gmt_modified`) values (1,'Rolyer','df30d7958af94ed8','2010-04-22 01:29:00','2010-04-22 01:29:01');
+insert  into `user`(`id`,`account`,`password`,`gmt_created`,`gmt_modified`) values (1,'Rolyer','df30d7958af94ed8','2010-04-22 01:29:00','2010-04-22 01:29:01');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
