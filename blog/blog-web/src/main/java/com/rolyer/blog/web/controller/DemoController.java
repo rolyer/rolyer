@@ -9,20 +9,19 @@ import java.util.Map;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
 
 /**
  * @author Rolyer (rolyer.live@gmail.com)
  *
  */
 @Controller
-public class BlogController extends BaseController {
+public class DemoController extends BaseController {
 //	@Autowired
 //	private UserService userService;
 	
 	@RequestMapping
-	public ModelAndView demo(Map<String, Object> out){
+	public void index(Map<String, Object> out){
 		out.put("json", "Hello Rolyer！");
-		return new ModelAndView("json");
+		//return new ModelAndView("json");
 	}
 }
