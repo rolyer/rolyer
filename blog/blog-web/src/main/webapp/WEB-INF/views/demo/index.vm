@@ -1,1 +1,6 @@
-Welcome!
+Welcome!<br/>
+#if($!{msg})
+	$!{msg}
+#else
+	You fail!
+#end

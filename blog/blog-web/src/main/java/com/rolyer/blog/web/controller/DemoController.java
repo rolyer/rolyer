@@ -21,7 +21,6 @@ public class DemoController extends BaseController {
 	
 	@RequestMapping
 	public void index(Map<String, Object> out){
-		out.put("json", "Hello Rolyer！");
-		//return new ModelAndView("json");
+		out.put("msg", "You are successful！");
 	}
 }
