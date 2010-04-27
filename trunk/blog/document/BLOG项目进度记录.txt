@@ -36,3 +36,15 @@
 问题反馈：
 1、测试数据存储问题仍未解决？开始数据库的链接是正确的，但是为何写入又写入了其他数据库中。
 
+
+
+0:25 2010/4/28
+进度描述：blog-web已配置完成，并成功运行。
+
+问题反馈：
+1、之前由于在spring-web.xml中<context:component-scan base-package="com.rolyer.blog"  />配置上写错包名而导致web层无进入到Controller里；
+2、测试的配置问题仍未解决。
+
+小结：检查要细心！
+
+

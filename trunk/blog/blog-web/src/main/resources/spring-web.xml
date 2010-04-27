@@ -9,7 +9,7 @@
 	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
 	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd"
 	default-autowire="byName">
-	<context:component-scan base-package="com.ast.ast1949"  />
+	<context:component-scan base-package="com.rolyer.blog"  />
 	<!-- property loader -->
 	<bean id="webPropertyPlaceholderConfigurer"
 		class="com.rolyer.blog.web.util.PropertyPlaceholderConfigurer">
@@ -89,9 +89,7 @@
 		class="org.springframework.web.servlet.view.velocity.VelocityLayoutViewResolver">
 		<property name="exposeSpringMacroHelpers" value="true"             />
 		<property name="suffix" value="${velocity.suffix}"                 />
-		<!--
 			<property name="layoutUrl" value="layout/default.vm"               />
-		-->
 		<property name="contentType" value="text/html;charset=utf-8"       />
 		<property name="toolboxConfigLocation"    value="WEB-INF/vm-toolbox.xml" />
 	</bean>
