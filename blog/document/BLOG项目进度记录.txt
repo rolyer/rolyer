@@ -43,7 +43,8 @@
 
 问题反馈：
 1、之前由于在spring-web.xml中<context:component-scan base-package="com.rolyer.blog"  />配置上写错包名而导致web层无进入到Controller里；
-2、测试的配置问题仍未解决。
+2、测试的配置问题仍未解决；
+3、关于Velocity页眉和页脚的配置问题不清楚。
 
 小结：检查要细心！
 
