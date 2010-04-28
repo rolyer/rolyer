@@ -15,7 +15,7 @@
 	</resultMap>
 	
 	<insert id="insertOneUser" parameterClass="user">
-		insert into blog.user
+		insert into user
 	            (account,
 	             password,
 	             gmt_created,
