@@ -12,5 +12,8 @@
 	 -->
 	 
 	<sqlMap resource="${sqlMap.root}/user.xml" />
+	<sqlMap resource="${sqlMap.root}/article.xml" />
+	<sqlMap resource="${sqlMap.root}/category.xml" />
+	<sqlMap resource="${sqlMap.root}/labels.xml" />
 	 
 </sqlMapConfig>

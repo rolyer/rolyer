@@ -3,9 +3,9 @@
  * All right reserved.
  * Created on 2010-4-24
  */
-package com.rolyer.blog.service.user;
+package com.rolyer.blog.service.blog;
 
-import com.rolyer.blog.domain.user.UserDO;
+import com.rolyer.blog.domain.blog.UserDO;
 
 /**
  * 用户服务接口

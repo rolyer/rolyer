@@ -3,14 +3,14 @@
  * All right reserved.
  * Created on 2010-4-24
  */
-package com.rolyer.blog.service.user.impl;
+package com.rolyer.blog.service.blog.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.rolyer.blog.domain.user.UserDO;
-import com.rolyer.blog.persist.user.UserDAO;
-import com.rolyer.blog.service.user.UserService;
+import com.rolyer.blog.domain.blog.UserDO;
+import com.rolyer.blog.persist.blog.UserDAO;
+import com.rolyer.blog.service.blog.UserService;
 
 /**
  * @author Rolyer (rolyer.live@gmail.com)

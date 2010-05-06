@@ -765,7 +765,7 @@ Shadow=0</a:DisplayPreferences>
 <o:RelationshipSymbol Id="o7">
 <a:CreationDate>1272773155</a:CreationDate>
 <a:ModificationDate>1272773155</a:ModificationDate>
-<a:Rect>((-6840,-5481), (-1590,1179))</a:Rect>
+<a:Rect>((-6841,-5481), (-1591,1179))</a:Rect>
 <a:ListOfPoints>((-5909,-5481),(-2539,1179))</a:ListOfPoints>
 <a:ArrowStyle>4883</a:ArrowStyle>
 <a:LineColor>11184640</a:LineColor>
@@ -787,7 +787,7 @@ NAMA 0 新宋体,8,N</a:FontList>
 <a:ModificationDate>1272773183</a:ModificationDate>
 <a:Rect>((-448,-5240), (5926,1419))</a:Rect>
 <a:ListOfPoints>((5325,-5240),(-132,1419))</a:ListOfPoints>
-<a:ArrowStyle>4883</a:ArrowStyle>
+<a:ArrowStyle>4369</a:ArrowStyle>
 <a:LineColor>11184640</a:LineColor>
 <a:ShadowColor>12632256</a:ShadowColor>
 <a:FontList>DISPNAME 0 新宋体,8,N
@@ -805,7 +805,7 @@ NAMA 0 新宋体,8,N</a:FontList>
 <o:RelationshipSymbol Id="o14">
 <a:CreationDate>1272773288</a:CreationDate>
 <a:ModificationDate>1272773288</a:ModificationDate>
-<a:Rect>((-13371,1518), (-2378,3472))</a:Rect>
+<a:Rect>((-13371,1443), (-2378,3472))</a:Rect>
 <a:ListOfPoints>((-2378,2623),(-13371,2703))</a:ListOfPoints>
 <a:ArrowStyle>4371</a:ArrowStyle>
 <a:LineColor>11184640</a:LineColor>
@@ -1016,17 +1016,17 @@ EntityComment 0 新宋体,8,N</a:FontList>
 <a:Code>article</a:Code>
 <a:CreationDate>1272168215</a:CreationDate>
 <a:Creator>Rolyer</a:Creator>
-<a:ModificationDate>1272773761</a:ModificationDate>
+<a:ModificationDate>1272806337</a:ModificationDate>
 <a:Modifier>Rolyer</a:Modifier>
 <a:Comment>文章表</a:Comment>
 </o:Entity>
 <o:Entity Id="o21">
 <a:ObjectID>28900277-7268-400E-B591-4265E62F6715</a:ObjectID>
-<a:Name>label</a:Name>
-<a:Code>label</a:Code>
+<a:Name>labels</a:Name>
+<a:Code>labels</a:Code>
 <a:CreationDate>1272168216</a:CreationDate>
 <a:Creator>Rolyer</a:Creator>
-<a:ModificationDate>1272773747</a:ModificationDate>
+<a:ModificationDate>1272781621</a:ModificationDate>
 <a:Modifier>Rolyer</a:Modifier>
 <a:Comment> 标签</a:Comment>
 </o:Entity>
@@ -1036,7 +1036,7 @@ EntityComment 0 新宋体,8,N</a:FontList>
 <a:Code>category</a:Code>
 <a:CreationDate>1272168216</a:CreationDate>
 <a:Creator>Rolyer</a:Creator>
-<a:ModificationDate>1272773761</a:ModificationDate>
+<a:ModificationDate>1272806337</a:ModificationDate>
 <a:Modifier>Rolyer</a:Modifier>
 <a:Comment>类别表</a:Comment>
 </o:Entity>
@@ -1105,10 +1105,10 @@ EntityComment 0 新宋体,8,N</a:FontList>
 <a:Code>article_category</a:Code>
 <a:CreationDate>1272773183</a:CreationDate>
 <a:Creator>Rolyer</a:Creator>
-<a:ModificationDate>1272773761</a:ModificationDate>
+<a:ModificationDate>1272806337</a:ModificationDate>
 <a:Modifier>Rolyer</a:Modifier>
-<a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
-<a:Entity2ToEntity1RoleCardinality>0,n</a:Entity2ToEntity1RoleCardinality>
+<a:Entity1ToEntity2RoleCardinality>0,1</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>0,1</a:Entity2ToEntity1RoleCardinality>
 <c:Object1>
 <o:Entity Ref="o20"/>
 </c:Object1>

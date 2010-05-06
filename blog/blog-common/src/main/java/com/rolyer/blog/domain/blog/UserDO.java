@@ -3,7 +3,7 @@
  * All right reserved.
  * Created on 2010-4-22
  */
-package com.rolyer.blog.domain.user;
+package com.rolyer.blog.domain.blog;
 
 import java.util.Date;
 
@@ -23,6 +23,7 @@ public class UserDO implements java.io.Serializable {
 	private Integer id;				//编号
 	private String account;			//账号
 	private String password;		//密码
+	private Date gmt_lastlogin;		//最后登陆时间
 	private Date gmtCreated;		//创建时间
 	private Date gmtModified;		//修改时间
 	
@@ -61,6 +62,18 @@ public class UserDO implements java.io.Serializable {
 	 */
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	/**
+	 * @return the gmt_lastlogin
+	 */
+	public Date getGmt_lastlogin() {
+		return gmt_lastlogin;
+	}
+	/**
+	 * @param gmtLastlogin the gmt_lastlogin to set
+	 */
+	public void setGmt_lastlogin(Date gmtLastlogin) {
+		gmt_lastlogin = gmtLastlogin;
 	}
 	/**
 	 * @return the gmtCreated

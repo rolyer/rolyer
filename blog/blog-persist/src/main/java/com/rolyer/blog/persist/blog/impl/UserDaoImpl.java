@@ -3,13 +3,15 @@
  * All right reserved.
  * Created on 2010-4-22
  */
-package com.rolyer.blog.persist.user.impl;
+package com.rolyer.blog.persist.blog.impl;
+
+import java.util.Map;
 
 import org.springframework.orm.ibatis.support.SqlMapClientDaoSupport;
 import org.springframework.stereotype.Component;
 
-import com.rolyer.blog.domain.user.UserDO;
-import com.rolyer.blog.persist.user.UserDAO;
+import com.rolyer.blog.domain.blog.UserDO;
+import com.rolyer.blog.persist.blog.UserDAO;
 
 /**
  * 用户接口实现类
@@ -21,5 +23,15 @@ public class UserDaoImpl extends SqlMapClientDaoSupport implements UserDAO{
 
 	public Integer insertOneUser(UserDO user) {
 		return (Integer) getSqlMapClientTemplate().insert("sqlMapUser.insertOneUser", user);
+	}
+
+	public Integer login(Map<String, Object> param) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Integer updatePassword(Map<String, Object> param) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
