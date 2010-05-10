@@ -1,0 +1,373 @@
+<div id="primaryContent">
+			<div class="content">
+				<div class="pageTop">
+					<div class="pageTitle">
+						<h1 class=" flir-replaced">Portfolio</h1>
+					</div>
+					<div class="breadCrumbs">
+						You are here: <a href="http://glue.be/en/" title="Home">Home</a>
+						»&nbsp;<span class="active">Portfolio</span>
+							
+					</div>					
+					<div class="clearer"></div>
+				</div>
+				
+				<div class="left">
+													
+
+
+
+<p class="intro-text">Here you can find a selection of our projects. On the right hand side of this page you can also select projects on a specific service. 
+If you are interested in hiring our expertise, please <a href="http://www.glue.be/en/contact/">let us know</a>. We would love to hear how we can help you.</p>
+
+
+<div class="caseDisplay">
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/abscis-architecten-website/" title="Abscis Architects website"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="Abscis Architects website"></a>
+		<p>Abscis Architects website</p>
+		<p class="tech-specs">(X)HTML/CSS, Photoshop, ExpressionEngine, Google Analytics, Javascript, PHP</p>
+	</div>
+	
+		
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/blinkblink-website/" title="BlinkBlink website"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="BlinkBlink website"></a>
+		<p>BlinkBlink website</p>
+		<p class="tech-specs">(X)HTML/CSS, Cufon, Photoshop, ExpressionEngine, Google Analytics, jQuery, Omnigraffle, Javascript, PHP</p>
+	</div>
+	
+		
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/pole-pole-cms-website/" title="Polé Polé website"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="Polé Polé website"></a>
+		<p>Polé Polé website</p>
+		<p class="tech-specs">(X)HTML/CSS, Photoshop, Flash, AS3, ExpressionEngine, Google Analytics, Javascript, MySQL, PHP</p>
+	</div>
+	
+	<div class="clearer"></div>	
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/ecoplan-google-maps-mashup/" title="Ecoplan Google Maps mashup"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="Ecoplan Google Maps mashup"></a>
+		<p>Ecoplan Google Maps mashup</p>
+		<p class="tech-specs">(X)HTML/CSS, Photoshop, ExpressionEngine, Google Analytics, Javascript, PHP</p>
+	</div>
+	
+		
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/knowledge-for-growth-event-website/" title="Knowledge for Growth event website"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="Knowledge for Growth event website"></a>
+		<p>Knowledge for Growth event website</p>
+		<p class="tech-specs">(X)HTML/CSS, Flash, AS3, ExpressionEngine, Javascript, MySQL, PHP</p>
+	</div>
+	
+		
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/ontsnap-aan-migraine-search-engine-optimization/" title="Ontsnap aan Migraine SEO"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="Ontsnap aan Migraine SEO"></a>
+		<p>Ontsnap aan Migraine SEO</p>
+		<p class="tech-specs">(X)HTML/CSS, ExpressionEngine, Google Analytics, Javascript, MySQL, PHP</p>
+	</div>
+	
+	<div class="clearer"></div>	
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/pijnstiller/" title="Pijnstiller"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="Pijnstiller"></a>
+		<p>Pijnstiller</p>
+		<p class="tech-specs">(X)HTML/CSS, Photoshop, ExpressionEngine, Google Analytics, Javascript, MySQL, PHP</p>
+	</div>
+	
+		
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/plantenverhuur-van-de-velde/" title="Plantenverhuur Van de Velde"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="Plantenverhuur Van de Velde"></a>
+		<p>Plantenverhuur Van de Velde</p>
+		<p class="tech-specs">(X)HTML/CSS, ExpressionEngine, Javascript, MySQL, PHP</p>
+	</div>
+	
+		
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/d51-operator-training/" title="D51 Operator Training"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="D51 Operator Training"></a>
+		<p>D51 Operator Training</p>
+		<p class="tech-specs">(X)HTML/CSS, Photoshop, AS3, XML</p>
+	</div>
+	
+	<div class="clearer"></div>	
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/covidien-sales-training/" title="Covidien Sales Training"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="Covidien Sales Training"></a>
+		<p>Covidien Sales Training</p>
+		<p class="tech-specs">(X)HTML/CSS, AIR, AS3, Flex, MySQL, PHP, XML</p>
+	</div>
+	
+		
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/eco-logic-by-beka/" title="Eco-Logic by BEKA"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="Eco-Logic by BEKA"></a>
+		<p>Eco-Logic by BEKA</p>
+		<p class="tech-specs">Photoshop, AS3, Google Analytics, XML</p>
+	</div>
+	
+		
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/greenway-veggie-resto/" title="Greenway Veggie Resto"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="Greenway Veggie Resto"></a>
+		<p>Greenway Veggie Resto</p>
+		<p class="tech-specs">(X)HTML/CSS, AIR, AS2, Photoshop, ExpressionEngine, Google Analytics, Javascript, MySQL, PHP</p>
+	</div>
+	
+	<div class="clearer"></div>	
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/meessen-de-clercq/" title="Meessen De Clercq"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="Meessen De Clercq"></a>
+		<p>Meessen De Clercq</p>
+		<p class="tech-specs">(X)HTML/CSS, Photoshop, ExpressionEngine, Google Analytics, Javascript, PHP</p>
+	</div>
+	
+		
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/weidel-tours/" title="Weidel Tours"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="Weidel Tours"></a>
+		<p>Weidel Tours</p>
+		<p class="tech-specs">(X)HTML/CSS, Illustrator, Photoshop, ExpressionEngine, Google Analytics, Javascript, PHP</p>
+	</div>
+	
+		
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/xandres-instore-video/" title="Xandres In Store Video"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="Xandres In Store Video"></a>
+		<p>Xandres In Store Video</p>
+		<p class="tech-specs">After Effects, Photoshop, Premiere</p>
+	</div>
+	
+	<div class="clearer"></div>	
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/de-blauwe-peer/" title="De Blauwe Peer"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="De Blauwe Peer"></a>
+		<p>De Blauwe Peer</p>
+		<p class="tech-specs">Photoshop, AS3, XML</p>
+	</div>
+	
+		
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/heart-for-the-future-website/" title="Heart For The Future website"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="Heart For The Future website"></a>
+		<p>Heart For The Future website</p>
+		<p class="tech-specs">(X)HTML/CSS, Photoshop, Google Analytics, Javascript, MySQL, PHP</p>
+	</div>
+	
+		
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/de-barbaren-flash-website-with-cms/" title="De Barbaren Flash website"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="De Barbaren Flash website"></a>
+		<p>De Barbaren Flash website</p>
+		<p class="tech-specs">AS2, Illustrator, Photoshop, PHP</p>
+	</div>
+	
+	<div class="clearer"></div>	
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/dag-van-de-biotechnologie/" title="Dag Van De Biotechnologie"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="Dag Van De Biotechnologie"></a>
+		<p>Dag Van De Biotechnologie</p>
+		<p class="tech-specs">(X)HTML/CSS, Illustrator, Photoshop, ExpressionEngine, Google Analytics, Javascript, MySQL, PHP</p>
+	</div>
+	
+		
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/aaitski-online-t-shirt-shop/" title="AAITSKI! Online T-shirt Shop"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="AAITSKI! Online T-shirt Shop"></a>
+		<p>AAITSKI! Online T-shirt Shop</p>
+		<p class="tech-specs">(X)HTML/CSS, AS2, Illustrator, Photoshop, Flash, ExpressionEngine, Javascript, MySQL, PHP</p>
+	</div>
+	
+		
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/plugmedia/" title="PlugMedia Website Restyling"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="PlugMedia Website Restyling"></a>
+		<p>PlugMedia Website Restyling</p>
+		<p class="tech-specs">(X)HTML/CSS, AS2, Photoshop, ExpressionEngine, Google Analytics, Javascript, PHP</p>
+	</div>
+	
+	<div class="clearer"></div>	
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/leddesigninnovation/" title="LedDesignInnovation"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="LedDesignInnovation"></a>
+		<p>LedDesignInnovation</p>
+		<p class="tech-specs">AS2, Fuse, MySQL, PHP, XML</p>
+	</div>
+	
+		
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/beka-cookware/" title="BEKA Cookware"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="BEKA Cookware"></a>
+		<p>BEKA Cookware</p>
+		<p class="tech-specs">(X)HTML/CSS, AS2, Photoshop, ExpressionEngine, Google Analytics, Javascript, MySQL, PHP</p>
+	</div>
+	
+		
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/dash8-virtual-tour/" title="DASH8 Virtual Tour"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="DASH8 Virtual Tour"></a>
+		<p>DASH8 Virtual Tour</p>
+		<p class="tech-specs">AS2, Photoshop, Premiere, Fuse, Sorenson Squeeze, XML</p>
+	</div>
+	
+	<div class="clearer"></div>	
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/dash8-launch-video/" title="DASH8 Launch Video"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="DASH8 Launch Video"></a>
+		<p>DASH8 Launch Video</p>
+		<p class="tech-specs">After Effects, Premiere, Sorenson Squeeze</p>
+	</div>
+	
+		
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/dash8-in-action/" title="DASH8 In Action"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="DASH8 In Action"></a>
+		<p>DASH8 In Action</p>
+		<p class="tech-specs">AS2, Photoshop, Premiere, Fuse, Sorenson Squeeze, XML, Zinc</p>
+	</div>
+	
+		
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/uw-reisapotheek/" title="Uw Reisapotheek"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="Uw Reisapotheek"></a>
+		<p>Uw Reisapotheek</p>
+		<p class="tech-specs">AS2, Photoshop, Fuse, Google Analytics, XML</p>
+	</div>
+	
+	<div class="clearer"></div>	
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/hd1500-monitor-simulator/" title="HD1500 Monitor Simulator"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="HD1500 Monitor Simulator"></a>
+		<p>HD1500 Monitor Simulator</p>
+		<p class="tech-specs">AS2, Photoshop, XML</p>
+	</div>
+	
+		
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/detoekomstbegintnu/" title="De Toekomst begint nu"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="De Toekomst begint nu"></a>
+		<p>De Toekomst begint nu</p>
+		<p class="tech-specs">(X)HTML/CSS, AS2, Illustrator, Fuse, Google Analytics, MySQL, PHP, XML</p>
+	</div>
+	
+		
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/bobcat-319/" title="Bobcat 319"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="Bobcat 319"></a>
+		<p>Bobcat 319</p>
+		<p class="tech-specs">(X)HTML/CSS, AS2, Photoshop, Premiere, Sorenson Squeeze, XML</p>
+	</div>
+	
+	<div class="clearer"></div>	
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/residences-delacourt/" title="Residences Delacourt"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="Residences Delacourt"></a>
+		<p>Residences Delacourt</p>
+		<p class="tech-specs">(X)HTML/CSS, AS2, Photoshop, MySQL, PHP</p>
+	</div>
+	
+		
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/insites-consulting/" title="Insites Consulting"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="Insites Consulting"></a>
+		<p>Insites Consulting</p>
+		<p class="tech-specs">(X)HTML/CSS, Photoshop, ImageReady, Javascript</p>
+	</div>
+	
+		
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/motilium-lunch/" title="Motilium Lunch"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="Motilium Lunch"></a>
+		<p>Motilium Lunch</p>
+		<p class="tech-specs">After Effects, AS2, Photoshop, Sorenson Squeeze, Zinc</p>
+	</div>
+	
+	<div class="clearer"></div>	
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/stag-seraing/" title="STAG Seraing"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="STAG Seraing"></a>
+		<p>STAG Seraing</p>
+		<p class="tech-specs">After Effects, Audition, AS2, Illustrator, Premiere, Sorenson Squeeze, XML</p>
+	</div>
+	
+		
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/monitor-panel-simulator/" title="Monitor panel simulator"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="Monitor panel simulator"></a>
+		<p>Monitor panel simulator</p>
+		<p class="tech-specs">(X)HTML/CSS, AS2, Photoshop, Fuse, Sorenson Squeeze, XML</p>
+	</div>
+	
+		
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/benecol/" title="Benecol"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="Benecol"></a>
+		<p>Benecol</p>
+		<p class="tech-specs">(X)HTML/CSS, AS2, Photoshop, ImageReady, Javascript</p>
+	</div>
+	
+	<div class="clearer"></div>	
+	
+
+	<div class="caseHolder"><a href="http://glue.be/en/portfolio/mevista/" title="Mevista"><img src="$!{address.images}/uploads/cases/Vandevelde_1.jpg" alt="Mevista"></a>
+		<p>Mevista</p>
+		<p class="tech-specs">Audition, AS2, Photoshop, XML</p>
+	</div>
+	
+		
+	
+
+		<div class="clearer"></div>		<div class="pageDiv"></div>
+		<div class="pagination"></div>
+	
+</div>
+											
+				</div>
+				
+			
+				<div class="right">
+				
+										<div class="rightBlock">
+						<h3 class=" flir-replaced">Filter by service</h3>
+						<ul>
+											<li><a href="http://glue.be/en/portfolio/cat/webdesign-website-restyling/" title="Webdesign">Webdesign</a></li>
+		
+
+				<li><a href="http://glue.be/en/portfolio/cat/e-learning/" title="E-learning">E-learning</a></li>
+		
+
+				<li><a href="http://glue.be/en/portfolio/cat/search-engine-optimization-seo/" title="Search Engine Optimization">Search Engine Optimization</a></li>
+		
+
+				<li><a href="http://glue.be/en/portfolio/cat/content-management-system-cms/" title="Content Management (CMS)">Content Management (CMS)</a></li>
+		
+
+				<li><a href="http://glue.be/en/portfolio/cat/interactive-video/" title="Interactive Video">Interactive Video</a></li>
+		
+
+				<li><a href="http://glue.be/en/portfolio/cat/product-presentations/" title="Product Presentations">Product Presentations</a></li>
+		
+
+						</ul>
+					</div>
+										
+					
+						
+
+<div class="rightBlock">
+	<h4 class=" flir-replaced">A word from our clients</h4>
+	<p><img src="$!{address.images}/layout/icn-testimonial.gif" alt="" style="float:left">Read our customer testimonials to find out why our clients keep returning to Glue for their projects. <a href="http://glue.be/en/about/customer-testimonials/" title="customer testimonials" style="margin-left:69px"><img src="$!{address.images}/layout/but-testimonial-en.gif" title="customer testimonials" alt="customer testimonials"></a></p>
+</div>
+
+<div class="rightBlock">
+	<h4 class=" flir-replaced">Do you like what you see?</h4>
+	<p><img src="$!{address.images}/layout/icn-worksheet.gif" alt="" style="float:left">Tell us about your project... Just fill out our project form, and we'll get in touch. <a href="http://glue.be/en/contact/#projectform" title="Get the ball rolling..." style="margin-left:69px"><img src="$!{address.images}/layout/but-worksheet-en.gif" title="Get the ball rolling..." alt="Get the ball rolling..."></a></p>
+</div>
+
+					
+					
+				</div>
+			</div>
+		</div>

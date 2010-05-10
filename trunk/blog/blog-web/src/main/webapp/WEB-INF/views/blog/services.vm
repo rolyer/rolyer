@@ -1,0 +1,119 @@
+<div id="primaryContent">
+			<div class="content">
+				<div class="pageTop">
+					<div class="pageTitle">
+						<h1 class=" flir-replaced">Services</h1>
+					</div>
+					<div class="breadCrumbs">
+						You are here: <a href="http://glue.be/en/" title="Home">Home</a>
+						»&nbsp;<span class="active">Services</span>
+							
+					</div>					
+					<div class="clearer"></div>
+				</div>
+				
+				<div class="left">
+											
+							<p class="intro-text"></p><p class="intro-text">Glue provides professional services to small and medium sized businesses as well as to larger companies in Europe and abroad. Specialising in Web Development, we have helped many businesses make their online appearance and interactive campaigns a success. We are specialized in following services.</p><p></p>
+						
+
+						
+							<div class="serviceListing">
+								<h2 class=" flir-replaced">Webdesign</h2>
+								<p><img src="$!{address.images}/layout/service-webdesign-website-restyling.gif" alt="Webdesign" style="float:left;margin-right:10px;">We design and develop websites according to the latest standards and demands. We focus on the end-users experience and goal.</p>
+								<p class="serviceLink">				<a href="http://glue.be/en/services/webdesign-website-restyling/" title="read more about Webdesign">read more about Webdesign</a>
+		
+</p>
+							</div>
+						
+							<div class="serviceListing">
+								<h2 class=" flir-replaced">E-learning</h2>
+								<p><img src="$!{address.images}/layout/service-e-learning.gif" alt="E-learning" style="float:left;margin-right:10px;">E-Learning gives you and your company the opportunity to teach your employees and workers anything, anytime and anywhere at their own pace.</p>
+								<p class="serviceLink">				<a href="http://glue.be/en/services/e-learning/" title="read more about E-learning">read more about E-learning</a>
+		
+</p>
+							</div>
+						
+							<div class="serviceListing">
+								<h2 class=" flir-replaced">Search Engine Optimization</h2>
+								<p><img src="$!{address.images}/layout/service-zoekmachine-optimalisatie-seo.gif" alt="Search Engine Optimization" style="float:left;margin-right:10px;">We can help you with a better ranking in the search engines. We offer a wide range of Search Engine Optimization and Search Engine Advertising solutions.
+</p>
+								<p class="serviceLink">				<a href="http://glue.be/en/services/search-engine-optimization-seo/" title="read more about Search Engine Optimization">read more about Search Engine Optimization</a>
+		
+</p>
+							</div>
+						
+							<div class="serviceListing">
+								<h2 class=" flir-replaced">Content Management (CMS)</h2>
+								<p><img src="$!{address.images}/layout/service-content-management-system-cms.gif" alt="Content Management (CMS)" style="float:left;margin-right:10px;">The implementation of a content management system gives the owner of the site the freedom to publish and edit the content without programming knowledge.
+</p>
+								<p class="serviceLink">				<a href="http://glue.be/en/services/content-management-system-cms/" title="read more about Content Management (CMS)">read more about Content Management (CMS)</a>
+		
+</p>
+							</div>
+						
+							<div class="serviceListing">
+								<h2 class=" flir-replaced">Interactive Video</h2>
+								<p><img src="$!{address.images}/layout/service-interactieve-video.gif" alt="Interactive Video" style="float:left;margin-right:10px;">We often add video to our projects. Whether you need video services for use on DVD, e-learning or websites we've got the expertise.</p>
+								<p class="serviceLink">				<a href="http://glue.be/en/services/interactive-video/" title="read more about Interactive Video">read more about Interactive Video</a>
+		
+</p>
+							</div>
+						
+							<div class="serviceListing">
+								<h2 class=" flir-replaced">Product Presentations</h2>
+								<p><img src="$!{address.images}/layout/service-product-presentaties.gif" alt="Product Presentations" style="float:left;margin-right:10px;">We offer interactive presentations that can be used as "product and sales tools" but also for training, knowledge testing and internal communication. </p>
+								<p class="serviceLink">				<a href="http://glue.be/en/services/product-presentations/" title="read more about Product Presentations">read more about Product Presentations</a>
+		
+</p>
+							</div>
+						
+
+
+										
+				</div>
+				
+			
+				<div class="right">
+				
+											<div class="rightBlock">
+	<h3 class=" flir-replaced">Our services</h3>
+	<ul>
+						<li><a href="http://glue.be/en/services/webdesign-website-restyling/" title="Webdesign">Webdesign</a></li>
+		
+
+				<li><a href="http://glue.be/en/services/e-learning/" title="E-learning">E-learning</a></li>
+		
+
+				<li><a href="http://glue.be/en/services/search-engine-optimization-seo/" title="Search Engine Optimization">Search Engine Optimization</a></li>
+		
+
+				<li><a href="http://glue.be/en/services/content-management-system-cms/" title="Content Management (CMS)">Content Management (CMS)</a></li>
+		
+
+				<li><a href="http://glue.be/en/services/interactive-video/" title="Interactive Video">Interactive Video</a></li>
+		
+
+				<li><a href="http://glue.be/en/services/product-presentations/" title="Product Presentations">Product Presentations</a></li>
+		
+
+	</ul>
+</div>
+																
+							
+
+<div class="rightBlock">
+	<h4 class=" flir-replaced">The stuff we did</h4>
+	<p><img src="$!{address.images}/layout/icn-portfolio.gif" alt="" style="float:left">Take a look at a selection of our projects in our portfolio section. <a href="http://glue.be/en/portfolio/" title="to the portfolio" style="margin-left:69px"><img src="$!{address.images}/layout/but-portfolio-en.gif" title="to the portfolio" alt="to the portfolio"></a></p>
+</div>
+
+<div class="rightBlock">
+	<h4 class=" flir-replaced">A word from our clients</h4>
+	<p><img src="$!{address.images}/layout/icn-testimonial.gif" alt="" style="float:left">Read our customer testimonials to find out why our clients keep returning to Glue for their projects. <a href="http://glue.be/en/about/customer-testimonials/" title="customer testimonials" style="margin-left:69px"><img src="$!{address.images}/layout/but-testimonial-en.gif" title="customer testimonials" alt="customer testimonials"></a></p>
+</div>
+
+						
+										
+				</div>
+			</div>
+		</div>
