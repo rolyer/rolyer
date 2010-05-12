@@ -2,10 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head >
-    <title>Rolyer Blog - over webdesign</title>
+    <title>$!{pageTitle}</title>
 	
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="generator" content="Rolyer Blog V0.0.1" />
+		<!-- Favicon --> 
+		<link rel="shortcut icon" href="$!{address.images}/favicon.ico" />
     
     <link rel='index' title='Glue Blog' href='http://glue.be/blog' />
     <!-- All in One SEO Pack 1.6.10 by Michael Torbert of Semper Fi Web Design[400,418] -->
@@ -29,8 +31,8 @@
     <script src="$!{address.js}/jquery.cookie.js" type="text/javascript"></script>
 
 </head>
-<body class="blog">
-	
+<body class="$!{whereiam}">
+
 <div id="container">
 	
 <div id="wrapper">
@@ -38,15 +40,18 @@
 <div id="navigation">
 		<div class="content">
 			<div class="logo">
-			<h1><a title="glue | interactive media" href="http://glue.be/en/"><span>glue | interactive media</span></a></h1>
+			<h1><a title="Rolyer&acute; Blog" href="$!{address.server}/blog/index.htm" accesskey="1"><span>Rolyer&acute; Blog</span></a></h1>
 			</div>
             <ol id="sitelinks">
+				<!--
             	<li class="services"><a href="http://glue.be/en/services/" title="Services"><span>Services</span><em>what we offer you</em></a></li>
             	<li class="portfolio"><a href="http://glue.be/en/portfolio/" title="Portfolio"><span>Portfolio</span> <em>the stuff we did</em></a></li>
             	<li class="clients"><a href="http://glue.be/en/clients/" title="Clients"><span>Clients</span> <em>you can join them</em></a></li>
-            	<li class="blog"><a href="http://glue.be/blog/" title="Blog"><span>Blog</span> <em>sorry, Dutch only</em></a></li>
-            	<li class="aboutus"><a href="http://glue.be/en/about/" title="About us"><span>About us</span> <em>get to know us</em></a></li>
-            	<li class="contactus"><a href="http://glue.be/en/contact/" title="Contact us"><span>Contact us</span> <em>let’s stick together</em></a></li>
+            	-->
+				<li class="home"><a href="$!{address.server}/home/index.htm" title="Home"><span>首&nbsp;&nbsp;页</span> <em>Home</em></a></li>
+				<li class="blog"><a href="$!{address.server}/blog/index.htm" title="Blog"><span>博&nbsp;&nbsp;客</span> <em>Rolyer&acute; Blog</em></a></li>
+            	<li class="aboutus"><a href="$!{address.server}/about/index.htm" title="About me"><span>关&nbsp;于&nbsp;我</span> <em>About me</em></a></li>
+            	<li class="contactus"><a href="$!{address.server}/contact/index.htm" title="Contact me"><span>联&nbsp;系&nbsp;我</span> <em>Contact me</em></a></li>
             </ol>
 			<!--
 			<div id="language">
@@ -110,18 +115,18 @@ $screen_content
 		<div class="positioner">
 			
 			<div class="box news">
-				<h2><a href="http://glue.be/en/rss/#fresh" title="Fresh Glue">Fresh Glue: our latest news</a></h2>
+				<h2><a href="$!{address.server}/rss/#fresh" title="Fresh Rolyer: 我的最新信息">Fresh Rolyer: 我的最新信息</a></h2>
 				<ul>
 					<li><a href='http://glue.be/en/freshglue/#cook-truly-green-with-beka' title='Cook truly green with BEKA'>Cook truly green with BEKA</a></li>
 					<li><a href='http://glue.be/en/freshglue/#new-website-for-q-int' title='New website for Q-int'>New website for Q-int</a></li>
 					<li><a href='http://glue.be/en/freshglue/#launched-flandersbios-new-website' title='Launched FlandersBio's new website'>Launched FlandersBio's new website</a></li>
 					<li><a href='http://glue.be/en/freshglue/#fresh-website-for-hoaxland' title='Fresh website for Hoaxland'>Fresh website for Hoaxland</a></li>
 				</ul>
-				<p class="serviceLink"><a href="http://glue.be/en/freshglue/" title="read more news">read more news</a></p>
+				<p class="serviceLink"><a href="$!{address.server}/freshnews/" title="read more news">read more news</a></p>
 			</div> 
 				
 			<div class="box news">
-				<h2><a href="http://glue.be/en/rss/#blog" title="Glue Blog">Glue Blog (Sorry, Dutch only)</a></h2>
+				<h2><a href="$!{address.server}/rss/#blog" title="Rolyer&acute; Blog 博客动态">Rolyer&acute; Blog 博客动态</a></h2>
 
 				<ul>
 					<li><a href='http://feedproxy.google.com/~r/glue/~3/tCysWMzA2cg/' title='Het belang van een goede homepage.'>Het belang van een goede homepage.</a></li>
@@ -130,14 +135,14 @@ $screen_content
 					<li><a href='http://feedproxy.google.com/~r/glue/~3/vhRDCku5kA0/' title='Observeer in real time het surfgedrag op je website: Micro Analytics'>Observeer in real time het surfgedrag op je website: Micro Analytics</a></li>
 				</ul>
  
-				<p class="serviceLink"><a href="http://glue.be/blog" title="read our glue blog">read our glue blog</a></p>
+				<p class="serviceLink"><a href="$!{address.server}/blog/index.htm" title="read my blog">read my blog</a></p>
 			</div>
 				
 			<div class="box news">
-				<h2><a href="http://glue.be/en/rss/#currently" title="Currently we&acute;re working on...">Currently we&acute;re working on...</a></h2>
+				<h2><a href="$!{address.server}/rss/#currently" title="I&acute;m working on...&nbsp;|&nbsp;我正在忙于...">I&acute;m working on...&nbsp;|&nbsp;我正在忙于...</a></h2>
 					 <p>... a new website with the ExpressionEngine CMS for Nicorette.be (McNeil, Johnson &amp; Johnson)</p>
 					 <div class="imageHolder"><img src="$!{address.images}/uploads/clients/logo-nicorette.gif" alt="" /></div> 
-				<p class="serviceLink"><a href="http://glue.be/en/portfolio/" title="view our portfolio">view our portfolio</a></p>
+				<p class="serviceLink"><a href="$!{address.server}/portfolio.htm" title="view my portfolio">view my portfolio</a></p>
 			</div>
 			
 			<div class="clearer"></div>
@@ -148,15 +153,15 @@ $screen_content
 	<div class="secondFooter">
 		<div class="content">
 		
-			<a href="http://glue.be/en/" class="siteBy"><span>Glue | interactive media</span></a>
-			<p>&copy; 2008  -  All rights reserved.</p>
+			<a href="$!{address.server}/blog/index.htm" class="siteBy"><span>Rolery&acute;s Blog</span></a>
+			<p>&copy; 2010  -  All rights reserved.</p>
 			<div class="footerRight">
 				<div class="validators">
 					<a href="http://validator.w3.org/check?uri=referer" class="valhtml"><span>validate html</span></a>
 					<a href="http://jigsaw.w3.org/css-validator/check?uri=referer" class="valcss"><span>validate css</span></a>
 				</div>
-				<p class="ee">powered by expression engine</p>
-				<a class="feed" href="http://glue.be/en/rss/">subscribe to our feeds</a>
+				<p class="ee">powered by rolyer</p>
+				<a class="feed" href="$!{address.server}/rss/">subscribe to my feeds</a>
 			</div>
 		</div>
 	</div>
