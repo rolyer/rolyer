@@ -662,6 +662,9 @@ background-color: #d1cdc1;
 .portfolio #navigation #sitelinks .portfolio a {
 	color: #fff;	
 }
+.home #navigation #sitelinks .home a {
+	color: #fff;	
+}
 .blog #navigation #sitelinks .blog a {
 	color: #fff;	
 }
@@ -671,8 +674,6 @@ background-color: #d1cdc1;
 .contact #navigation #sitelinks .contactus a {
 	color: #fff;	
 }
-
-
 
 /* lang bar */
 
