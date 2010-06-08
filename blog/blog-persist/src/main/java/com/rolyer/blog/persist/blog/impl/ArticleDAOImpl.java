@@ -61,4 +61,13 @@ public class ArticleDAOImpl extends SqlMapClientDaoSupport implements ArticleDAO
 		return getSqlMapClientTemplate().update("sqlMapArticle.upadteArticle", article);
 	}
 
+	@SuppressWarnings("unchecked")
+	public List<ArticleDTO> queryArticleList(ArticleDTO articleDTO) {
+		return getSqlMapClientTemplate().queryForList("sqlMapArticle.queryArticleList", articleDTO);
+	}
+
+	public Integer queryArticleCount(ArticleDTO articleDTO) {
+		return (Integer) getSqlMapClientTemplate().queryForObject("sqlMapArticle.queryArticleCount", articleDTO);
+	}
+
 }

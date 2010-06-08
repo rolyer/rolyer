@@ -3,7 +3,7 @@
 			<div class="pageTop"></div>
 
 			<div class="left">
-		
+				<!--
 			<div class="post" id="post-1695">
 				<h2><a href="http://glue.be/blog/2010/05/het-belang-van-een-goede-homepage/" rel="bookmark" title="Permanent Link to Het belang van een goede homepage.">Het belang van een goede homepage.</a></h2>
 								<p class="postInfo">Gepost op 3 May 2010 door Koen</p>
@@ -71,10 +71,55 @@ Al <a href="http://www.useit.com/alertbox/9712a.html" target="_blank">sinds 1994
 				<div class="clearer" ></div>
 				</div>
 							</div>
- 
-				
+							-->
+			#foreach($list in $results)
+				<div class="post" id="post-$!{list.article.id}">
+				<h2><a href="http://glue.be/blog/2010/05/het-belang-van-een-goede-homepage/" rel="bookmark" title="Permanent Link to Het belang van een goede homepage.">$!{list.article.title}</a></h2>
+								<p class="postInfo">发布时间：$!date.format('yyyy-MM-dd HH:mm:ss ',$!{list.article.gmtModified}) 类别:$!{list.labels.name}</p>
+								
+				<div class="entry">
+					
+					#set($content = $!{list.article.content})
+                    #set($contentShort = $content)
+                    #if($contentShort.length()>$!{list.article.showMaxLength})
+						#set($contentShort = $contentShort.substring(0,$!{list.article.showMaxLength})+"...")
+					#end
+					
+					$contentShort
+					
+				</div>
+				<div class="blogTags">Tags: <a href="http://glue.be/blog/tag/homepage/" rel="tag">homepage</a>, <a href="http://glue.be/blog/tag/usability/" rel="tag">Usability</a>, <a href="http://glue.be/blog/tag/webdesign/" rel="tag">Webdesign</a></div>				<div class="postFooter">
+
+<div class="sociable">
+<div class="sociable_tagline">
+<strong>Share and Enjoy:</strong>
+</div>
+<ul>
+	<li class="sociablefirst"><a rel="nofollow"  href="http://twitter.com/home?status=Het%20belang%20van%20een%20goede%20homepage.%20-%20http%3A%2F%2Fglue.be%2Fblog%2F2010%2F05%2Fhet-belang-van-een-goede-homepage%2F" title="Twitter"><img src="$!{address.images}/services-sprite.gif" title="Twitter" alt="Twitter" style="width: 16px; height: 16px; background: transparent url(images/services-sprite.png) no-repeat; background-position:-343px -55px" class="sociable-hovers" /></a></li>
+	<li><a rel="nofollow"  href="http://www.facebook.com/share.php?u=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F05%2Fhet-belang-van-een-goede-homepage%2F&amp;t=Het%20belang%20van%20een%20goede%20homepage." title="Facebook"><img src="$!{address.images}/services-sprite.gif" title="Facebook" alt="Facebook" style="width: 16px; height: 16px; background: transparent url(images/services-sprite.png) no-repeat; background-position:-343px -1px" class="sociable-hovers" /></a></li>
+	<li><a rel="nofollow"  href="http://delicious.com/post?url=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F05%2Fhet-belang-van-een-goede-homepage%2F&amp;title=Het%20belang%20van%20een%20goede%20homepage.&amp;notes=Samen%20met%20onze%20klanten%20overleggen%20we%20bij%20aanvang%20van%20een%20project%20wat%20er%20juist%20op%20de%20homepage%20van%20hun%20website%20zou%20kunnen%20staan.%20Vroeger%20kwam%20elke%20bezoeker%20op%20de%20website%20terecht%20via%20de%20homepage.%20Vandaag%20is%20dat%20niet%20meer%20het%20geval.%0D%0AIs%20de%20homepage%20nog%20b" title="del.icio.us"><img src="$!{address.images}/services-sprite.gif" title="del.icio.us" alt="del.icio.us" style="width: 16px; height: 16px; background: transparent url(images/services-sprite.png) no-repeat; background-position:-199px -1px" class="sociable-hovers" /></a></li>
+	<li><a rel="nofollow"  href="http://nujij.nl/jij.lynkx?t=Het%20belang%20van%20een%20goede%20homepage.&amp;u=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F05%2Fhet-belang-van-een-goede-homepage%2F&amp;b=Samen%20met%20onze%20klanten%20overleggen%20we%20bij%20aanvang%20van%20een%20project%20wat%20er%20juist%20op%20de%20homepage%20van%20hun%20website%20zou%20kunnen%20staan.%20Vroeger%20kwam%20elke%20bezoeker%20op%20de%20website%20terecht%20via%20de%20homepage.%20Vandaag%20is%20dat%20niet%20meer%20het%20geval.%0D%0AIs%20de%20homepage%20nog%20b" title="NuJIJ"><img src="$!{address.images}/services-sprite.gif" title="NuJIJ" alt="NuJIJ" style="width: 16px; height: 16px; background: transparent url(images/services-sprite.png) no-repeat; background-position:-253px -37px" class="sociable-hovers" /></a></li>
+	<li><a rel="nofollow"  href="http://www.google.com/bookmarks/mark?op=edit&amp;bkmk=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F05%2Fhet-belang-van-een-goede-homepage%2F&amp;title=Het%20belang%20van%20een%20goede%20homepage.&amp;annotation=Samen%20met%20onze%20klanten%20overleggen%20we%20bij%20aanvang%20van%20een%20project%20wat%20er%20juist%20op%20de%20homepage%20van%20hun%20website%20zou%20kunnen%20staan.%20Vroeger%20kwam%20elke%20bezoeker%20op%20de%20website%20terecht%20via%20de%20homepage.%20Vandaag%20is%20dat%20niet%20meer%20het%20geval.%0D%0AIs%20de%20homepage%20nog%20b" title="Google Bookmarks"><img src="$!{address.images}/services-sprite.gif" title="Google Bookmarks" alt="Google Bookmarks" style="width: 16px; height: 16px; background: transparent url(images/services-sprite.png) no-repeat; background-position:-91px -19px" class="sociable-hovers" /></a></li>
+	<li><a rel="nofollow"  href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F05%2Fhet-belang-van-een-goede-homepage%2F&amp;title=Het%20belang%20van%20een%20goede%20homepage." title="StumbleUpon"><img src="$!{address.images}/services-sprite.gif" title="StumbleUpon" alt="StumbleUpon" style="width: 16px; height: 16px; background: transparent url(images/services-sprite.png) no-repeat; background-position:-217px -55px" class="sociable-hovers" /></a></li>
+	<li><a rel="nofollow"  href="http://technorati.com/faves?add=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F05%2Fhet-belang-van-een-goede-homepage%2F" title="Technorati"><img src="$!{address.images}/services-sprite.gif" title="Technorati" alt="Technorati" style="width: 16px; height: 16px; background: transparent url(images/services-sprite.png) no-repeat; background-position:-271px -55px" class="sociable-hovers" /></a></li>
+	<li><a rel="nofollow"  href="http://digg.com/submit?phase=2&amp;url=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F05%2Fhet-belang-van-een-goede-homepage%2F&amp;title=Het%20belang%20van%20een%20goede%20homepage.&amp;bodytext=Samen%20met%20onze%20klanten%20overleggen%20we%20bij%20aanvang%20van%20een%20project%20wat%20er%20juist%20op%20de%20homepage%20van%20hun%20website%20zou%20kunnen%20staan.%20Vroeger%20kwam%20elke%20bezoeker%20op%20de%20website%20terecht%20via%20de%20homepage.%20Vandaag%20is%20dat%20niet%20meer%20het%20geval.%0D%0AIs%20de%20homepage%20nog%20b" title="Digg"><img src="$!{address.images}/services-sprite.gif" title="Digg" alt="Digg" style="width: 16px; height: 16px; background: transparent url(images/services-sprite.png) no-repeat; background-position:-235px -1px" class="sociable-hovers" /></a></li>
+	<li><a rel="nofollow"  href="http://reddit.com/submit?url=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F05%2Fhet-belang-van-een-goede-homepage%2F&amp;title=Het%20belang%20van%20een%20goede%20homepage." title="Reddit"><img src="$!{address.images}/services-sprite.gif" title="Reddit" alt="Reddit" style="width: 16px; height: 16px; background: transparent url(images/services-sprite.png) no-repeat; background-position:-55px -55px" class="sociable-hovers" /></a></li>
+	<li class="sociablelast"><a rel="nofollow"  href="http://www.ekudos.nl/artikel/nieuw?url=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F05%2Fhet-belang-van-een-goede-homepage%2F&amp;title=Het%20belang%20van%20een%20goede%20homepage.&amp;desc=Samen%20met%20onze%20klanten%20overleggen%20we%20bij%20aanvang%20van%20een%20project%20wat%20er%20juist%20op%20de%20homepage%20van%20hun%20website%20zou%20kunnen%20staan.%20Vroeger%20kwam%20elke%20bezoeker%20op%20de%20website%20terecht%20via%20de%20homepage.%20Vandaag%20is%20dat%20niet%20meer%20het%20geval.%0D%0AIs%20de%20homepage%20nog%20b" title="eKudos"><img src="$!{address.images}/services-sprite.gif" title="eKudos" alt="eKudos" style="width: 16px; height: 16px; background: transparent url(images/services-sprite.png) no-repeat; background-position:-307px -1px" class="sociable-hovers" /></a></li>
+</ul>
+</div>
+				<div class="commentIndic"> <a href="http://glue.be/blog/2010/05/het-belang-van-een-goede-homepage/#respond" title="Comment on Het belang van een goede homepage.">评论($!{list.article.commentsNumber})&nbsp;&#187; </a>				</div> 
+				<div class="clearer" ></div> 
+				</div> 
+							</div> 
+			#end
 		<div class="pagination">
-			<div class="prev"><a href="http://glue.be/blog/page/2/" ><img alt="Vorige" src="$!{address.images}/layout/but-prev-page-nl.gif"/></a></div>
+			<div class="prev">
+				$totalPage $currentPage
+				#pageBar($totalPage $currentPage $suffixUrl)
+				<a href="http://glue.be/blog/page/2/" >
+					<img alt="Vorige" src="$!{address.images}/layout/but-prev-page-nl.gif"/>
+				</a>
+			</div>
 			<div class="next"></div>
 		</div>
  
