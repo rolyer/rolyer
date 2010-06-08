@@ -20,4 +20,7 @@ public interface ArticleService {
 	public Integer upadteArticle(ArticleDO article);
 	public ArticleDTO queryArticleById(Integer id);
 	public List<ArticleDO> queryArticleByCategoryId(Integer id);
+	
+	public List<ArticleDTO> queryArticleList(ArticleDTO articleDTO);
+	public Integer queryArticleCount(ArticleDTO articleDTO);
 }

@@ -69,6 +69,22 @@ public class ArticleDAOTest extends BaseDaoTestCase {
 		assertTrue(list.size()+"", list.size()==10);
 	}
 	
+	public void test_query_article_list(){
+		clean();
+		for (int i = 1; i <= 10; i++) {
+			ArticleDO article=getArticleDO();
+			article.setTitle("title"+i);
+			articleDAO.insertArticle(article);
+		}
+		ArticleDTO articleDTO=new ArticleDTO();
+		List<ArticleDTO> list=articleDAO.queryArticleList(articleDTO);
+		
+		Integer count=articleDAO.queryArticleCount(articleDTO);
+		
+		assertTrue(list.size()+"", list.size()==count.intValue());
+	}
+	
+	
 	public ArticleDO getArticleDO(){
 		ArticleDO article=new ArticleDO();
 		article.setCategoryId(1);
@@ -77,6 +93,7 @@ public class ArticleDAOTest extends BaseDaoTestCase {
 		article.setGmtModified(new Date());
 		article.setTitle("title");
 		article.setViews(0);
+		article.setCommentsNumber(10);
 		return article;
 	}
 	

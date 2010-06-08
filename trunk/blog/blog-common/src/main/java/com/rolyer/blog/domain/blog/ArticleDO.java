@@ -23,7 +23,9 @@ public class ArticleDO implements java.io.Serializable {
 	private Integer categoryId;		//类别编号
 	private String title;			//标题
 	private String content;			//内容
+	private Integer showMaxLength;	//文章显示长度（默认500）
 	private Integer views;			//浏览次数
+	private Integer commentsNumber;	//评论数
 	private Date gmtCreated;		//创建时间
 	private Date gmtModified;		//修改时间
 	
@@ -76,6 +78,18 @@ public class ArticleDO implements java.io.Serializable {
 		this.content = content;
 	}
 	/**
+	 * @return the showMaxLength
+	 */
+	public Integer getShowMaxLength() {
+		return showMaxLength;
+	}
+	/**
+	 * @param showMaxLength the showMaxLength to set
+	 */
+	public void setShowMaxLength(Integer showMaxLength) {
+		this.showMaxLength = showMaxLength;
+	}
+	/**
 	 * @return the views
 	 */
 	public Integer getViews() {
@@ -86,6 +100,18 @@ public class ArticleDO implements java.io.Serializable {
 	 */
 	public void setViews(Integer views) {
 		this.views = views;
+	}
+	/**
+	 * @return the commentsNumber
+	 */
+	public Integer getCommentsNumber() {
+		return commentsNumber;
+	}
+	/**
+	 * @param commentsNumber the commentsNumber to set
+	 */
+	public void setCommentsNumber(Integer commentsNumber) {
+		this.commentsNumber = commentsNumber;
 	}
 	/**
 	 * @return the gmtCreated

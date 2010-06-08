@@ -60,4 +60,12 @@ public class ArticleServiceImpl implements ArticleService {
 		return articleDAO.upadteArticle(article);
 	}
 
+	public Integer queryArticleCount(ArticleDTO articleDTO) {
+		return articleDAO.queryArticleCount(articleDTO);
+	}
+
+	public List<ArticleDTO> queryArticleList(ArticleDTO articleDTO) {
+		return articleDAO.queryArticleList(articleDTO);
+	}
+
 }
