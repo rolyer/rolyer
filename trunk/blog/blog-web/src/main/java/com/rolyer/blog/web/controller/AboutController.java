@@ -7,8 +7,12 @@ package com.rolyer.blog.web.controller;
 
 import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.rolyer.blog.domain.blog.InformationDO;
+import com.rolyer.blog.service.blog.InformationService;
 
 /**
  * @author Rolyer (rolyer.live@gmail.com)
@@ -16,9 +20,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @Controller
 public class AboutController extends BaseController {
+	@Autowired
+	private InformationService informationService;
 	
+	/**
+	 * 获取我的信息
+	 * @param out
+	 */
 	@RequestMapping
 	public void index(Map<String, Object> out){
-		out.put("whereiam", "about");
+		InformationDO informationDO = informationService.queryFirstInformation();
+		
+		out.put("aboutme", informationDO.getAboutMe());
 	}
 }

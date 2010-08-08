@@ -1,5 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<!--顶级父pom.xml文件-->
 	<parent>
 		<artifactId>blog-parent</artifactId>
 		<groupId>com.rolyer</groupId>
@@ -12,7 +13,7 @@
 	<name>blog-test</name>
 	<packaging>jar</packaging>
 	<version>1.0.0-SNAPSHOT</version>
-
+	<!--配置依赖关系-->
 	<dependencies>
 		<dependency>
 			<groupId>com.rolyer</groupId>

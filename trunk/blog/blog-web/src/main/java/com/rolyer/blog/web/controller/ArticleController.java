@@ -18,6 +18,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class ArticleController extends BaseController {
 	@RequestMapping
 	public void index(Map<String, Object> out){
-		
+		out.put("whereiam", "blog");
 	}
 }

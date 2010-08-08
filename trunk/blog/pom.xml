@@ -10,12 +10,12 @@
   <version>1.0.0-SNAPSHOT</version>
 
   <properties>
-		<java.source.version>1.5</java.source.version>
-		<java.target.version>1.5</java.target.version>
-		<encoding>UTF-8</encoding>
-		<project.version>1.0.0-SNAPSHOT</project.version>
-		<project.prefix>blog</project.prefix>		
-	</properties>
+	<java.source.version>1.5</java.source.version>
+	<java.target.version>1.5</java.target.version>
+	<encoding>UTF-8</encoding>
+	<project.version>1.0.0-SNAPSHOT</project.version>
+	<project.prefix>blog</project.prefix>		
+  </properties>
   
   <developers>
 		<developer>

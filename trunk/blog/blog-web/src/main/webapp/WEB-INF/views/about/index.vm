@@ -11,14 +11,7 @@
 				</div>
 				
 				<div class="left">
-					
-					<p class="intro-text">Glue offers of wide variety of complementary multimedia services. Whether it's webdesign, web development, search engine optimization or custom e-learning, we will help you tackle projects of all shapes and sizes.</p>
-<h2 class=" flir-replaced">We love to be one step ahead.</h2>
-<p>Glue consists of a diverse team of in house specialists. Moreover, we can rely on a network of highly experienced partners. If you would like to learn more About me, feel free to <a href="/en/contact/">invite  for a demo</a>.</p>
-					
-					
-										
-							
+					$!{aboutme}
 				</div>
 				
 			

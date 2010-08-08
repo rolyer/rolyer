@@ -112,17 +112,33 @@ Al <a href="http://www.useit.com/alertbox/9712a.html" target="_blank">sinds 1994
 				</div> 
 							</div> 
 			#end
+		<p>Blue Style
+			<div class="manu">
+				<span class="disabled"> <  Prev</span>
+					<span class="current">1</span>
+					<a href="#?page=2">2</a>
+					<a href="#?page=3">3</a>
+					<a href="#?page=4">4</a>
+					<a href="#?page=5">5</a>
+					<a href="#?page=6">6</a>
+					<a href="#?page=7">7</a>
+					...
+					<a href="#?page=199">199</a>
+					<a href="#?page=200">200</a>
+					<a href="#?page=2">Next  > </a>
+			</div>
+		</p>
+		
 		<div class="pagination">
 			<div class="prev">
-				$totalPage $currentPage
-				#pageBar($totalPage $currentPage $suffixUrl)
+				#pageBar2($totalPage $currentPage $suffixUrl)
 				<a href="http://glue.be/blog/page/2/" >
 					<img alt="Vorige" src="$!{address.images}/layout/but-prev-page-nl.gif"/>
 				</a>
 			</div>
 			<div class="next"></div>
 		</div>
- 
+		
 	
 	</div>
  

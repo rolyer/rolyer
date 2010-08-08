@@ -51,7 +51,7 @@ public class BlogController extends BaseController {
 		PageDto page=new PageDto(); 
 	 	page.setPageSize(9);
 	 	page.setSort("gmt_modified");
-	 	page.setDir("ASC");
+	 	page.setDir("DESC");
 	 	int start=(Integer.valueOf(p)-1)*page.getPageSize();
 	 	page.setStartIndex(start);
 	 	Integer totalPages = totalRecords / page.getPageSize() + 1;
