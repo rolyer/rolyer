@@ -122,9 +122,9 @@
 		    on c.id = a.category_id
 		<dynamic prepend="order by">
 			<isNotEmpty property="page.sort">
-				#page.sort#
+				$page.sort$
 				<isNotEmpty property="page.dir">
-					#page.dir#
+					$page.dir$
 				</isNotEmpty>
 			</isNotEmpty>
 		</dynamic>

@@ -318,56 +318,122 @@
 *#
 #macro(zz91UlTag $attributes $urlPrefix  $objList  )
  <ul $attributes>
-  #set ($var1="newsId")	
+  #set ($var1="newsId")
   #evaluate("obj.$var1")
   #foreach($obj in $objList)
    <li>·<a href='123#evaluate("$obj.$var1").htm'>$obj.newsName</a></li>
   #end
- </ul> 
-#end
-#macro(zz91UlTag_help $attributes $urlPrefix $objList )
-	<ul $attributes>
-		#foreach($obj in $objList)
-			<li>·<a href="123${obj.helpId}.html">$obj.helpName</a></li>
-		#end
-	</ul>
+ </ul>
 #end
 
-#macro(zz91UlTag_lead $attributes $urlPrefix $objList )
-	<ul $attributes>
-		#foreach($obj in $objList)
-			<li>·<a href="123${obj.leadId}.html">$obj.leadName</a></li>
+##通用分页宏,查询参数直接跟在url后面,主要用于生意管家等对URL静态化要求不高的页面
+#macro(pageBar $totalPages $currentPage $suffixUrl)
+	#if($totalPages>0)
+		#set($itemCountPerPage=10)
+		#if($currentPage/$itemCountPerPage>0)
+			#set($start=($currentPage/$itemCountPerPage)*$itemCountPerPage)
+		#else
+			#set($start=1)
 		#end
-	</ul>
-#end
-#macro(zz91UlTag_tag $attributes $urlPrefix $objList )
-	<ul $attributes>
-		#foreach($obj in $objList)
-			<li>·<a href="123${obj.tagID}.html">$obj.tagName</a></li>
+		#if($currentPage > $itemCountPerPage)
+			#set($startPage=$start - 1)
+			<a href="?p=$startPage${suffixUrl}" style='color:red'>...</a>
 		#end
-	</ul>
+		#if($currentPage+$itemCountPerPage<$totalPages)
+			#set($end=$start+9)
+		#elseif($totalPages<$itemCountPerPage)
+			#set($end=$totalPages)
+		#else
+			#set($end=$itemCountPerPage)
+		#end
+		#foreach($i in [$start..$end])
+			#if($currentPage==$i)
+				<a href="?p=$i${suffixUrl}" style='color:red'>$i</a>
+			#else
+				<a href="?p=$i${suffixUrl}">$i</a>
+			#end
+		#end
+		#if($currentPage+ 10<$totalPages)
+			#set($endPage=$end + 1)
+			<a href="?p=$endPage${suffixUrl}">...</a>
+		#end
+	#end
 #end
 
-#macro(zz91UlTag_price $attributes $urlPrefix $objList )
-	<ul $attributes>
-		#foreach($obj in $objList)
-			<li>·<a href="123${obj.priceId}.html">$obj.priceName</a></li>
+##通用分页宏,查询参数静态化后编码进url,主要用于前台等需要SEO的页面
+#macro(staticPageBar $totalPages $currentPage $url)
+	#if($totalPages>0)
+		#set($itemCountPerPage=10)
+		#if($currentPage/$itemCountPerPage>0)
+			#set($start=($currentPage/$itemCountPerPage)*$itemCountPerPage)
+		#else
+			#set($start=1)
 		#end
-	</ul>
+		#if($currentPage > $itemCountPerPage)
+			#set($startPage=$start - 1)
+			<a href="${url}_p${startPage}.htm" style='color:red'>...</a>
+		#end
+		#if($currentPage+$itemCountPerPage<$totalPages)
+			#set($end=$start+9)
+		#elseif($totalPages<$itemCountPerPage)
+			#set($end=$totalPages)
+		#else
+			#set($end=$itemCountPerPage)
+		#end
+		#foreach($i in [$start..$end])
+			#if($currentPage==$i)
+				<a href="${url}_p${i}.htm" style='color:red'>$i</a>
+			#else
+				<a href="${url}_p${i}.htm">$i</a>
+			#end
+		#end
+		#if($currentPage+ 10<$totalPages)
+			#set($endPage=$end + 1)
+			<a href="${url}_p${endPage}.htm">...</a>
+		#end
+	#end
 #end
 
-#macro(zz91UlTag_enterprisePrice $attributes $urlPrefix $objList )
-	<ul $attributes>
-		#foreach($obj in $objList)
-			<li>·<a href="123${obj.priceId}.html">$obj.priceName</a></li>
-		#end
-	</ul>
+##通用分页宏2,查询参数直接跟在url后面,主要用于生意管家等对URL静态化要求不高的页面
+#macro(pageBar2 $totalRecords $totalPages $currentPage $suffixUrl)
+	#if($totalPages>0)
+		#set($itemCountPerPage=10)
+	<div id="pageleft">
+		共<b>$!{totalRecords}</b>条信息&nbsp;&nbsp;<b>$!{currentPages}</b>/<b>$!{totalPages}</b> 页&nbsp;&nbsp;<b>10</b> /页
+	</div>
+	<div align="right" id="pagetop">
+	  <font color="#666666">
+	  	首页
+  	  </font>
+	  	#if($currentPage > 1)
+	  		#set($prevPage=$currentPage - 1)
+	  		<a href="?p=$prevPage">上一页</a>
+	  	#end
+
+	  	#if($currentPage < $totalPages)
+	  		#set($nextPage=$currentPage + 1)
+	  		<a href="?p=$nextPage">下一页</a>
+	  	#end
+
+	  <a href="?p=$totalPages">尾页</a>
+	</div>
+	#end
 #end
 
-#macro(zz91UlTag_tech $attributes $urlPrefix $objList )
-	<ul $attributes>
-		#foreach($obj in $objList)
-			<li>·<a href="123${obj.techId}.html">$obj.techName</a></li>
-		#end
-	</ul>
+
+
+##通用分页宏2,查询参数静态化后编码进url,主要用于前台等需要SEO的页面,并且不显示首页、尾页和总条数
+#macro(staticPageBar2 $totalPages $currentPage $url)
+	#if($totalPages>0)
+		#set($itemCountPerPage=10)
+	  	#if($currentPage > 1)
+	  		#set($prevPage=$currentPage - 1)
+	  		<a href="${url}_p${prevPage}.htm">上一页</a>
+	  	#end
+
+	  	#if($currentPage < $totalPages)
+	  		#set($nextPage=$currentPage + 1)
+	  		<a href="${url}_p${nextPage}.htm">下一页</a>
+	  	#end
+	#end
 #end
