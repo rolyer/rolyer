@@ -14,7 +14,8 @@
 	<java.target.version>1.5</java.target.version>
 	<encoding>UTF-8</encoding>
 	<project.version>1.0.0-SNAPSHOT</project.version>
-	<project.prefix>blog</project.prefix>		
+	<project.prefix>blog</project.prefix>
+	<package.environment>devwin</package.environment>
   </properties>
   
   <developers>
@@ -28,7 +29,7 @@
 	<!-- 软件配置管理（版本控制软件），如cvs、svn。
 	<scm>
 		<connection>
-			scm:svn://127.0.0.1/simple-parent/trunk
+			scm:svn://127.0.0.1/blog-parent/trunk
 		</connection>
 	</scm>
 	-->
@@ -307,6 +308,23 @@
 		            </excludes>
 		        </configuration>
 	        </plugin>
+			<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <addMavenDescriptor>false</addMavenDescriptor>
+                    </archive>
+                    <webResources>
+                        <resource>
+                            <!-- this is relative to the pom.xml directory -->
+                            <directory>src/main/resources/${package.environment}</directory>
+                            <targetPath>WEB-INF/classes</targetPath>
+                            <filtering>true</filtering>
+                        </resource>
+                    </webResources>
+                </configuration>
+            </plugin>
 			<!--
 			<plugin>  
 			   <groupId>org.apache.maven.plugins</groupId>  
@@ -321,6 +339,16 @@
 		<resources>
 			<resource>
 				<directory>src/main/resources</directory>
+				<includes>
+					<include>**/*</include>
+				</includes>
+				<excludes>
+					<exclude>${package.environment}/*</exclude>
+				</excludes>
+				<filtering>true</filtering>
+			</resource>
+			<resource>
+				<directory>src/main/resources/${package.environment}</directory>
 				<includes>
 					<include>**/*</include>
 				</includes>
@@ -345,29 +373,24 @@
 
 	<profiles>
 		<profile>
+			<id>dev</id>
+			<properties>
+				<package.environment>dev</package.environment>
+			</properties>
+		</profile>
+
+		<profile>
+			<id>test</id>
+			<properties>
+				<package.environment>test</package.environment>
+			</properties>
+		</profile>
+
+		<profile>
 			<id>production</id>
 			<properties>
-				<jdbc.driver>com.mysql.jdbc.Driver</jdbc.driver>  
-				<jdbc.astUrl>
-					<![CDATA[
-					jdbc:mysql://127.0.0.1:3306/blog?useUnicode=true&amp;characterEncoding=utf-8
-					]]>
-				</jdbc.astUrl>  
-				<jdbc.username>root</jdbc.username>  
-				<jdbc.password>zj88friend</jdbc.password>  
-
-				<log4j.root>/usr/local/logs</log4j.root>
-				<log4j.debuglevel>info</log4j.debuglevel>
-				<cache.server>127.0.0.1:11211</cache.server>
-
-				<!--baseconfig-->
-				<bc.uploadFolderTemp>/tmp/</bc.uploadFolderTemp>
-				<bc.uploadFolder>/usr/local/apache-tomcat-6.0.20/webapps/blog/resource/</bc.uploadFolder>
-				<bc.resourceUrl>http://127.0.0.1:8080/web/resource</bc.resourceUrl>
-				<bc.luceneIndexFolder>/usr/local/apache-tomcat-6.0.20/webapps/index-store/offerlist</bc.luceneIndexFolder>
-				<!--baseconfig-->
+				<package.environment>production</package.environment>
 			</properties>
-		</profile>  
+		</profile>
 	</profiles>
-  
 </project>
