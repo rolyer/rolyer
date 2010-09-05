@@ -1,7 +1,7 @@
-/*
- * Copyright 2010 ASTO.
+/**
+ * Copyright 2010 ROLYER.
  * All right reserved.
- * Created on 2010-1-25 下午01:57:56
+ * Created on 2010-1-25
  */
 package com.rolyer.blog.web.controller;
 
@@ -17,7 +17,7 @@ import org.springframework.web.servlet.ModelAndView;
 /**
  * 控制器基类,用于封装HttpServletResponse对象用于输出JOSN
  *
- * @author Ryan
+ * @author Rolyer (rolyer.live@gmail.com)
  *
  */
 public class BaseController {
@@ -46,4 +46,21 @@ public class BaseController {
 		out.put("json", jsonString);
 		return new ModelAndView("json");
 	}
+	
+	/**
+	 * 打印JS字符串
+	 * 
+	 * @param s
+	 *            输出的js
+	 * @param out
+	 *            将生成的JS字符串放到该map里
+	 * @throws IOException
+	 *             出现IO异常时抛出
+	 */
+	public ModelAndView printJs(String s, Map<String, Object> out)
+			throws IOException {
+		out.put("js", s);
+		return new ModelAndView("js");
+	}
+
 }
