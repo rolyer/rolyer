@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.rolyer</groupId>
@@ -15,7 +14,13 @@
 	<encoding>UTF-8</encoding>
 	<project.version>1.0.0-SNAPSHOT</project.version>
 	<project.prefix>blog</project.prefix>
+	<!-- Windows开发环境 
 	<package.environment>devwin</package.environment>
+	-->
+	<!-- Linux开发环境 -->
+	<package.environment>dev</package.environment>
+
+	<jdbc.location>classpath:persist.properties</jdbc.location>
   </properties>
   
   <developers>
@@ -39,6 +44,7 @@
 	<module>blog-persist</module> 
 	<module>blog-service</module>
 	<module>blog-web</module>
+	<module>blog-admin</module>
 	<module>blog-test</module>
   </modules>
 
@@ -383,6 +389,7 @@
 			<id>test</id>
 			<properties>
 				<package.environment>test</package.environment>
+				<!--<jdbc.location>file:/usr/siteconfig/persist.properties</jdbc.location>-->
 			</properties>
 		</profile>
 
@@ -390,6 +397,7 @@
 			<id>production</id>
 			<properties>
 				<package.environment>production</package.environment>
+				<!--<jdbc.location>file:D:/siteconfig/persist.properties</jdbc.location>-->
 			</properties>
 		</profile>
 	</profiles>

@@ -89,7 +89,7 @@
 		class="org.springframework.web.servlet.view.velocity.VelocityLayoutViewResolver">
 		<property name="exposeSpringMacroHelpers" value="true"             />
 		<property name="suffix" value="${velocity.suffix}"                 />
-			<property name="layoutUrl" value="layout/default.vm"               />
+		<property name="layoutUrl" value="layout/default.vm"               />
 		<property name="contentType" value="text/html;charset=utf-8"       />
 		<property name="toolboxConfigLocation"    value="WEB-INF/vm-toolbox.xml" />
 	</bean>

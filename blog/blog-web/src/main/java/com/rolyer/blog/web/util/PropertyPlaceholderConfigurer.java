@@ -10,7 +10,7 @@ import org.springframework.util.Assert;
 /**
  * 重载spring默认的属性配置文件解析器，这样，可以让配置文件bean可以作为普通的属性访问器来使用
  *
- * @author yinhai.fuyh
+ * @author roleyr
  */
 public class PropertyPlaceholderConfigurer extends org.springframework.beans.factory.config.PropertyPlaceholderConfigurer {
 
