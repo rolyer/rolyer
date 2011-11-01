@@ -1,0 +1,1 @@
+mvn install:install-file -DgroupId=net.spy -DartifactId=memcached -Dversion=2.5rc1 -Dpackaging=jar -Dfile=C:\Rolyer\Projects\blog\document\lib\memcached-2.5rc1.jar

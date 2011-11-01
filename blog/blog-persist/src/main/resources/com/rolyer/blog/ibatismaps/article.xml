@@ -89,6 +89,7 @@
 		  a.comments_number,
 		  a.gmt_created,
 		  a.gmt_modified,
+		  a.show_max_length,
 		  c.name as category_name
 		from article a
 		left join category c on c.id=a.category_id
