@@ -3,7 +3,6 @@
 			<div class="pageTop"></div>
 
 			<div class="left">
-				<!--
 			<div class="post" id="post-1695">
 				<h2><a href="http://glue.be/blog/2010/05/het-belang-van-een-goede-homepage/" rel="bookmark" title="Permanent Link to Het belang van een goede homepage.">Het belang van een goede homepage.</a></h2>
 								<p class="postInfo">Gepost op 3 May 2010 door Koen</p>
@@ -71,7 +70,7 @@ Al <a href="http://www.useit.com/alertbox/9712a.html" target="_blank">sinds 1994
 				<div class="clearer" ></div>
 				</div>
 							</div>
-							-->
+							
 			#foreach($list in $results)
 				<div class="post" id="post-$!{list.article.id}">
 				<h2><a href="http://glue.be/blog/2010/05/het-belang-van-een-goede-homepage/" rel="bookmark" title="Permanent Link to Het belang van een goede homepage.">$!{list.article.title}</a></h2>

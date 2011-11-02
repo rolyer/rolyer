@@ -1,15 +1,4 @@
-<div id="primaryContent">
-			<div class="content">
-				<div class="pageTop">
-					<div class="pageTitle">
-						<h1 class=" flir-replaced">About us</h1>
-					</div>
-					<div class="breadCrumbs">
-						You are here: <a href="http://glue.be/en/" title="Home">Home</a>»&nbsp;<span class="active">About us</span>
-					</div>					
-					<div class="clearer"></div>
-				</div>
-				
+
 				<div class="left">
 					
 					<p class="intro-text">Glue offers of wide variety of complementary multimedia services. Whether it's webdesign, web development, search engine optimization or custom e-learning, we will help you tackle projects of all shapes and sizes.</p>
@@ -57,5 +46,3 @@
 					
 				</div>
 				
-			</div>
-		</div>

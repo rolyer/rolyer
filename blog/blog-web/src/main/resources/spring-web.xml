@@ -63,7 +63,15 @@
 		<property name="basePackage"    value="com.rolyer.blog.web.controller" />
 		<!--property name="defaultHandler" value="homeController" /-->
 	</bean>
-
+	<!-- 页面数据配置(SEO)
+	<bean id="pageFactory" class="com.recyclechina.common.page.DefaultPageFactory">
+		<property name="pageFiles">
+			<list>
+				<value>/WEB-INF/conf/page/index_page.xml</value>
+			</list>
+		</property>
+	</bean>
+	-->
 	<!--  shared velocity engine which will be used by email and page presentation -->
 	<bean id="velocityEngine"
 		class="org.springframework.ui.velocity.VelocityEngineFactoryBean">
