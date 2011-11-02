@@ -1,54 +1,42 @@
-<div id="primaryContent">
-			<div class="content">
-				<div class="pageTop">
-					<div class="pageTitle">
-						<h1 class=" flir-replaced">About me</h1>
-					</div>
-					<div class="breadCrumbs">
-						You are here: <a href="http://glue.be/en/" title="Home">Home</a>»&nbsp;<span class="active">About me</span>
-					</div>					
-					<div class="clearer"></div>
-				</div>
-				
-				<div class="left">
-					$!{aboutme}
-				</div>
-				
-			
-				<div class="right">
-					<div class="rightBlock">
-	<h3 class=" flir-replaced">Get to know </h3>
-	<ul>
-		<!-- <li><a href="http://glue.be/en/about/our-methodology/" title="Our methodology">Our methodology</a></li> -->
-		<li><a href="http://glue.be/en/about/customer-testimonials/" title="A word from our customers">A word from our customers</a></li>
-		<li><a href="http://glue.be/en/about/why-work-with-me/" title="Why work with me?">Why work with ?</a></li>
-		<li><a href="http://glue.be/en/freshglue/" title="Fresh Glue: our latest news">Fresh Glue: our latest news</a></li>
-	</ul>
-</div>
-					
-					
-						
-
-<div class="rightBlock">
-	<h4 class=" flir-replaced">Want to work for me?</h4>
-	<p><img src="$!{address.images}/layout/icn-job.gif" alt="" style="float:left">We are always on the lookout for talented and enthusiastic people. Let me know you exist… <a href="http://glue.be/en/contact/#job" title="to the contact form" style="margin-left:69px"><img src="$!{address.images}/layout/but-job-en.gif" title="to the contact form" alt="to the contact form"></a></p>
+<div class="left">
+    <p>$!{aboutme}</p>
 </div>
 
+<div class="right">
+    <div class="rightBlock">
+        <h3 class=" flir-replaced">Get to know </h3>
+        <ul>
+            <!-- <li>
+            <a href="http://glue.be/en/about/our-methodology/" title="Our methodology">Our methodology</a>
+            </li>
+            -->
+            <li>
+                <a href="http://glue.be/en/about/customer-testimonials/" title="A word from our customers">A word from our customers</a>
+            </li>
+            <li>
+                <a href="http://glue.be/en/about/why-work-with-me/" title="Why work with me?">Why work with ?</a>
+            </li>
+            <li>
+                <a href="http://glue.be/en/freshglue/" title="Fresh Glue: our latest news">Fresh Glue: our latest news</a>
+            </li>
+        </ul>
+    </div>
+    <div class="rightBlock">
+        <h4 class=" flir-replaced">Want to work for me?</h4>
+        <p>
+            <img src="$!{address.images}/layout/icn-job.gif" alt="" style="float:left">We are always on the lookout for talented and enthusiastic people. Let me know you exist… <a href="http://glue.be/en/contact/#job" title="to the contact form" style="margin-left:69px">
+                    <img src="$!{address.images}/layout/but-job-en.gif" title="to the contact form" alt="to the contact form"></a>
+</p>
+</div>
 <div class="rightBlock twitterblock">
-	<h4 class=" flir-replaced">Follow me on Twitter</h4>
-	<img src="$!{address.images}/layout/icn-twitter.gif" alt="" style="float:left">
-	
-	<p>way past office hours, but hey, you can't hear me complaining :)</p>
-	
-<a href="http://twitter.com/gluewebdesign" title="Follow me on Twitter" style="margin-left:69px"><img src="$!{address.images}/layout/but-twitter-en.gif" alt="Follow me on Twitter"></a>
+    <h4 class=" flir-replaced">Follow me on Twitter</h4>
+    <img src="$!{address.images}/layout/icn-twitter.gif" alt="" style="float:left">
+        <p>way past office hours, but hey, you can't hear me complaining :)</p>
+            <a href="http://twitter.com/gluewebdesign" title="Follow me on Twitter" style="margin-left:69px">
+                <img src="$!{address.images}/layout/but-twitter-en.gif" alt="Follow me on Twitter"></a>
 </div>
-
 <div class="rightBlock" style="border-bottom:none;">
-	<a href="http://www.feweb.be"><img src="$!{address.images}/content/logofeweb.gif" alt="logo Feweb" title="GLUE Interactive Media is lid van Feweb, de Federatie van Webontwikkelaars."></a>
+    <a href="http://www.feweb.be">
+        <img src="$!{address.images}/content/logofeweb.gif" alt="logo Feweb" title="GLUE Interactive Media is lid van Feweb, de Federatie van Webontwikkelaars."></a>
 </div>
-
-					
-				</div>
-				
-			</div>
-		</div>
+</div>
