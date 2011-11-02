@@ -28,13 +28,7 @@
                     <img src="$!{address.images}/layout/but-job-en.gif" title="to the contact form" alt="to the contact form"></a>
 </p>
 </div>
-<div class="rightBlock twitterblock">
-    <h4 class=" flir-replaced">Follow me on Twitter</h4>
-    <img src="$!{address.images}/layout/icn-twitter.gif" alt="" style="float:left">
-        <p>way past office hours, but hey, you can't hear me complaining :)</p>
-            <a href="http://twitter.com/gluewebdesign" title="Follow me on Twitter" style="margin-left:69px">
-                <img src="$!{address.images}/layout/but-twitter-en.gif" alt="Follow me on Twitter"></a>
-</div>
+#parse("/layout/twitterblock.vm")
 <div class="rightBlock" style="border-bottom:none;">
     <a href="http://www.feweb.be">
         <img src="$!{address.images}/content/logofeweb.gif" alt="logo Feweb" title="GLUE Interactive Media is lid van Feweb, de Federatie van Webontwikkelaars."></a>
