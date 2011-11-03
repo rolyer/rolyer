@@ -63,8 +63,8 @@
 		<property name="basePackage"    value="com.rolyer.blog.web.controller" />
 		<!--property name="defaultHandler" value="homeController" /-->
 	</bean>
-	<!-- 页面数据配置(SEO)
-	<bean id="pageFactory" class="com.recyclechina.common.page.DefaultPageFactory">
+	<!-- 页面数据配置(SEO) 
+	<bean id="pageFactory" class="com.rolyer.blog.page.DefaultPageFactory">
 		<property name="pageFiles">
 			<list>
 				<value>/WEB-INF/conf/page/index_page.xml</value>

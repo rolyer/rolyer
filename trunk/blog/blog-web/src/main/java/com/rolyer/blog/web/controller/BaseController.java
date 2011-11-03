@@ -14,6 +14,8 @@ import net.sf.json.JSONObject;
 
 import org.springframework.web.servlet.ModelAndView;
 
+import com.rolyer.blog.page.PageDetails;
+
 /**
  * 控制器基类,用于封装HttpServletResponse对象用于输出JOSN
  *
@@ -61,6 +63,19 @@ public class BaseController {
 			throws IOException {
 		out.put("js", s);
 		return new ModelAndView("js");
+	}
+	
+	/**
+	 * 初始页面信息
+	 * @return
+	 */
+	public PageDetails initPageDetails() {
+		PageDetails details = new PageDetails();
+		details.setTitle("Rolyer's Blog - over webdesign");
+		details.setKeywords("rolyer,blog");
+		details.setDescription("This is my blog developed by rolyer.");
+		details.setBodyClass("home");
+		return details;
 	}
 
 }

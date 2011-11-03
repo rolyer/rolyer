@@ -16,6 +16,7 @@ import com.rolyer.blog.domain.blog.CategoryDO;
 import com.rolyer.blog.domain.blog.LabelsDO;
 import com.rolyer.blog.dto.ArticleDTO;
 import com.rolyer.blog.dto.PageDto;
+import com.rolyer.blog.page.PageDetails;
 import com.rolyer.blog.service.blog.ArticleService;
 import com.rolyer.blog.service.blog.CategoryService;
 import com.rolyer.blog.service.blog.LabelsService;
@@ -36,8 +37,6 @@ public class BlogController extends BaseController {
 	
 	@Autowired
 	private CategoryService categoryService;
-	
-	
 	
 	@RequestMapping
 	public void index(Map<String, Object> out,ArticleDTO articleDTO,String p){
@@ -74,8 +73,9 @@ public class BlogController extends BaseController {
 		List<CategoryDO> categoryList = categoryService.queryCategoryList();
 		out.put("categoryList",categoryList);
 		//页面信息
-		out.put("whereiam", "blog");
-		out.put("pageTitle", "Rolyer's Blog - over webdesign");
+		PageDetails details = initPageDetails();
+		details.setBodyClass("blog");
+		out.put("details", details);
 	}
 	
 	@RequestMapping
@@ -100,11 +100,19 @@ public class BlogController extends BaseController {
 	@RequestMapping
 	public void services(Map<String, Object> out){
 		out.put("welcome","Welcome,this is Rolyer's blog!");
+		//页面信息
+		PageDetails details = initPageDetails();
+		details.setBodyClass("services");
+		out.put("details", details);
 	}
 	
 	@RequestMapping
 	public void portfolio(Map<String, Object> out){
 		out.put("welcome","Welcome,this is Rolyer's blog!");
+		//页面信息
+		PageDetails details = initPageDetails();
+		details.setBodyClass("portfolio");
+		out.put("details", details);
 	}
 	
 	

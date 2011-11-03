@@ -17,7 +17,7 @@ import com.rolyer.blog.page.PageDetails;
  *
  */
 @Controller
-public class HomeController extends BaseController {
+public class PortfolioController extends BaseController {
 	@RequestMapping
 	public void index(Map<String, Object> out){
 		out.put("whereiam", "home");
