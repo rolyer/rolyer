@@ -1,31 +1,60 @@
-<div class="left">
-    <p>$!{aboutme}</p>
-</div>
-
-<div class="right">
-    <div class="rightBlock">
-        <h3 class=" flir-replaced">Get to know </h3>
-        <ul>
-            <!-- <li>
-            <a href="http://glue.be/en/about/our-methodology/" title="Our methodology">Our methodology</a>
-            </li>
-            -->
-            <li>
-                <a href="http://glue.be/en/about/customer-testimonials/" title="A word from our customers">A word from our customers</a>
-            </li>
-            <li>
-                <a href="http://glue.be/en/about/why-work-with-me/" title="Why work with me?">Why work with ?</a>
-            </li>
-            <li>
-                <a href="http://glue.be/en/freshglue/" title="Fresh Glue: our latest news">Fresh Glue: our latest news</a>
-            </li>
-        </ul>
-    </div>
-    <div class="rightBlock">
-        <h4 class=" flir-replaced">Want to work for me?</h4>
-        <p>
-            <img src="$!{address.images}/layout/icn-job.gif" alt="" style="float:left">We are always on the lookout for talented and enthusiastic people. Let me know you exist… <a href="http://glue.be/en/contact/#job" title="to the contact form" style="margin-left:69px">
-                    <img src="$!{address.images}/layout/but-job-en.gif" title="to the contact form" alt="to the contact form"></a>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head >
+        <title>About me | Rolyer&#39;s Blog</title>
+        <meta name="Keywords" content="">
+            <meta name="Description" content="">
+                <!-- beging contxt -->
+                #parse("layout/context.vm")
+                <!-- end contxt -->
+</head>
+<body class="about">
+    <div id="container">
+        <div id="wrapper">
+            <!--begin navigation -->
+            #parse("layout/navigation.vm")
+            <!-- end navigation -->
+            <!-- beging PrimaryContent -->
+            <div id="primaryContent">
+                <div class="content">
+                    <div class="pageTop">
+                        <div class="pageTitle">
+                            <h1 class=" flir-replaced">About me</h1>
+                        </div>
+                        <div class="breadCrumbs">
+                            You are here: <a href="$!{address.server}/home/index.htm" title="Home">Home</a>
+                            »&nbsp;<span class="active">About me</span>
+                        </div>
+                        <div class="clearer"></div>
+                    </div>
+                    <!-- beging Content -->	
+                    <div class="left">
+                        <p>$!{aboutme}</p>
+                    </div>
+                    <div class="right">
+                        <div class="rightBlock">
+                            <h3 class=" flir-replaced">Get to know </h3>
+                            <ul>
+                                <!-- <li>
+                                <a href="$!{address.server}/about/our-methodology/" title="Our methodology">Our methodology</a>
+                                </li>
+                                -->
+                                <li>
+                                    <a href="$!{address.server}/about/customer-testimonials/" title="A word from our customers">A word from our customers</a>
+                                </li>
+                                <li>
+                                    <a href="$!{address.server}/about/why-work-with-me/" title="Why work with me?">Why work with ?</a>
+                                </li>
+                                <li>
+                                    <a href="$!{address.server}/freshglue/" title="Fresh Glue: our latest news">Fresh Glue: our latest news</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="rightBlock">
+                            <h4 class=" flir-replaced">Want to work for me?</h4>
+                            <p>
+                                <img src="$!{address.images}/layout/icn-job.gif" alt="" style="float:left">We are always on the lookout for talented and enthusiastic people. Let me know you exist… <a href="$!{address.server}/contact/#job" title="to the contact form" style="margin-left:69px">
+                                        <img src="$!{address.images}/layout/but-job-en.gif" title="to the contact form" alt="to the contact form"></a>
 </p>
 </div>
 #parse("/layout/twitterblock.vm")
@@ -34,3 +63,14 @@
         <img src="$!{address.images}/content/logofeweb.gif" alt="logo Feweb" title="GLUE Interactive Media is lid van Feweb, de Federatie van Webontwikkelaars."></a>
 </div>
 </div>
+<!-- end Content -->
+</div>
+                        </div>
+                        <!-- end Primary Content -->
+                        <!--begin footer -->
+                        #parse("layout/footer.vm")
+                        <!-- end footer --> 
+                    </div>
+                </div>
+</body>
+</html>

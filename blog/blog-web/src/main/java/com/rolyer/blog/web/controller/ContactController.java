@@ -12,6 +12,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.rolyer.blog.domain.blog.InformationDO;
+import com.rolyer.blog.page.PageDetails;
 import com.rolyer.blog.service.blog.InformationService;
 
 /**
@@ -19,7 +20,7 @@ import com.rolyer.blog.service.blog.InformationService;
  *
  */
 @Controller
-public class ContactController {
+public class ContactController extends BaseController {
 	@Autowired
 	private InformationService informationService;
 	
@@ -32,5 +33,9 @@ public class ContactController {
 		InformationDO informationDO = informationService.queryFirstInformation();
 		
 		out.put("contactme", informationDO.getContactMe());
+		//页面信息
+		PageDetails details = initPageDetails();
+		details.setBodyClass("contact");
+		out.put("details", details);
 	}
 }

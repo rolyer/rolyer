@@ -1,18 +1,32 @@
-<div id="primaryContent">
-			<div class="content">
-				<div class="pageTop">
-					<div class="pageTitle">
-						<h1 class=" flir-replaced">Services</h1>
-					</div>
-					<div class="breadCrumbs">
-						You are here: <a href="http://glue.be/en/" title="Home">Home</a>
-						»&nbsp;<span class="active">Services</span>
-							
-					</div>					
-					<div class="clearer"></div>
-				</div>
-				
-				<div class="left">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head >
+        <title>Rolyer&#39;s Blog</title>
+        <!-- beging contxt -->
+        #parse("layout/context.vm")
+        <!-- end contxt -->
+    </head>
+    <body class="services">
+        <div id="container">
+            <div id="wrapper">
+                <!--begin navigation -->
+                #parse("layout/navigation.vm")
+                <!-- end navigation -->
+                <!-- beging PrimaryContent -->
+                <div id="primaryContent">
+                    <div class="content">
+                        <div class="pageTop">
+                            <div class="pageTitle">
+                                <h1 class=" flir-replaced">Services</h1>
+                            </div>
+                            <div class="breadCrumbs">
+                                You are here: <a href="$!{address.server}/blog/index.htm" title="Home">Home</a>
+                                »&nbsp;<span class="active">Services</span>
+                            </div>
+                            <div class="clearer"></div>
+                        </div>
+                        <!-- beging Content -->
+						<div class="left">
 											
 							<p class="intro-text"></p><p class="intro-text">Glue provides professional services to small and medium sized businesses as well as to larger companies in Europe and abroad. Specialising in Web Development, we have helped many businesses make their online appearance and interactive campaigns a success. We are specialized in following services.</p><p></p>
 						
@@ -115,5 +129,14 @@
 						
 										
 				</div>
-			</div>
-		</div>
+                        <!-- end Content -->
+                    </div>
+                </div>
+                <!-- end Primary Content -->
+                <!--begin footer -->
+                #parse("layout/footer.vm")
+                <!-- end footer --> 
+            </div>
+        </div>
+    </body>
+</html>

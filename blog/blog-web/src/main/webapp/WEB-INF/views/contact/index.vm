@@ -1,11 +1,39 @@
-<div class="left">
-    <p>
-        $!{contactme}
-    </p>
-    <form class="contactForm" id="contact_form" method="post" action="/send_mail.php">
-        <p>
-            <label id="lbl_name" for="name">Name</label>
-            <input type="text" name="name" id="name">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head >
+        <title>Contact me | Rolyer&#39;s Blog</title>
+        <!-- beging contxt -->
+        #parse("layout/context.vm")
+        <!-- end contxt -->
+    </head>
+    <body class="contact">
+        <div id="container">
+            <div id="wrapper">
+                <!--begin navigation -->
+                #parse("layout/navigation.vm")
+                <!-- end navigation -->
+                <!-- beging PrimaryContent -->
+                <div id="primaryContent">
+                    <div class="content">
+                        <div class="pageTop">
+                            <div class="pageTitle">
+                                <h1 class=" flir-replaced">Contact me</h1>
+                            </div>
+                            <div class="breadCrumbs">
+                                You are here: <a href="$!{address.server}/blog/index.htm" title="Home">Home</a>
+                                »&nbsp;<span class="active">Contact me</span>
+                            </div>
+                            <div class="clearer"></div>
+                        </div>
+                        <!-- beging Content -->
+                        <div class="left">
+                            <p>
+                                $!{contactme}
+                            </p>
+                            <form class="contactForm" id="contact_form" method="post" action="/send_mail.php">
+                                <p>
+                                    <label id="lbl_name" for="name">Name</label>
+                                    <input type="text" name="name" id="name">
 </p>
 <p>
     <label id="lbl_email" for="email">Email</label>
@@ -114,3 +142,14 @@
 #parse("/layout/twitterblock.vm")
 <!-- end twitterblock -->
 </div>
+<!-- end Content -->
+</div>
+    </div>
+    <!-- end Primary Content -->
+    <!--begin footer -->
+    #parse("layout/footer.vm")
+    <!-- end footer --> 
+</div>
+</div>
+</body>
+</html>

@@ -9,19 +9,19 @@
         </div>
         <ol id="sitelinks">
             <li class="services">
-                <a href="$!{address.server}/blog/services.htm" title="Services">
+                <a href="$!{address.server}/services/index.htm" title="Services">
                     <span>Services</span>
                     <em>what we offer you</em>
                 </a>
             </li>
             <li class="portfolio">
-                <a href="$!{address.server}/blog/portfolio.htm" title="Portfolio">
+                <a href="$!{address.server}/portfolio/index.htm" title="Portfolio">
                     <span>Portfolio</span>
                     <em>the stuff we did</em>
                 </a>
             </li>
             <li class="clients">
-                <a href="$!{address.server}/blog/services.htm" title="Clients">
+                <a href="$!{address.server}/clients/index.htm" title="Clients">
                     <span>Clients</span>
                     <em>you can join them</em>
                 </a>
@@ -32,15 +32,15 @@
                     <em>sorry, Dutch only</em>
                 </a>
             </li>
-            <li class="aboutus">
-                <a href="$!{address.server}/about/index.htm" title="About us">
-                    <span>About us</span>
-                    <em>get to know us</em>
+            <li class="aboutme">
+                <a href="$!{address.server}/about/index.htm" title="About me">
+                    <span>About me</span>
+                    <em>get to know me</em>
                 </a>
             </li>
-            <li class="contactus">
-                <a href="$!{address.server}/contact/index.htm" title="Contact us">
-                    <span>Contact us</span>
+            <li class="contactme">
+                <a href="$!{address.server}/contact/index.htm" title="Contact me">
+                    <span>Contact me</span>
                     <em>let’s stick together</em>
                 </a>
             </li>

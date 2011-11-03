@@ -1,12 +1,29 @@
-<div id="primaryContent">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head >
+        <title>Rolyer&#39;s Blog</title>
+        <!-- beging contxt -->
+        #parse("layout/context.vm")
+        <!-- end contxt -->
+    </head>
+    <body class="about">
+        <div id="container">
+            <div id="wrapper">
+                <!--begin navigation -->
+                #parse("layout/navigation.vm")
+                <!-- end navigation -->
+                <!-- beging PrimaryContent -->
+                
+                        <!-- beging Content -->
+						<div id="primaryContent">
 			<div class="content">
 				<div class="pageTop">
 					<div class="pageTitle">
 						<h1 class=" flir-replaced">A word from our customers</h1>
 					</div>
 					<div class="breadCrumbs">
-						You are here: <a href="http://glue.be/en/" title="Home">Home</a>
-						»&nbsp;<a href="http://glue.be/en/about/" title="About us">About us</a>
+						You are here: <a href="$!{address.server}/home/index.htm" title="Home">Home</a>
+						»&nbsp;<a href="$!{address.server}/about/index.htm" title="About us">About us</a>
 						»&nbsp;<span class="active">A word from our customers</span>
 					</div>
 					<div class="clearer"></div>
@@ -94,3 +111,12 @@
 				
 			</div>
 		</div>
+                        <!-- end Content -->
+                <!-- end Primary Content -->
+                <!--begin footer -->
+                #parse("layout/footer.vm")
+                <!-- end footer --> 
+            </div>
+        </div>
+    </body>
+</html>

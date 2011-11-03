@@ -5,24 +5,32 @@
  */
 package com.rolyer.blog.page;
 
-import com.rolyer.blog.util.StringUtils;
-
 /**
  * @author Rolyer (rolyer.live@gmail.com)
  * 
  */
-public class Page {
-	private String pageName;
+public class PageDetails {
+	
 	private String title;
 	private String keywords;
 	private String description;
-
+	private String bodyClass = "home";
+	
+	public PageDetails() {
+		super();
+	}
+	
+	public PageDetails(String title, String keywords, String description,
+			String bodyClass) {
+		super();
+		this.title = title;
+		this.keywords = keywords;
+		this.description = description;
+		this.bodyClass = bodyClass;
+	}
+	
 	public String getTitle() {
-		if (StringUtils.isBlank(title)) {
-			return "Welcom to my blog!";
-		} else {
-			return title;
-		}
+		return title;
 	}
 
 	public void setTitle(String title) {
@@ -30,11 +38,7 @@ public class Page {
 	}
 
 	public String getKeywords() {
-		if (StringUtils.isBlank(keywords)) {
-			return "blog, roleyr,Rolyer's Blog";
-		} else {
-			return keywords;
-		}
+		return keywords;
 	}
 
 	public void setKeywords(String keywords) {
@@ -42,22 +46,18 @@ public class Page {
 	}
 
 	public String getDescription() {
-		if (StringUtils.isBlank(description)) {
-			return "This is my blog, Developed by Roleyr.";
-		} else {
-			return description;
-		}
+		return description;
 	}
 
 	public void setDescription(String description) {
 		this.description = description;
 	}
 
-	public void setPageName(String pageName) {
-		this.pageName = pageName;
+	public String getBodyClass() {
+		return bodyClass;
 	}
 
-	public String getPageName() {
-		return pageName;
+	public void setBodyClass(String bodyClass) {
+		this.bodyClass = bodyClass;
 	}
 }

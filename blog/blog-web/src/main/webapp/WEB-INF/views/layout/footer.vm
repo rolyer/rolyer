@@ -51,7 +51,7 @@
                 </h2>
                 <p>... a new website with the ExpressionEngine CMS for Nicorette.be (McNeil, Johnson &amp; Johnson)</p>
                 <div class="imageHolder">
-                    <img src="$!{address.images}/uploads/clients/logo-nicorette.gif" alt="" />
+                    <img src="$!{address.images}/uploads/clients/mollom.gif" alt="" />
                 </div>
                 <p class="serviceLink">
                     <a href="$!{address.server}/blog/portfolio.htm" title="view our portfolio">view our portfolio</a>

@@ -1,4 +1,25 @@
-<div class="left">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head >
+        <title>Rolyer&#39;s Blog</title>
+        <!-- beging contxt -->
+        #parse("layout/context.vm")
+        <!-- end contxt -->
+    </head>
+    <body class="home">
+        <div id="container">
+            <div id="wrapper">
+                <!--begin navigation -->
+                #parse("layout/navigation.vm")
+                <!-- end navigation -->
+                <!-- beging PrimaryContent -->
+                <div id="primaryContent">
+                    <div class="content">
+                        <div class="pageTop">
+                            
+                        </div>
+                        <!-- beging Content -->
+						<div class="left">
     <p class="intro-text"></p>
     <p class="intro-text">Glue provides professional services to small and medium sized businesses as well as to larger companies in Europe and abroad. Specialising in Web Development, we have helped many businesses make their online appearance and interactive campaigns a success. We are specialized in following services.</p>
     <p></p>
@@ -92,3 +113,17 @@
 </p>
 </div>
 </div>
+
+                        <!-- end Content -->
+                    </div>
+                </div>
+                <!-- end Primary Content -->
+                <!--begin footer -->
+                #parse("layout/footer.vm")
+                <!-- end footer --> 
+            </div>
+        </div>
+    </body>
+</html>
+
+

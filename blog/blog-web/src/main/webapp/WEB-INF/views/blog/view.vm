@@ -1,4 +1,32 @@
-<div class="left blogpostDetail">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head >
+        <title>Rolyer&#39;s Blog</title>
+        <!-- beging contxt -->
+        #parse("layout/context.vm")
+        <!-- end contxt -->
+    </head>
+    <body class="blog">
+        <div id="container">
+            <div id="wrapper">
+                <!--begin navigation -->
+                #parse("layout/navigation.vm")
+                <!-- end navigation -->
+                <!-- beging PrimaryContent -->
+                <div id="primaryContent">
+                    <div class="content">
+                        <div class="pageTop">
+                            <div class="pageTitle">
+                                <h1 class=" flir-replaced">Blog</h1>
+                            </div>
+                            <div class="breadCrumbs">
+                                You are here: <a href="$!{address.server}/blog/index.htm" title="Home">Home</a>
+                                »&nbsp;<span class="active">Blog</span>
+                            </div>
+                            <div class="clearer"></div>
+                        </div>
+                        <!-- beging Content -->
+						<div class="left blogpostDetail">
     <div class="post" id="post-1654">
         <h2 class=" flir-replaced">Mag je scrollen op een website? Realiteit én mythe</h2>
         <p class="postInfo">Gepost op 19 April 2010 door Anthony</p>
@@ -48,43 +76,43 @@
         <ul>
             <li class="sociablefirst">
                 <a rel="nofollow" href="http://twitter.com/home?status=Mag%20je%20scrollen%20op%20een%20website%3F%20Realiteit%20%C3%A9n%20mythe%20-%20http%3A%2F%2Fglue.be%2Fblog%2F2010%2F04%2Fmag-je-scrollen-op-een-website-realiteit-en-mythe%2F" title="Twitter">
-                    <img src="./archief_files/services-sprite.gif" title="Twitter" alt="Twitter" style="width: 16px; height: 16px; background: transparent url(http://glue.be/blog/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-343px -55px" class="sociable-hovers"></a>
+                    <img src="$!{address.images}/services-sprite.gif" title="Twitter" alt="Twitter" style="width: 16px; height: 16px; background: transparent url($!{address.images}/services-sprite.png) no-repeat; background-position:-343px -55px" class="sociable-hovers"></a>
 </li>
 <li>
     <a rel="nofollow" href="http://www.facebook.com/share.php?u=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F04%2Fmag-je-scrollen-op-een-website-realiteit-en-mythe%2F&amp;t=Mag%20je%20scrollen%20op%20een%20website%3F%20Realiteit%20%C3%A9n%20mythe" title="Facebook">
-        <img src="./archief_files/services-sprite.gif" title="Facebook" alt="Facebook" style="width: 16px; height: 16px; background: transparent url(http://glue.be/blog/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-343px -1px" class="sociable-hovers"></a>
+        <img src="$!{address.images}/services-sprite.gif" title="Facebook" alt="Facebook" style="width: 16px; height: 16px; background: transparent url($!{address.images}/services-sprite.png) no-repeat; background-position:-343px -1px" class="sociable-hovers"></a>
 </li>
 <li>
     <a rel="nofollow" href="http://delicious.com/post?url=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F04%2Fmag-je-scrollen-op-een-website-realiteit-en-mythe%2F&amp;title=Mag%20je%20scrollen%20op%20een%20website%3F%20Realiteit%20%C3%A9n%20mythe&amp;notes=Regelmatig%20vragen%20klanten%20ons%20om%20een%20website%20te%20bouwen%20waarbij%20je%20niet%20moet%20scrollen.%20Waarom%20niet%20scrollen%3F%20Omdat%20de%20belangrijkste%20info%20in%20%C3%A9%C3%A9n%20oogopslag%20zichtbaar%20moet%20zijn%2C%20is%20dan%20het%20vaak%20gehoorde%20argument.%0D%0AAl%20sinds%201994%20discussi%C3%ABren%20webdesigne" title="del.icio.us">
-        <img src="./archief_files/services-sprite.gif" title="del.icio.us" alt="del.icio.us" style="width: 16px; height: 16px; background: transparent url(http://glue.be/blog/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-199px -1px" class="sociable-hovers"></a>
+        <img src="$!{address.images}/services-sprite.gif" title="del.icio.us" alt="del.icio.us" style="width: 16px; height: 16px; background: transparent url($!{address.images}/services-sprite.png) no-repeat; background-position:-199px -1px" class="sociable-hovers"></a>
 </li>
 <li>
     <a rel="nofollow" href="http://nujij.nl/jij.lynkx?t=Mag%20je%20scrollen%20op%20een%20website%3F%20Realiteit%20%C3%A9n%20mythe&amp;u=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F04%2Fmag-je-scrollen-op-een-website-realiteit-en-mythe%2F&amp;b=Regelmatig%20vragen%20klanten%20ons%20om%20een%20website%20te%20bouwen%20waarbij%20je%20niet%20moet%20scrollen.%20Waarom%20niet%20scrollen%3F%20Omdat%20de%20belangrijkste%20info%20in%20%C3%A9%C3%A9n%20oogopslag%20zichtbaar%20moet%20zijn%2C%20is%20dan%20het%20vaak%20gehoorde%20argument.%0D%0AAl%20sinds%201994%20discussi%C3%ABren%20webdesigne" title="NuJIJ">
-        <img src="./archief_files/services-sprite.gif" title="NuJIJ" alt="NuJIJ" style="width: 16px; height: 16px; background: transparent url(http://glue.be/blog/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-253px -37px" class="sociable-hovers"></a>
+        <img src="$!{address.images}/services-sprite.gif" title="NuJIJ" alt="NuJIJ" style="width: 16px; height: 16px; background: transparent url($!{address.images}/services-sprite.png) no-repeat; background-position:-253px -37px" class="sociable-hovers"></a>
 </li>
 <li>
     <a rel="nofollow" href="http://www.google.com/bookmarks/mark?op=edit&amp;bkmk=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F04%2Fmag-je-scrollen-op-een-website-realiteit-en-mythe%2F&amp;title=Mag%20je%20scrollen%20op%20een%20website%3F%20Realiteit%20%C3%A9n%20mythe&amp;annotation=Regelmatig%20vragen%20klanten%20ons%20om%20een%20website%20te%20bouwen%20waarbij%20je%20niet%20moet%20scrollen.%20Waarom%20niet%20scrollen%3F%20Omdat%20de%20belangrijkste%20info%20in%20%C3%A9%C3%A9n%20oogopslag%20zichtbaar%20moet%20zijn%2C%20is%20dan%20het%20vaak%20gehoorde%20argument.%0D%0AAl%20sinds%201994%20discussi%C3%ABren%20webdesigne" title="Google Bookmarks">
-        <img src="./archief_files/services-sprite.gif" title="Google Bookmarks" alt="Google Bookmarks" style="width: 16px; height: 16px; background: transparent url(http://glue.be/blog/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-91px -19px" class="sociable-hovers"></a>
+        <img src="$!{address.images}/services-sprite.gif" title="Google Bookmarks" alt="Google Bookmarks" style="width: 16px; height: 16px; background: transparent url($!{address.images}/services-sprite.png) no-repeat; background-position:-91px -19px" class="sociable-hovers"></a>
 </li>
 <li>
     <a rel="nofollow" href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F04%2Fmag-je-scrollen-op-een-website-realiteit-en-mythe%2F&amp;title=Mag%20je%20scrollen%20op%20een%20website%3F%20Realiteit%20%C3%A9n%20mythe" title="StumbleUpon">
-        <img src="./archief_files/services-sprite.gif" title="StumbleUpon" alt="StumbleUpon" style="width: 16px; height: 16px; background: transparent url(http://glue.be/blog/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-217px -55px" class="sociable-hovers"></a>
+        <img src="$!{address.images}/services-sprite.gif" title="StumbleUpon" alt="StumbleUpon" style="width: 16px; height: 16px; background: transparent url($!{address.images}/services-sprite.png) no-repeat; background-position:-217px -55px" class="sociable-hovers"></a>
 </li>
 <li>
     <a rel="nofollow" href="http://technorati.com/faves?add=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F04%2Fmag-je-scrollen-op-een-website-realiteit-en-mythe%2F" title="Technorati">
-        <img src="./archief_files/services-sprite.gif" title="Technorati" alt="Technorati" style="width: 16px; height: 16px; background: transparent url(http://glue.be/blog/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-271px -55px" class="sociable-hovers"></a>
+        <img src="$!{address.images}/services-sprite.gif" title="Technorati" alt="Technorati" style="width: 16px; height: 16px; background: transparent url($!{address.images}/services-sprite.png) no-repeat; background-position:-271px -55px" class="sociable-hovers"></a>
 </li>
 <li>
     <a rel="nofollow" href="http://digg.com/submit?phase=2&amp;url=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F04%2Fmag-je-scrollen-op-een-website-realiteit-en-mythe%2F&amp;title=Mag%20je%20scrollen%20op%20een%20website%3F%20Realiteit%20%C3%A9n%20mythe&amp;bodytext=Regelmatig%20vragen%20klanten%20ons%20om%20een%20website%20te%20bouwen%20waarbij%20je%20niet%20moet%20scrollen.%20Waarom%20niet%20scrollen%3F%20Omdat%20de%20belangrijkste%20info%20in%20%C3%A9%C3%A9n%20oogopslag%20zichtbaar%20moet%20zijn%2C%20is%20dan%20het%20vaak%20gehoorde%20argument.%0D%0AAl%20sinds%201994%20discussi%C3%ABren%20webdesigne" title="Digg">
-        <img src="./archief_files/services-sprite.gif" title="Digg" alt="Digg" style="width: 16px; height: 16px; background: transparent url(http://glue.be/blog/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-235px -1px" class="sociable-hovers"></a>
+        <img src="$!{address.images}/services-sprite.gif" title="Digg" alt="Digg" style="width: 16px; height: 16px; background: transparent url($!{address.images}/services-sprite.png) no-repeat; background-position:-235px -1px" class="sociable-hovers"></a>
 </li>
 <li>
     <a rel="nofollow" href="http://reddit.com/submit?url=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F04%2Fmag-je-scrollen-op-een-website-realiteit-en-mythe%2F&amp;title=Mag%20je%20scrollen%20op%20een%20website%3F%20Realiteit%20%C3%A9n%20mythe" title="Reddit">
-        <img src="./archief_files/services-sprite.gif" title="Reddit" alt="Reddit" style="width: 16px; height: 16px; background: transparent url(http://glue.be/blog/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-55px -55px" class="sociable-hovers"></a>
+        <img src="$!{address.images}/services-sprite.gif" title="Reddit" alt="Reddit" style="width: 16px; height: 16px; background: transparent url($!{address.images}/services-sprite.png) no-repeat; background-position:-55px -55px" class="sociable-hovers"></a>
 </li>
 <li class="sociablelast">
     <a rel="nofollow" href="http://www.ekudos.nl/artikel/nieuw?url=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F04%2Fmag-je-scrollen-op-een-website-realiteit-en-mythe%2F&amp;title=Mag%20je%20scrollen%20op%20een%20website%3F%20Realiteit%20%C3%A9n%20mythe&amp;desc=Regelmatig%20vragen%20klanten%20ons%20om%20een%20website%20te%20bouwen%20waarbij%20je%20niet%20moet%20scrollen.%20Waarom%20niet%20scrollen%3F%20Omdat%20de%20belangrijkste%20info%20in%20%C3%A9%C3%A9n%20oogopslag%20zichtbaar%20moet%20zijn%2C%20is%20dan%20het%20vaak%20gehoorde%20argument.%0D%0AAl%20sinds%201994%20discussi%C3%ABren%20webdesigne" title="eKudos">
-        <img src="./archief_files/services-sprite.gif" title="eKudos" alt="eKudos" style="width: 16px; height: 16px; background: transparent url(http://glue.be/blog/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-307px -1px" class="sociable-hovers"></a>
+        <img src="$!{address.images}/services-sprite.gif" title="eKudos" alt="eKudos" style="width: 16px; height: 16px; background: transparent url($!{address.images}/services-sprite.png) no-repeat; background-position:-307px -1px" class="sociable-hovers"></a>
 </li>
 </ul>
 </div>
@@ -252,3 +280,14 @@
     </ul>
 </div>
 </div>
+                        <!-- end Content -->
+                    </div>
+                </div>
+                <!-- end Primary Content -->
+                <!--begin footer -->
+                #parse("layout/footer.vm")
+                <!-- end footer --> 
+            </div>
+        </div>
+    </body>
+</html>

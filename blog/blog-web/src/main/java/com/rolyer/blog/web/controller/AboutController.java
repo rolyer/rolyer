@@ -12,25 +12,31 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.rolyer.blog.domain.blog.InformationDO;
+import com.rolyer.blog.page.PageDetails;
 import com.rolyer.blog.service.blog.InformationService;
 
 /**
  * @author Rolyer (rolyer.live@gmail.com)
- *
+ * 
  */
 @Controller
 public class AboutController extends BaseController {
 	@Autowired
 	private InformationService informationService;
-	
+
 	/**
 	 * 获取我的信息
+	 * 
 	 * @param out
 	 */
 	@RequestMapping
-	public void index(Map<String, Object> out){
+	public void index(Map<String, Object> out) {
 		InformationDO informationDO = informationService.queryFirstInformation();
-		
 		out.put("aboutme", informationDO.getAboutMe());
+
+		// 页面信息
+		PageDetails details = initPageDetails();
+		details.setBodyClass("about");
+		out.put("details", details);
 	}
 }
