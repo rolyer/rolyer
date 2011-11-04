@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+	PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+	"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="sqlMapLabels">
+	<typeAlias alias="labels" type="com.rolyer.blog.domain.blog.LabelsDO"/>
+	
+	<resultMap class="labels" id="labelsFullResult">
+		<result property="id" column="id" />
+		<result property="name" column="name" />
+	</resultMap>
+	
+	<insert id="insertLabels" parameterClass="labels">
+		insert into labels(id,name)
+		values (#id#,#name#);
+		<selectKey resultClass="java.lang.Integer" keyProperty="id" >
+      		select last_insert_id()
+   		</selectKey>
+	</insert>
+	
+	<delete id="deleteLabelsById" parameterClass="java.lang.Integer">
+		delete from labels 
+	    where id=#value#;
+  	</delete>
+  	
+  	<update id="updateLabels" parameterClass="labels">
+	   update labels
+		set name=#name#
+		where id = #id#;
+  	</update>
+  	
+  	<select id="queryLabelsById" resultMap="labelsFullResult" parameterClass="java.lang.Integer">
+		select id,name
+		from labels
+		where id=#value#
+	</select>
+	
+	<select id="queryLabelsList" resultMap="labelsFullResult">
+		select id,name
+		from labels
+		<!--  
+		<dynamic prepend="limit">
+				<isGreaterEqual property="num"
+					compareValue="0">
+					0,#num#
+				</isGreaterEqual>
+		</dynamic>
+		-->
+	</select>
+	
+</sqlMap>

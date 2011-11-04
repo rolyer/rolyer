@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+	PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+	"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="sqlMapArticle">
+	<typeAlias alias="article" type="com.rolyer.blog.domain.blog.ArticleDO"/>
+	<typeAlias alias="labels" type="com.rolyer.blog.domain.blog.LabelsDO"/>
+	<typeAlias alias="articleDTO" type="com.rolyer.blog.dto.ArticleDTO"/>
+	
+	<resultMap class="article" id="articleFullResult">
+		<result property="id" column="id" />
+		<result property="categoryId" column="category_id" />
+		<result property="title" column="title" />
+		<result property="content" column="content" />
+		<result property="showMaxLength" column="show_max_length" />
+		<result property="views" column="views" />
+		<result property="commentsNumber" column="comments_number" />
+		<result property="gmtCreated" column="gmt_created" />
+		<result property="gmtModified" column="gmt_modified" />
+	</resultMap>
+	
+	<resultMap class="article" id="articleMiniResult">
+		<result property="id" column="id" />
+		<result property="categoryId" column="category_id" />
+		<result property="title" column="title" />
+		<result property="gmtModified" column="gmt_modified" />
+	</resultMap>
+	
+	<resultMap class="articleDTO" id="articleDTOFullResult">
+		<result property="article" resultMap="sqlMapArticle.articleFullResult" />
+		<result property="categoryName" column="category_name" />
+	</resultMap>
+	
+	<!-- List相关 -->
+	<resultMap class="labels" id="labelsMiniFullResult">
+		<result property="name" column="name"/>
+	</resultMap>
+	
+	<resultMap class="articleDTO" id="articleDTOFullResultForList">
+		<result property="article" resultMap="sqlMapArticle.articleFullResult" />
+		<result property="labels" resultMap="sqlMapArticle.labelsMiniFullResult" />
+	</resultMap>
+	
+	<insert id="insertArticle" parameterClass="article">
+		insert into article
+            (category_id,
+             title,
+             content,
+             views,
+             comments_number,
+             gmt_created,
+             gmt_modified)
+		values (#categoryId#,
+		        #title#,
+		        #content#,
+		        #views#,
+		        #commentsNumber#,
+		        #gmtCreated#,
+		        #gmtModified#)
+		 <selectKey resultClass="java.lang.Integer" keyProperty="id" >
+      		select last_insert_id()
+   		</selectKey>
+   		
+   		
+	</insert>
+	
+	<delete id="deleteArticleById" parameterClass="java.lang.Integer">
+		delete from article 
+	    where id=#value#;
+  	</delete>
+  	
+  	<update id="upadteArticle" parameterClass="article">
+	   update article
+		set category_id = #categoryId#,
+		  title = #title#,
+		  content = #content#,
+		  views = #views#,
+		  gmt_modified = #gmtModified#
+		where id = #id#;
+  	</update>
+  	
+  	<select id="queryArticleById" resultMap="articleDTOFullResult" parameterClass="java.lang.Integer">
+  		select
+		  a.id,
+		  a.category_id,
+		  a.title,
+		  a.content,
+		  a.views,
+		  a.comments_number,
+		  a.gmt_created,
+		  a.gmt_modified,
+		  a.show_max_length,
+		  c.name as category_name
+		from article a
+		left join category c on c.id=a.category_id
+		where a.id =#value# 
+  	</select>
+  	
+  	<select id="queryArticleByCategoryId" resultMap="articleMiniResult" parameterClass="java.lang.Integer">
+  		select
+		  id,
+		  category_id,
+		  title,
+		  gmt_modified
+		from article
+		where category_id=#value#
+  	</select>
+  	
+  	<select id="queryArticleList" resultMap="articleDTOFullResultForList" parameterClass="articleDTO">
+  		select
+		  a.id,
+		  a.category_id,
+		  a.title,
+		  a.content,
+		  a.show_max_length,
+		  a.views,
+		  a.comments_number,
+		  a.gmt_created,
+		  a.gmt_modified,
+		  c.name
+		from article a
+		  left join category c
+		    on c.id = a.category_id
+		<dynamic prepend="order by">
+			<isNotEmpty property="page.sort">
+				$page.sort$
+				<isNotEmpty property="page.dir">
+					$page.dir$
+				</isNotEmpty>
+			</isNotEmpty>
+		</dynamic>
+		<dynamic prepend="limit">
+			<isGreaterThan property="page.pageSize" compareValue="0">
+				<isGreaterEqual property="page.startIndex"
+					compareValue="0">
+					#page.startIndex#,#page.pageSize#
+				</isGreaterEqual>
+			</isGreaterThan>
+		</dynamic>
+  	</select>
+  	
+  	<select id="queryArticleCount" resultClass="java.lang.Integer" parameterClass="articleDTO">
+  		select count(a.id)
+		from article a
+		  left join category c
+		    on c.id = a.category_id
+  	</select>
+  	
+  	
+  	
+</sqlMap>

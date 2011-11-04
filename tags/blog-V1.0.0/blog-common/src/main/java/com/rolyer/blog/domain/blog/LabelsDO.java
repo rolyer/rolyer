@@ -1,0 +1,47 @@
+/**
+ * Copyright 2010 ROLYER.
+ * All right reserved.
+ * Created on 2010-5-2
+ */
+package com.rolyer.blog.domain.blog;
+
+/**
+ * 文章标签实体类
+ * @author Rolyer (rolyer.live@gmail.com)
+ *
+ */
+public class LabelsDO implements java.io.Serializable {
+
+	/**
+	 * 序列化
+	 */
+	private static final long serialVersionUID = 1L;
+
+	private Integer id;				//编号
+	private String name;			//标签名称
+	
+	/**
+	 * @return the id
+	 */
+	public Integer getId() {
+		return id;
+	}
+	/**
+	 * @param id the id to set
+	 */
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	/**
+	 * @return the name
+	 */
+	public String getName() {
+		return name;
+	}
+	/**
+	 * @param name the name to set
+	 */
+	public void setName(String name) {
+		this.name = name;
+	}
+}

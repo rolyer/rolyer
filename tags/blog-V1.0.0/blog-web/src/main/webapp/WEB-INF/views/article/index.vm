@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head >
+        <title>Rolyer&#39;s Blog</title>
+        <!-- beging contxt -->
+        #parse("layout/context.vm")
+        <!-- end contxt -->
+    </head>
+    <body class="blog">
+        <div id="container">
+            <div id="wrapper">
+                <!--begin navigation -->
+                #parse("layout/navigation.vm")
+                <!-- end navigation -->
+                <!-- beging PrimaryContent -->
+                <div id="primaryContent">
+                    <div class="content">
+                        <div class="pageTop">
+                            <div class="pageTitle">
+                                <h1 class=" flir-replaced">Blog</h1>
+                            </div>
+                            <div class="breadCrumbs">
+                                You are here: <a href="$!{address.server}/home/index.htm" title="Home">Home</a>
+                                »&nbsp;<span class="active">Blog</span>
+                            </div>
+                            <div class="clearer"></div>
+                        </div>
+                        <!-- beging Content -->
+						<div class="left blogpostDetail">
+    <div class="post" id="post-1654">
+        <h2 class=" flir-replaced">Mag je scrollen op een website? Realiteit én mythe</h2>
+        <p class="postInfo">Gepost op 19 April 2010 door Anthony</p>
+        <div class="entry">
+            <p>Regelmatig vragen klanten ons om een website te bouwen waarbij je niet moet scrollen. Waarom niet scrollen? Omdat de belangrijkste info in één oogopslag zichtbaar moet zijn, is dan het vaak gehoorde argument.<br>
+                    Al <a href="http://www.useit.com/alertbox/9712a.html" target="_blank">sinds 1994</a>
+                    discussiëren webdesigners en usability architects over de zin en onzin van de page fold*, en slagen ze er maar moeilijk in om tot een conclusie te komen. </p>
+                    <p>Scrollen mensen nu wel of niet? <span id="more-1654"></span>
+                    </p>
+                    <h3 class=" flir-replaced">Page fold, de foute reflex.</h3>
+                    <p>Als concept is de page fold zeker niet oninteressant. Het is immers een feit dat bezoekers bij het bezoeken van uw website in eerste instantie enkel de informatie ‘above the fold’ zullen zien. De reflex is dan: <strong>“Laten we alle informatie – en zeker de belangrijke – boven the fold zetten!”. Fout.</strong>
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="http://www.cxpartners.co.uk/thoughts/the_myth_of_the_page_fold_evidence_from_user_testing.htm" target="_blank">Eye-tracking onderzoek toont aan</a>
+                            dat bezoekers geen moeite hebben met scrollen, en de scrollbalk zelfs gebruiken om te weten hoelang een pagina is.</li>
+                            <li>Onderzoek toont bovendien aan dat een pagina met minder informatie boven the fold beter scrollgedrag oplevert dan websites met veel informatie boven the fold.</li>
+                            <li>Een logisch opgebouwde, lange pagina kan veel informatie bevatten en de bezoeker behoorlijk wat klikwerk besparen.</li>
+                    </ul>
+                    <h3 class=" flir-replaced">Hoe ga je wèl om met de page fold?</h3>
+                    <p>Als je redeneert vanuit de gebruiker, dan zijn de principes eenvoudig. <strong>In plaats van alles in het werk te stellen om informatie boven de page fold te plaatsen, ga je moeite doen om de bezoeker te laten scrollen. </strong>
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Teasen, niet doodslaan.</strong>
+                            <br>
+                                De bezoeker bij het openen van een pagina meteen doodslaan met alle informatie waarvan jij denkt dat ze relevant is, kan niet meteen gebruiksvriendelijk genoemd worden. <a href="http://www.cxpartners.co.uk/thoughts/the_myth_of_the_page_fold_evidence_from_user_testing.htm" target="_blank">Bovendien levert het slecht scrollgedrag op. </a>
+                                <br>
+                                    Probeer de meest teasende informatie kernachtig bovenaan te plaatsen, en stimuleer daarmee de bezoeker om verder te lezen.</li>
+                                    <li>
+                                        <strong>Toon dat het niet gedaan is.</strong>
+                                        <br>
+                                            Baken de page fold niet af met een doorlopende lijn, maar laat enkele afbeeldingen of wat tekst boven de page fold uitkomen. In één oogopslag maak je de bezoeker duidelijk dat er nog meer informatie te vinden is.</li>
+                                            <li>
+                                                <strong>Vertel een verhaal.</strong>
+                                                <br>
+                                                    Met bezoekers die meer teksten scannen in plaats van lezen, wordt het goed vertellen van een verhaal steeds belangrijker. Combineer visuele elementen met tekst om een krachtig begin te formuleren boven the fold, en werk langzaamaan naar een climax toe onderaan de pagina.</li>
+</ul>
+<h3 class=" flir-replaced">Conclusie</h3>
+<p>Dat bezoekers niet verder kijken dan de page fold is duidelijk een mythe. De realiteit is wel dat je moeite moet doen om de bezoeker te stimuleren om verder te kijken. Een goede webdesigner zal daar dan ook steeds rekening mee houden.</p>
+<p>(*) Met de page fold bedoelt men het deel van een webpagina dat zichtbaar is zonder te scrollen.</p>
+<div class="postFooter">
+    <div class="sociable">
+        <div class="sociable_tagline">
+            <strong>Share and Enjoy:</strong>
+        </div>
+        <ul>
+            <li class="sociablefirst">
+                <a rel="nofollow" href="http://twitter.com/home?status=Mag%20je%20scrollen%20op%20een%20website%3F%20Realiteit%20%C3%A9n%20mythe%20-%20http%3A%2F%2Fglue.be%2Fblog%2F2010%2F04%2Fmag-je-scrollen-op-een-website-realiteit-en-mythe%2F" title="Twitter">
+                    <img src="$!{address.images}/services-sprite.gif" title="Twitter" alt="Twitter" style="width: 16px; height: 16px; background: transparent url($!{address.images}/services-sprite.png) no-repeat; background-position:-343px -55px" class="sociable-hovers"></a>
+</li>
+<li>
+    <a rel="nofollow" href="http://www.facebook.com/share.php?u=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F04%2Fmag-je-scrollen-op-een-website-realiteit-en-mythe%2F&amp;t=Mag%20je%20scrollen%20op%20een%20website%3F%20Realiteit%20%C3%A9n%20mythe" title="Facebook">
+        <img src="$!{address.images}/services-sprite.gif" title="Facebook" alt="Facebook" style="width: 16px; height: 16px; background: transparent url($!{address.images}/services-sprite.png) no-repeat; background-position:-343px -1px" class="sociable-hovers"></a>
+</li>
+<li>
+    <a rel="nofollow" href="http://delicious.com/post?url=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F04%2Fmag-je-scrollen-op-een-website-realiteit-en-mythe%2F&amp;title=Mag%20je%20scrollen%20op%20een%20website%3F%20Realiteit%20%C3%A9n%20mythe&amp;notes=Regelmatig%20vragen%20klanten%20ons%20om%20een%20website%20te%20bouwen%20waarbij%20je%20niet%20moet%20scrollen.%20Waarom%20niet%20scrollen%3F%20Omdat%20de%20belangrijkste%20info%20in%20%C3%A9%C3%A9n%20oogopslag%20zichtbaar%20moet%20zijn%2C%20is%20dan%20het%20vaak%20gehoorde%20argument.%0D%0AAl%20sinds%201994%20discussi%C3%ABren%20webdesigne" title="del.icio.us">
+        <img src="$!{address.images}/services-sprite.gif" title="del.icio.us" alt="del.icio.us" style="width: 16px; height: 16px; background: transparent url($!{address.images}/services-sprite.png) no-repeat; background-position:-199px -1px" class="sociable-hovers"></a>
+</li>
+<li>
+    <a rel="nofollow" href="http://nujij.nl/jij.lynkx?t=Mag%20je%20scrollen%20op%20een%20website%3F%20Realiteit%20%C3%A9n%20mythe&amp;u=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F04%2Fmag-je-scrollen-op-een-website-realiteit-en-mythe%2F&amp;b=Regelmatig%20vragen%20klanten%20ons%20om%20een%20website%20te%20bouwen%20waarbij%20je%20niet%20moet%20scrollen.%20Waarom%20niet%20scrollen%3F%20Omdat%20de%20belangrijkste%20info%20in%20%C3%A9%C3%A9n%20oogopslag%20zichtbaar%20moet%20zijn%2C%20is%20dan%20het%20vaak%20gehoorde%20argument.%0D%0AAl%20sinds%201994%20discussi%C3%ABren%20webdesigne" title="NuJIJ">
+        <img src="$!{address.images}/services-sprite.gif" title="NuJIJ" alt="NuJIJ" style="width: 16px; height: 16px; background: transparent url($!{address.images}/services-sprite.png) no-repeat; background-position:-253px -37px" class="sociable-hovers"></a>
+</li>
+<li>
+    <a rel="nofollow" href="http://www.google.com/bookmarks/mark?op=edit&amp;bkmk=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F04%2Fmag-je-scrollen-op-een-website-realiteit-en-mythe%2F&amp;title=Mag%20je%20scrollen%20op%20een%20website%3F%20Realiteit%20%C3%A9n%20mythe&amp;annotation=Regelmatig%20vragen%20klanten%20ons%20om%20een%20website%20te%20bouwen%20waarbij%20je%20niet%20moet%20scrollen.%20Waarom%20niet%20scrollen%3F%20Omdat%20de%20belangrijkste%20info%20in%20%C3%A9%C3%A9n%20oogopslag%20zichtbaar%20moet%20zijn%2C%20is%20dan%20het%20vaak%20gehoorde%20argument.%0D%0AAl%20sinds%201994%20discussi%C3%ABren%20webdesigne" title="Google Bookmarks">
+        <img src="$!{address.images}/services-sprite.gif" title="Google Bookmarks" alt="Google Bookmarks" style="width: 16px; height: 16px; background: transparent url($!{address.images}/services-sprite.png) no-repeat; background-position:-91px -19px" class="sociable-hovers"></a>
+</li>
+<li>
+    <a rel="nofollow" href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F04%2Fmag-je-scrollen-op-een-website-realiteit-en-mythe%2F&amp;title=Mag%20je%20scrollen%20op%20een%20website%3F%20Realiteit%20%C3%A9n%20mythe" title="StumbleUpon">
+        <img src="$!{address.images}/services-sprite.gif" title="StumbleUpon" alt="StumbleUpon" style="width: 16px; height: 16px; background: transparent url($!{address.images}/services-sprite.png) no-repeat; background-position:-217px -55px" class="sociable-hovers"></a>
+</li>
+<li>
+    <a rel="nofollow" href="http://technorati.com/faves?add=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F04%2Fmag-je-scrollen-op-een-website-realiteit-en-mythe%2F" title="Technorati">
+        <img src="$!{address.images}/services-sprite.gif" title="Technorati" alt="Technorati" style="width: 16px; height: 16px; background: transparent url($!{address.images}/services-sprite.png) no-repeat; background-position:-271px -55px" class="sociable-hovers"></a>
+</li>
+<li>
+    <a rel="nofollow" href="http://digg.com/submit?phase=2&amp;url=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F04%2Fmag-je-scrollen-op-een-website-realiteit-en-mythe%2F&amp;title=Mag%20je%20scrollen%20op%20een%20website%3F%20Realiteit%20%C3%A9n%20mythe&amp;bodytext=Regelmatig%20vragen%20klanten%20ons%20om%20een%20website%20te%20bouwen%20waarbij%20je%20niet%20moet%20scrollen.%20Waarom%20niet%20scrollen%3F%20Omdat%20de%20belangrijkste%20info%20in%20%C3%A9%C3%A9n%20oogopslag%20zichtbaar%20moet%20zijn%2C%20is%20dan%20het%20vaak%20gehoorde%20argument.%0D%0AAl%20sinds%201994%20discussi%C3%ABren%20webdesigne" title="Digg">
+        <img src="$!{address.images}/services-sprite.gif" title="Digg" alt="Digg" style="width: 16px; height: 16px; background: transparent url($!{address.images}/services-sprite.png) no-repeat; background-position:-235px -1px" class="sociable-hovers"></a>
+</li>
+<li>
+    <a rel="nofollow" href="http://reddit.com/submit?url=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F04%2Fmag-je-scrollen-op-een-website-realiteit-en-mythe%2F&amp;title=Mag%20je%20scrollen%20op%20een%20website%3F%20Realiteit%20%C3%A9n%20mythe" title="Reddit">
+        <img src="$!{address.images}/services-sprite.gif" title="Reddit" alt="Reddit" style="width: 16px; height: 16px; background: transparent url($!{address.images}/services-sprite.png) no-repeat; background-position:-55px -55px" class="sociable-hovers"></a>
+</li>
+<li class="sociablelast">
+    <a rel="nofollow" href="http://www.ekudos.nl/artikel/nieuw?url=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F04%2Fmag-je-scrollen-op-een-website-realiteit-en-mythe%2F&amp;title=Mag%20je%20scrollen%20op%20een%20website%3F%20Realiteit%20%C3%A9n%20mythe&amp;desc=Regelmatig%20vragen%20klanten%20ons%20om%20een%20website%20te%20bouwen%20waarbij%20je%20niet%20moet%20scrollen.%20Waarom%20niet%20scrollen%3F%20Omdat%20de%20belangrijkste%20info%20in%20%C3%A9%C3%A9n%20oogopslag%20zichtbaar%20moet%20zijn%2C%20is%20dan%20het%20vaak%20gehoorde%20argument.%0D%0AAl%20sinds%201994%20discussi%C3%ABren%20webdesigne" title="eKudos">
+        <img src="$!{address.images}/services-sprite.gif" title="eKudos" alt="eKudos" style="width: 16px; height: 16px; background: transparent url($!{address.images}/services-sprite.png) no-repeat; background-position:-307px -1px" class="sociable-hovers"></a>
+</li>
+</ul>
+</div>
+<div class="clearer"></div>
+</div>
+<p class="postmetadata alt">
+    <small>
+        Deze blogpost was gepubliceerd op        Monday 19 April 2010						onder de categorie(ën) <a href="http://glue.be/blog/category/uncategorized/" title="View all posts in Uncategorized" rel="category tag">Uncategorized</a>
+        .
+        Je kunt de commentaren op deze post volgen op onze <a href="http://glue.be/blog/2010/04/mag-je-scrollen-op-een-website-realiteit-en-mythe/feed/">RSS 2.0</a>
+        feed.
+        Je kan <a href="http://glue.be/blog/2010/04/mag-je-scrollen-op-een-website-realiteit-en-mythe/#respond">een bericht nalaten </a>
+        of je kunt een <a href="http://glue.be/blog/2010/04/mag-je-scrollen-op-een-website-realiteit-en-mythe/trackback/" rel="trackback">trackback</a>
+        toevoegen op je eigen site.
+    </small>
+</p>
+</div>
+</div>
+<!-- You can start editing here. -->
+<h3 id="comments" class=" flir-replaced">3 commentaren op “Mag je scrollen op een website? Realiteit én mythe”</h3>
+<ol class="commentlist">
+    <li class="alt" id="comment-6467">
+        <img alt="" src="$!{address.images}/head.jpg" class="avatar avatar-32 photo" height="32" width="32">
+            <div class="comment-meta-div">
+                <small class="commentmetadata">April 19th, 2010 om 6:32 pm </small>
+                <br>
+                    <cite>
+                        <a href="http://usability-blog.be/" rel="external nofollow" class="url">Karl Gilis</a>
+                    </cite>
+                    zegt:
+</div>
+<br class="clearer">
+    <p>Het artikel vanb CXPartners (waarop dit artikel gebaseerd is) is nogal kort door de bocht, wat ze zelf in hun latere aanpassingen en comments ook toegeven.<br>
+            Of mensen al dan niet scrollen hangt vooral af van het type pagina en het type website. Op <a href="http://usability-blog.be/paginavouw-feit-of-fictie/" rel="nofollow">http://usability-blog.be/paginavouw-feit-of-fictie/</a>
+            staat een mooi overzicht van al die paginatypes.<br>
+                Uit grootschalig onderzoek van Nielsen blijkt trouwens dat anno 2010 links boven de vouwlijn nog steeds 80% meer kliks krijgen dan links onder de vouwlijn. Toch blijven opletten dus met de paginaopbouw.</p>
+                <p>Maar inderdaad: scrollen op zich is geen probleem.</p>
+</li>
+<li id="comment-6486">
+    <img alt="" src="$!{address.images}/head.jpg" class="avatar avatar-32 photo" height="32" width="32">
+        <div class="comment-meta-div">
+            <small class="commentmetadata">April 20th, 2010 om 7:53 am </small>
+            <br>
+                <cite>
+                    <a href="http://www.forte.eu/" rel="external nofollow" class="url">Diedert Debusscher</a>
+                </cite>
+                zegt:
+</div>
+<br class="clearer">
+    <p>Helemaal mee eens. Uit gebruikerstesten blijkt trouwens dat de rechterkolom (van het klassieke drieluikscherm) nu veel minder bekeken wordt dan vroeger. Ook dat pleit voor scrollen en tegen een horizontale schermopbouw waar je per se alles in wilt proppen.</p>
+</li>
+<li class="alt" id="comment-6490">
+    <img alt="" src="$!{address.images}/head.jpg" class="avatar avatar-32 photo" height="32" width="32">
+        <div class="comment-meta-div">
+            <small class="commentmetadata">April 20th, 2010 om 2:57 pm </small>
+            <br>
+                <cite>Koen</cite>
+                zegt:
+</div>
+<br class="clearer">
+    <p>@Karl. Bedankt voor de aanvulling. Het was onze bedoeling te verduidelijken dat scrollen echt wel geen probleem is. Zonder daarom een uitgebreid ‘argumentarium’ te schrijven. </p>
+    <p>Dat links boven de vouwlijn nog steeds 80% meer clicks krijgen, lijkt me evident. De meeste webbouwers zullen de belangrijkste info ook boven de vouwlijn plaatsen. Ook bij nieuwssites.</p>
+</li>
+</ol>
+<h3 id="respond" class=" flir-replaced">Reageer op deze blogpost</h3>
+<form action="http://glue.be/blog/wp-comments-post.php" method="post" id="commentform" class="contactForm">
+    <p>
+        <label for="author">Naam <small><!--(verplicht)--></small>
+        </label>
+        <input type="text" name="author" id="author" value="Deze" size="22" tabindex="1" aria-required="true">
+    </p>
+    <p>
+        <label for="email">E-mail <small>wordt niet openbaar gemaakt  <!--(verplicht)--></small>
+        </label>
+        <input type="text" name="email" id="email" value="Deze@g.com" size="22" tabindex="2" aria-required="true">
+</p>
+<p>
+    <label for="url">Website</label>
+    <input type="text" name="url" id="url" value="" size="22" tabindex="3">
+</p>
+<p>
+    <label>of</label>
+    <span class="fbc_hide_on_login fbc_connect_button_area" id="fbc_login"></span>
+</p>
+<div class="dark">
+    <fb:login-button size="large" background="white" length="long">
+    </fb:login-button>
+</div>
+<p></p>
+<p>
+    <label for="comment">Uw commentaar</label>
+    <textarea name="comment" id="comment" rows="10" cols="40" tabindex="4"></textarea>
+</p>
+<p>
+    <input type="image" class="verzend" id="send-button" tabindex="5" value="Submit Comment" name="submit" src="$!{address.images}/but-send-message-nl.gif">
+        <input type="hidden" name="comment_post_ID" value="1654">
+</p>
+</form>
+<hr>
+    <div class="pagination">
+        <div class="prev">
+            <a href="http://glue.be/blog/2010/04/betere-zoekresultaten-in-google-met-deze-handige-tips/" rel="prev">
+                <img alt="Betere zoekresultaten in Google met deze handige tips" src="$!{address.images}/but-prev-page-nl.gif"></a>
+</div>
+<div class="next"></div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="rightBlock">
+            <img usemap="#Map" alt="" src="$!{address.images}/layout/hdr-blog.jpg"/>
+            <map id="Map" name="Map">
+                <area alt="schrijf u in op onze RSS feed" href="http://glue.be/en/rss/" coords="37,94,280,136" shape="rect"/>
+            </map>
+        </div>
+        <div class="rightBlock twitterblock">
+            <h4>Glue op Twitter</h4>
+            <img src="$!{address.images}/layout/icn-twitter.gif" alt="" style="float:left"/>
+            <p> way past office hours, but hey, you can't hear us complaining :) </p>
+                <a style="margin-left: 69px; display:block" title="Volg ons op Twitter" href="http://twitter.com/gluewebdesign">
+                    <img alt="Volg ons op Twitter" src="$!{address.images}/layout/but-twitter-nl.gif"/>
+                </a>
+</div>
+<div class="rightBlock">
+    <h4>Glue op Facebook</h4>
+    <!--
+    <iframe src="http://www.facebook.com/plugins/likebox.php?id=44445434577&amp;stream=false&amp;header=false&amp;width=300&amp;height=270&amp;connections=10&amp;" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:270px;" allowtransparency="true"></iframe>
+    -->
+</div>
+<div id="tag_cloud-2" class="widget widget_tag_cloud rightBlock">
+    <h3 class="widgettitle">Tags</h3>
+    <div>
+        <a href='http://glue.be/blog/tag/actionscript/' class='tag-link-40' title='2 topics' style='font-size: 8pt;'>Java</a>
+        <a href='http://glue.be/blog/tag/actionscript/' class='tag-link-40' title='2 topics' style='font-size: 16pt;'>maven</a>
+        <a href='http://glue.be/blog/tag/actionscript/' class='tag-link-40' title='2 topics' style='font-size: 11.2777777777777777pt;'>Velocity</a>
+        <a href='http://glue.be/blog/tag/actionscript/' class='tag-link-40' title='2 topics' style='font-size: 12pt;'>JavaScript</a>
+    </div>
+</div>
+<div id="archives-2" class="widget widget_archive rightBlock">
+    <h3 class="widgettitle">Archief</h3>
+    <ul>
+        <li>
+            <a href='http://glue.be/blog/2010/05/' title='May 2010'>May 2010</a>
+        </li>
+        <li>
+            <a href='http://glue.be/blog/2009/12/' title='December 2009'>December 2009</a>
+        </li>
+        <li>
+            <a href='http://glue.be/blog/2008/12/' title='December 2008'>December 2008</a>
+        </li>
+        <li>
+            <a href='http://glue.be/blog/2007/12/' title='December 2007'>December 2007</a>
+        </li>
+    </ul>
+</div>
+<div id="categories-333156211" class="widget widget_categories rightBlock">
+    <h3 class="widgettitle">Categorieën</h3>
+    <ul>
+        <li class="cat-item cat-item-3">
+            <a href="http://glue.be/blog/category/adobe/" title="View all posts filed under Adobe">Adobe</a>
+        </li>
+        <li class="cat-item cat-item-4">
+            <a href="http://glue.be/blog/category/air/" title="View all posts filed under AIR">AIR</a>
+        </li>
+    </ul>
+</div>
+</div>
+
+                        <!-- end Content -->
+                    </div>
+                </div>
+                <!-- end Primary Content -->
+                <!--begin footer -->
+                #parse("layout/footer.vm")
+                <!-- end footer --> 
+            </div>
+        </div>
+    </body>
+</html>

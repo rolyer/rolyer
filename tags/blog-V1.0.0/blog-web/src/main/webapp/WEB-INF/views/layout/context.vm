@@ -1,0 +1,18 @@
+<meta name="Keywords" content="Rolyer,Rolyer&#39;s blog,java,javascrtipt,linux,数据库,开发,计算机技术,博客,技术博客" />
+<meta name="Description" content="Rolyer,Rolyer&#39;s blog,I am Rolyer,我是Rolyer，这是我的个人技术博客，在这里我会发表计算机技术相关的文章，欢迎大家一起讨论." />
+<meta name="Author" content="rolyer">
+<meta name="generator" content="Roleyr-Blog 1.0.0-SNAPSHOT" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="$!{address.css}/glue-style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="$!{address.css}/sociable.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="$!{address.css}/wp-syntax.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="$!{address.css}/plugins/wp-syntax.css" type="text/css" media="screen" />
+<!-- fbc_header --> 
+<link type="text/css" rel="stylesheet" href="$!{address.css}/plugins/fbconnect.css"></link>
+<link rel='stylesheet' id='sociable-front-css-css'  href='$!{address.css}/plugins/sociable_ver_2.9.1.css' type='text/css' media='' />
+<!-- JavaScripts --> 
+<script src="$!{address.js}/flir/flir.js" type="text/javascript"></script>
+<script src="$!{address.js}/jquery.js" type="text/javascript"></script>
+<script src="$!{address.js}/jquery.cookie.js" type="text/javascript"></script>
+<script src="$!{address.js}/plugins/fbconnect.js" type="text/javascript"></script>
+<!-- end fbc_header -->

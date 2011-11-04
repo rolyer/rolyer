@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head >
+        <title>Contact me | Rolyer&#39;s Blog</title>
+        <!-- beging contxt -->
+        #parse("layout/context.vm")
+        <!-- end contxt -->
+    </head>
+    <body class="contact">
+        <div id="container">
+            <div id="wrapper">
+                <!--begin navigation -->
+                #parse("layout/navigation.vm")
+                <!-- end navigation -->
+                <!-- beging PrimaryContent -->
+                <div id="primaryContent">
+                    <div class="content">
+                        <div class="pageTop">
+                            <div class="pageTitle">
+                                <h1 class=" flir-replaced">Contact me</h1>
+                            </div>
+                            <div class="breadCrumbs">
+                                You are here: <a href="$!{address.server}/blog/index.htm" title="Home">Home</a>
+                                »&nbsp;<span class="active">Contact me</span>
+                            </div>
+                            <div class="clearer"></div>
+                        </div>
+                        <!-- beging Content -->
+                        <div class="left">
+                            <p>
+                                $!{contactme}
+                            </p>
+                            <form class="contactForm" id="contact_form" method="post" action="/send_mail.php">
+                                <p>
+                                    <label id="lbl_name" for="name">Name</label>
+                                    <input type="text" name="name" id="name">
+</p>
+<p>
+    <label id="lbl_email" for="email">Email</label>
+    <input type="text" name="email" id="email">
+</p>
+<p>
+    <label for="subject">Subject</label>
+    <select name="subject" id="subject">
+        <option value="quote">Quote request</option>
+        <option value="job">Applying for a job</option>
+        <option value="hi" selected="selected">Just want to say hi!</option>
+    </select>
+</p>
+<p>
+    <label id="lbl_message" for="message">Message</label>
+    <textarea rows="6" cols="2" name="message" id="message"></textarea>
+</p>
+<div id="project-form" style="display: none; ">
+    <p>
+        <label for="phone">Phone</label>
+        <input type="text" name="phone" id="phone">
+</p>
+<p>
+    <label for="company">Company</label>
+    <input type="text" name="company" id="company">
+</p>
+<div class="clearform">&nbsp;</div>
+<p>
+    <label for="projecttype">Project type</label>
+    <select name="projecttype" id="projecttype">
+        <option value="none" selected="selected">-- Choose one below --</option>
+        <option value="webdesign">Webdesign/Development</option>
+        <option value="elearning">E-learning</option>
+        <option value="seo">Search Engine Optimization (SEO)</option>
+        <option value="video">Video</option>
+        <option value="other">Other...</option>
+    </select>
+</p>
+<p id="type_other" style="display: none; ">
+    <label for="projecttype_other">Specify other...</label>
+    <input type="text" name="projecttype_other" id="projecttype_other">
+</p>
+<p>
+    <label for="timeline">Project timeline</label>
+    <select name="timeline" id="timeline">
+        <option value="" selected="selected">-- Choose one below --</option>
+        <option value="2">within 2 months</option>
+        <option value="4">within 4 months</option>
+        <option value="6">within 6 months</option>
+        <option value="big">whenever</option>
+        <option value="none">none</option>
+    </select>
+</p>
+<p>
+    <label for="budget">Budget</label>
+    <select name="budget" id="budget">
+        <option value="" selected="selected">-- Choose one below --</option>
+        <option value="2.5-5">2.500 - 5.000&nbsp;€</option>
+        <option value="5-7.5">5.000 - 7.500&nbsp;€</option>
+        <option value="7.5-10">7.500 - 10.000&nbsp;€</option>
+        <option value="10-15">10.000 - 15.000&nbsp;€</option>
+        <option value="15-20">15.000 - 20.000&nbsp;€</option>
+        <option value="20-50">20.000 - 50.000&nbsp;€</option>
+        <option value="50-100">50.000 - 100.000&nbsp;€</option>
+        <option value="100+">&gt; 100.000&nbsp;€</option>
+        <option value="none">none</option>
+    </select>
+</p>
+<div class="clearform">&nbsp;</div>
+<p>
+    <label id="lbl_contact">Contact me via</label>
+    <span class="form-special">
+        <input type="radio" name="contact" value="mail" id="contact_mail" checked="checked">
+            <label class="box-radio" for="contact_mail">Email</label>
+</span>
+<span class="form-special">
+    <input type="radio" name="contact" value="phone" id="contact_phone">
+        <label class="box-radio" for="contact_phone">Phone</label>
+</span>
+</p>
+</div>
+<p class="captcha">
+    <label for="website">spamcheck (don't fill in!)</label>
+        <input id="website" type="text" value="" name="website">
+            <input id="captcha" type="text" value="" name="captcha">
+</p>
+<p>
+    <input type="image" src="$!{address.images}/layout/but-send-message-en.gif" name="submit" value="Send" id="send-button" class="verzend">
+        <input type="hidden" name="lang" value="en">
+            <input type="hidden" name="redir" value="http://glue.be/en/contact/">
+</p>
+<div class="divider"></div>
+</form>
+</div>
+<div class="right">
+    <div class="rightBlock">
+        <h4>Where are we situated?</h4>
+        <p>
+            <strong>Glue offices</strong>
+            <br>Technologiepark 3<br>B-9052 Ghent - Belgium</p>
+                <p class="address">Call us: +32 (0)9 241 56 33 <br>Fax us: +32 (0)9 241 56 56</p>
+                    <p class="address">e-mail: <a href="mailto:info@glue.be">info@glue.be</a>
+                    </p>
+</div>
+<!-- beging twitterblock -->
+#parse("/layout/twitterblock.vm")
+<!-- end twitterblock -->
+</div>
+<!-- end Content -->
+</div>
+    </div>
+    <!-- end Primary Content -->
+    <!--begin footer -->
+    #parse("layout/footer.vm")
+    <!-- end footer --> 
+</div>
+</div>
+</body>
+</html>

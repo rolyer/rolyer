@@ -1,0 +1,471 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xmlns:fb="http://www.facebook.com/2008/fbml"> 
+ 
+<head > 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="blogcatalog" content="9BC9307652" /> 
+<title>Glue Blog - over webdesign</title> 
+ 
+<link rel="stylesheet" href="$!{address.css}/glue-style.css" type="text/css" media="screen" /> 
+<link rel="stylesheet" href="$!{address.css}/sociable.css" type="text/css" media="screen" /> 
+<link rel="stylesheet" href="$!{address.css}/wp-syntax.css" type="text/css" media="screen" /> 
+
+<link rel="alternate" type="application/rss+xml" title="Glue Blog RSS Feed" href="http://glue.be/blog/feed/" /> 
+<link rel="pingback" href="http://glue.be/blog/xmlrpc.php" /> 
+
+<!-- JavaScripts --> 
+<script src="$!{address.js}/flir/flir.js" type="text/javascript"></script> 
+<script src="$!{address.js}/jquery.js" type="text/javascript"></script> 
+<script src="$!{address.js}/jquery.cookie.js" type="text/javascript"></script> 
+<link rel='stylesheet' id='sociable-front-css-css'  href='$!{address.css}/plugins/sociable_ver_2.9.1.css' type='text/css' media='' /> 
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://glue.be/blog/xmlrpc.php?rsd" /> 
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://glue.be/blog/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Glue Blog' href='http://glue.be/blog' /> 
+<meta name="generator" content="WordPress 2.9.1" /> 
+ 
+<!-- All in One SEO Pack 1.6.10 by Michael Torbert of Semper Fi Web Design[400,418] --> 
+<link rel="canonical" href="http://glue.be/blog/" /> 
+<!-- /all in one seo pack --> 
+<!-- Meta tags added by Robots Meta: http://yoast.com/wordpress/meta-robots-wordpress-plugin/ --> 
+<meta name="robots" content="noodp,noydir" /> 
+<!-- fbc_header --> 
+ 
+<link type="text/css" rel="stylesheet" href="$!{address.css}/plugins/fbconnect.css"></link> 
+<!--
+<script src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php" type="text/javascript"></script> 
+-->
+ 
+<script src="$!{address.js}/plugins/fbconnect.js" type="text/javascript"></script> 
+ 
+<!-- end fbc_header --> 
+<link rel="stylesheet" href="$!{address.css}/plugins/wp-syntax.css" type="text/css" media="screen" /> 
+ 
+ 
+</head> 
+<body class="blog"> 
+<!--
+<script type='text/javascript' src='http://track2.mybloglog.com/js/jsserv.php?mblID=2007062207420675'></script> 
+-->
+<div id="container"> 
+<div id="wrapper"> 
+<div id="navigation"> 
+		<div class="content"> 
+			<div class="logo"> 
+			<h1><a title="glue | interactive media" href="http://glue.be/en/"><span>glue | interactive media</span></a></h1> 
+			</div> 
+			<ol id="sitelinks"> 
+						<li class="services"><a href="http://glue.be/en/services/" title="Services"><span>Services</span><em>what we offer you</em></a></li> 
+			<li class="portfolio"><a href="http://glue.be/en/portfolio/" title="Portfolio"><span>Portfolio</span> <em>the stuff we did</em></a></li> 
+			<li class="clients"><a href="http://glue.be/en/clients/" title="Clients"><span>Clients</span> <em>you can join them</em></a></li> 
+			<li class="blog"><a href="http://glue.be/blog/" title="Blog"><span>Blog</span> <em>sorry, Dutch only</em></a></li> 
+			<li class="aboutus"><a href="http://glue.be/en/about/" title="About us"><span>About us</span> <em>get to know us</em></a></li> 
+			<li class="contactus"><a href="http://glue.be/en/contact/" title="Contact us"><span>Contact us</span> <em>let’s stick together</em></a></li> 
+							</ol> 
+			<!--
+			<div id="language">
+				<ol>
+					<li><a href="http://glue.be/" title="Nederlands" class="l-nl"><span>Nederlands</span></a></li>
+					<li><a href="/en/" title="English" class="l-en"><span>English</span></a></li>
+				</ol>
+			</div>
+			--> 
+			<script type="text/javascript"> 
+				jQuery(document).ready(function(){
+					var now = "en";
+					var def_lang = "nl";
+ 
+					//cookie START
+					var cookie_name = 'language';
+					jQuery.cookie(cookie_name, now, {path: '/', expires: 365});
+					//cookie END
+ 
+					jQuery("a.lang").click(function(){
+ 
+						var chosen = $(this).attr("id");
+ 
+						//Controle of je niet op de huidige taalkeuze klikt
+ 
+						if(chosen != now){
+ 
+							var url = location.href.split('/');
+ 
+							//keuze == default  => DELETE taal
+							if(chosen == def_lang){
+								url.splice(3,1);
+							}
+							//huidige taal != default  => REPLACE taal
+							else if(now != def_lang){
+								url[3] = chosen;
+							}
+							//huidige taal == default  => ADD taal
+							else if(now == def_lang){
+								url.splice(3, 0, chosen);
+							}
+ 
+							location.href = url.join('/');
+						}
+ 
+						return false;
+					})
+				});
+			</script> 
+		</div> 
+		<!-- end content --> 
+	</div> 
+	<!-- end navigation --> 
+ 
+<div id="primaryContent"> 
+		<div class="content"> 
+			<div class="pageTop"></div> 
+			<div class="left"> 
+ 
+	
+		
+			<div class="post" id="post-1695"> 
+				<h2><a href="http://glue.be/blog/2010/05/het-belang-van-een-goede-homepage/" rel="bookmark" title="Permanent Link to Het belang van een goede homepage.">Het belang van een goede homepage.</a></h2> 
+								<p class="postInfo">Gepost
+												op 3 May 2010 door Koen</p> 
+ 
+				<div class="entry"> 
+					<p>Samen met onze klanten overleggen we bij aanvang van een project wat er juist op de homepage van hun website zou kunnen staan. Vroeger kwam elke bezoeker op de website terecht via de homepage. Vandaag is dat niet meer het geval.</p> 
+<h3>Is de homepage nog belangrijk?</h3> 
+<p>Alsmaar meer bezoekers komen op je website terecht via zoekmachines. Deze zoekmachines proberen bezoekers meteen door te sturen naar de pagina die voor hun zoekactie relevant is.<br /> 
+ <a href="http://glue.be/blog/2010/05/het-belang-van-een-goede-homepage/#more-1695" class="more-link">Lees het volledig artikel &raquo;</a></p> 
+				</div> 
+				<div class="blogTags">Tags: <a href="http://glue.be/blog/tag/homepage/" rel="tag">homepage</a>, <a href="http://glue.be/blog/tag/usability/" rel="tag">Usability</a>, <a href="http://glue.be/blog/tag/webdesign/" rel="tag">Webdesign</a></div>				<div class="postFooter"> 
+						
+<div class="sociable"> 
+<div class="sociable_tagline"> 
+<strong>Share and Enjoy:</strong> 
+</div> 
+<ul> 
+	<li class="sociablefirst"><a rel="nofollow"  href="http://twitter.com/home?status=Het%20belang%20van%20een%20goede%20homepage.%20-%20http%3A%2F%2Fglue.be%2Fblog%2F2010%2F05%2Fhet-belang-van-een-goede-homepage%2F" title="Twitter"><img src="$!{address.images}/services-sprite.gif" title="Twitter" alt="Twitter" style="width: 16px; height: 16px; background: transparent url(images/services-sprite.png) no-repeat; background-position:-343px -55px" class="sociable-hovers" /></a></li> 
+	<li><a rel="nofollow"  href="http://www.facebook.com/share.php?u=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F05%2Fhet-belang-van-een-goede-homepage%2F&amp;t=Het%20belang%20van%20een%20goede%20homepage." title="Facebook"><img src="$!{address.images}/services-sprite.gif" title="Facebook" alt="Facebook" style="width: 16px; height: 16px; background: transparent url(images/services-sprite.png) no-repeat; background-position:-343px -1px" class="sociable-hovers" /></a></li> 
+	<li><a rel="nofollow"  href="http://delicious.com/post?url=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F05%2Fhet-belang-van-een-goede-homepage%2F&amp;title=Het%20belang%20van%20een%20goede%20homepage.&amp;notes=Samen%20met%20onze%20klanten%20overleggen%20we%20bij%20aanvang%20van%20een%20project%20wat%20er%20juist%20op%20de%20homepage%20van%20hun%20website%20zou%20kunnen%20staan.%20Vroeger%20kwam%20elke%20bezoeker%20op%20de%20website%20terecht%20via%20de%20homepage.%20Vandaag%20is%20dat%20niet%20meer%20het%20geval.%0D%0AIs%20de%20homepage%20nog%20b" title="del.icio.us"><img src="$!{address.images}/services-sprite.gif" title="del.icio.us" alt="del.icio.us" style="width: 16px; height: 16px; background: transparent url(images/services-sprite.png) no-repeat; background-position:-199px -1px" class="sociable-hovers" /></a></li> 
+	<li><a rel="nofollow"  href="http://nujij.nl/jij.lynkx?t=Het%20belang%20van%20een%20goede%20homepage.&amp;u=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F05%2Fhet-belang-van-een-goede-homepage%2F&amp;b=Samen%20met%20onze%20klanten%20overleggen%20we%20bij%20aanvang%20van%20een%20project%20wat%20er%20juist%20op%20de%20homepage%20van%20hun%20website%20zou%20kunnen%20staan.%20Vroeger%20kwam%20elke%20bezoeker%20op%20de%20website%20terecht%20via%20de%20homepage.%20Vandaag%20is%20dat%20niet%20meer%20het%20geval.%0D%0AIs%20de%20homepage%20nog%20b" title="NuJIJ"><img src="$!{address.images}/services-sprite.gif" title="NuJIJ" alt="NuJIJ" style="width: 16px; height: 16px; background: transparent url(images/services-sprite.png) no-repeat; background-position:-253px -37px" class="sociable-hovers" /></a></li> 
+	<li><a rel="nofollow"  href="http://www.google.com/bookmarks/mark?op=edit&amp;bkmk=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F05%2Fhet-belang-van-een-goede-homepage%2F&amp;title=Het%20belang%20van%20een%20goede%20homepage.&amp;annotation=Samen%20met%20onze%20klanten%20overleggen%20we%20bij%20aanvang%20van%20een%20project%20wat%20er%20juist%20op%20de%20homepage%20van%20hun%20website%20zou%20kunnen%20staan.%20Vroeger%20kwam%20elke%20bezoeker%20op%20de%20website%20terecht%20via%20de%20homepage.%20Vandaag%20is%20dat%20niet%20meer%20het%20geval.%0D%0AIs%20de%20homepage%20nog%20b" title="Google Bookmarks"><img src="$!{address.images}/services-sprite.gif" title="Google Bookmarks" alt="Google Bookmarks" style="width: 16px; height: 16px; background: transparent url(images/services-sprite.png) no-repeat; background-position:-91px -19px" class="sociable-hovers" /></a></li> 
+	<li><a rel="nofollow"  href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F05%2Fhet-belang-van-een-goede-homepage%2F&amp;title=Het%20belang%20van%20een%20goede%20homepage." title="StumbleUpon"><img src="$!{address.images}/services-sprite.gif" title="StumbleUpon" alt="StumbleUpon" style="width: 16px; height: 16px; background: transparent url(images/services-sprite.png) no-repeat; background-position:-217px -55px" class="sociable-hovers" /></a></li> 
+	<li><a rel="nofollow"  href="http://technorati.com/faves?add=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F05%2Fhet-belang-van-een-goede-homepage%2F" title="Technorati"><img src="$!{address.images}/services-sprite.gif" title="Technorati" alt="Technorati" style="width: 16px; height: 16px; background: transparent url(images/services-sprite.png) no-repeat; background-position:-271px -55px" class="sociable-hovers" /></a></li> 
+	<li><a rel="nofollow"  href="http://digg.com/submit?phase=2&amp;url=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F05%2Fhet-belang-van-een-goede-homepage%2F&amp;title=Het%20belang%20van%20een%20goede%20homepage.&amp;bodytext=Samen%20met%20onze%20klanten%20overleggen%20we%20bij%20aanvang%20van%20een%20project%20wat%20er%20juist%20op%20de%20homepage%20van%20hun%20website%20zou%20kunnen%20staan.%20Vroeger%20kwam%20elke%20bezoeker%20op%20de%20website%20terecht%20via%20de%20homepage.%20Vandaag%20is%20dat%20niet%20meer%20het%20geval.%0D%0AIs%20de%20homepage%20nog%20b" title="Digg"><img src="$!{address.images}/services-sprite.gif" title="Digg" alt="Digg" style="width: 16px; height: 16px; background: transparent url(images/services-sprite.png) no-repeat; background-position:-235px -1px" class="sociable-hovers" /></a></li> 
+	<li><a rel="nofollow"  href="http://reddit.com/submit?url=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F05%2Fhet-belang-van-een-goede-homepage%2F&amp;title=Het%20belang%20van%20een%20goede%20homepage." title="Reddit"><img src="$!{address.images}/services-sprite.gif" title="Reddit" alt="Reddit" style="width: 16px; height: 16px; background: transparent url(images/services-sprite.png) no-repeat; background-position:-55px -55px" class="sociable-hovers" /></a></li> 
+	<li class="sociablelast"><a rel="nofollow"  href="http://www.ekudos.nl/artikel/nieuw?url=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F05%2Fhet-belang-van-een-goede-homepage%2F&amp;title=Het%20belang%20van%20een%20goede%20homepage.&amp;desc=Samen%20met%20onze%20klanten%20overleggen%20we%20bij%20aanvang%20van%20een%20project%20wat%20er%20juist%20op%20de%20homepage%20van%20hun%20website%20zou%20kunnen%20staan.%20Vroeger%20kwam%20elke%20bezoeker%20op%20de%20website%20terecht%20via%20de%20homepage.%20Vandaag%20is%20dat%20niet%20meer%20het%20geval.%0D%0AIs%20de%20homepage%20nog%20b" title="eKudos"><img src="$!{address.images}/services-sprite.gif" title="eKudos" alt="eKudos" style="width: 16px; height: 16px; background: transparent url(images/services-sprite.png) no-repeat; background-position:-307px -1px" class="sociable-hovers" /></a></li> 
+</ul> 
+</div> 
+				<div class="commentIndic"> <a href="http://glue.be/blog/2010/05/het-belang-van-een-goede-homepage/#respond" title="Comment on Het belang van een goede homepage.">Geen commentaar &#187;</a>				</div> 
+				<div class="clearer" ></div> 
+				</div> 
+							</div> 
+ 
+		
+			<div class="post" id="post-1654"> 
+				<h2><a href="http://glue.be/blog/2010/04/mag-je-scrollen-op-een-website-realiteit-en-mythe/" rel="bookmark" title="Permanent Link to Mag je scrollen op een website? Realiteit én mythe">Mag je scrollen op een website? Realiteit én mythe</a></h2> 
+								<p class="postInfo">Gepost
+												op 19 April 2010 door Anthony</p> 
+ 
+				<div class="entry"> 
+					<p>Regelmatig vragen klanten ons om een website te bouwen waarbij je niet moet scrollen. Waarom niet scrollen? Omdat de belangrijkste info in één oogopslag zichtbaar moet zijn, is dan het vaak gehoorde argument.<br /> 
+Al <a href="http://www.useit.com/alertbox/9712a.html" target="_blank">sinds 1994</a> discussiëren webdesigners en usability architects over de zin en onzin van de page fold*, en slagen ze er maar moeilijk in om tot een conclusie te komen. </p> 
+<p>Scrollen mensen nu wel of niet?  <a href="http://glue.be/blog/2010/04/mag-je-scrollen-op-een-website-realiteit-en-mythe/#more-1654" class="more-link">Lees het volledig artikel &raquo;</a></p> 
+				</div> 
+								<div class="postFooter"> 
+						
+<div class="sociable"> 
+<div class="sociable_tagline"> 
+<strong>Share and Enjoy:</strong> 
+</div> 
+<ul> 
+	<li class="sociablefirst"><a rel="nofollow"  href="http://twitter.com/home?status=Mag%20je%20scrollen%20op%20een%20website%3F%20Realiteit%20%C3%A9n%20mythe%20-%20http%3A%2F%2Fglue.be%2Fblog%2F2010%2F04%2Fmag-je-scrollen-op-een-website-realiteit-en-mythe%2F" title="Twitter"><img src="$!{address.images}/services-sprite.gif" title="Twitter" alt="Twitter" style="width: 16px; height: 16px; background: transparent url(images/services-sprite.png) no-repeat; background-position:-343px -55px" class="sociable-hovers" /></a></li> 
+	<li><a rel="nofollow"  href="http://www.facebook.com/share.php?u=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F04%2Fmag-je-scrollen-op-een-website-realiteit-en-mythe%2F&amp;t=Mag%20je%20scrollen%20op%20een%20website%3F%20Realiteit%20%C3%A9n%20mythe" title="Facebook"><img src="$!{address.images}/services-sprite.gif" title="Facebook" alt="Facebook" style="width: 16px; height: 16px; background: transparent url(images/services-sprite.png) no-repeat; background-position:-343px -1px" class="sociable-hovers" /></a></li> 
+	<li><a rel="nofollow"  href="http://delicious.com/post?url=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F04%2Fmag-je-scrollen-op-een-website-realiteit-en-mythe%2F&amp;title=Mag%20je%20scrollen%20op%20een%20website%3F%20Realiteit%20%C3%A9n%20mythe&amp;notes=Regelmatig%20vragen%20klanten%20ons%20om%20een%20website%20te%20bouwen%20waarbij%20je%20niet%20moet%20scrollen.%20Waarom%20niet%20scrollen%3F%20Omdat%20de%20belangrijkste%20info%20in%20%C3%A9%C3%A9n%20oogopslag%20zichtbaar%20moet%20zijn%2C%20is%20dan%20het%20vaak%20gehoorde%20argument.%0D%0AAl%20sinds%201994%20discussi%C3%ABren%20webdesigne" title="del.icio.us"><img src="$!{address.images}/services-sprite.gif" title="del.icio.us" alt="del.icio.us" style="width: 16px; height: 16px; background: transparent url(images/services-sprite.png) no-repeat; background-position:-199px -1px" class="sociable-hovers" /></a></li> 
+	<li><a rel="nofollow"  href="http://nujij.nl/jij.lynkx?t=Mag%20je%20scrollen%20op%20een%20website%3F%20Realiteit%20%C3%A9n%20mythe&amp;u=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F04%2Fmag-je-scrollen-op-een-website-realiteit-en-mythe%2F&amp;b=Regelmatig%20vragen%20klanten%20ons%20om%20een%20website%20te%20bouwen%20waarbij%20je%20niet%20moet%20scrollen.%20Waarom%20niet%20scrollen%3F%20Omdat%20de%20belangrijkste%20info%20in%20%C3%A9%C3%A9n%20oogopslag%20zichtbaar%20moet%20zijn%2C%20is%20dan%20het%20vaak%20gehoorde%20argument.%0D%0AAl%20sinds%201994%20discussi%C3%ABren%20webdesigne" title="NuJIJ"><img src="$!{address.images}/services-sprite.gif" title="NuJIJ" alt="NuJIJ" style="width: 16px; height: 16px; background: transparent url(images/services-sprite.png) no-repeat; background-position:-253px -37px" class="sociable-hovers" /></a></li> 
+	<li><a rel="nofollow"  href="http://www.google.com/bookmarks/mark?op=edit&amp;bkmk=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F04%2Fmag-je-scrollen-op-een-website-realiteit-en-mythe%2F&amp;title=Mag%20je%20scrollen%20op%20een%20website%3F%20Realiteit%20%C3%A9n%20mythe&amp;annotation=Regelmatig%20vragen%20klanten%20ons%20om%20een%20website%20te%20bouwen%20waarbij%20je%20niet%20moet%20scrollen.%20Waarom%20niet%20scrollen%3F%20Omdat%20de%20belangrijkste%20info%20in%20%C3%A9%C3%A9n%20oogopslag%20zichtbaar%20moet%20zijn%2C%20is%20dan%20het%20vaak%20gehoorde%20argument.%0D%0AAl%20sinds%201994%20discussi%C3%ABren%20webdesigne" title="Google Bookmarks"><img src="$!{address.images}/services-sprite.gif" title="Google Bookmarks" alt="Google Bookmarks" style="width: 16px; height: 16px; background: transparent url(images/services-sprite.png) no-repeat; background-position:-91px -19px" class="sociable-hovers" /></a></li> 
+	<li><a rel="nofollow"  href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F04%2Fmag-je-scrollen-op-een-website-realiteit-en-mythe%2F&amp;title=Mag%20je%20scrollen%20op%20een%20website%3F%20Realiteit%20%C3%A9n%20mythe" title="StumbleUpon"><img src="$!{address.images}/services-sprite.gif" title="StumbleUpon" alt="StumbleUpon" style="width: 16px; height: 16px; background: transparent url(images/services-sprite.png) no-repeat; background-position:-217px -55px" class="sociable-hovers" /></a></li> 
+	<li><a rel="nofollow"  href="http://technorati.com/faves?add=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F04%2Fmag-je-scrollen-op-een-website-realiteit-en-mythe%2F" title="Technorati"><img src="$!{address.images}/services-sprite.gif" title="Technorati" alt="Technorati" style="width: 16px; height: 16px; background: transparent url(images/services-sprite.png) no-repeat; background-position:-271px -55px" class="sociable-hovers" /></a></li> 
+	<li><a rel="nofollow"  href="http://digg.com/submit?phase=2&amp;url=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F04%2Fmag-je-scrollen-op-een-website-realiteit-en-mythe%2F&amp;title=Mag%20je%20scrollen%20op%20een%20website%3F%20Realiteit%20%C3%A9n%20mythe&amp;bodytext=Regelmatig%20vragen%20klanten%20ons%20om%20een%20website%20te%20bouwen%20waarbij%20je%20niet%20moet%20scrollen.%20Waarom%20niet%20scrollen%3F%20Omdat%20de%20belangrijkste%20info%20in%20%C3%A9%C3%A9n%20oogopslag%20zichtbaar%20moet%20zijn%2C%20is%20dan%20het%20vaak%20gehoorde%20argument.%0D%0AAl%20sinds%201994%20discussi%C3%ABren%20webdesigne" title="Digg"><img src="$!{address.images}/services-sprite.gif" title="Digg" alt="Digg" style="width: 16px; height: 16px; background: transparent url(images/services-sprite.png) no-repeat; background-position:-235px -1px" class="sociable-hovers" /></a></li> 
+	<li><a rel="nofollow"  href="http://reddit.com/submit?url=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F04%2Fmag-je-scrollen-op-een-website-realiteit-en-mythe%2F&amp;title=Mag%20je%20scrollen%20op%20een%20website%3F%20Realiteit%20%C3%A9n%20mythe" title="Reddit"><img src="$!{address.images}/services-sprite.gif" title="Reddit" alt="Reddit" style="width: 16px; height: 16px; background: transparent url(images/services-sprite.png) no-repeat; background-position:-55px -55px" class="sociable-hovers" /></a></li> 
+	<li class="sociablelast"><a rel="nofollow"  href="http://www.ekudos.nl/artikel/nieuw?url=http%3A%2F%2Fglue.be%2Fblog%2F2010%2F04%2Fmag-je-scrollen-op-een-website-realiteit-en-mythe%2F&amp;title=Mag%20je%20scrollen%20op%20een%20website%3F%20Realiteit%20%C3%A9n%20mythe&amp;desc=Regelmatig%20vragen%20klanten%20ons%20om%20een%20website%20te%20bouwen%20waarbij%20je%20niet%20moet%20scrollen.%20Waarom%20niet%20scrollen%3F%20Omdat%20de%20belangrijkste%20info%20in%20%C3%A9%C3%A9n%20oogopslag%20zichtbaar%20moet%20zijn%2C%20is%20dan%20het%20vaak%20gehoorde%20argument.%0D%0AAl%20sinds%201994%20discussi%C3%ABren%20webdesigne" title="eKudos"><img src="$!{address.images}/services-sprite.gif" title="eKudos" alt="eKudos" style="width: 16px; height: 16px; background: transparent url(images/services-sprite.png) no-repeat; background-position:-307px -1px" class="sociable-hovers" /></a></li> 
+</ul> 
+</div> 
+				<div class="commentIndic"> <a href="http://glue.be/blog/2010/04/mag-je-scrollen-op-een-website-realiteit-en-mythe/#comments" title="Comment on Mag je scrollen op een website? Realiteit én mythe">3 commentaren &#187;</a>				</div> 
+				<div class="clearer" ></div> 
+				</div> 
+							</div> 
+ 
+				
+		<div class="pagination"> 
+			<div class="prev"><a href="http://glue.be/blog/page/2/" ><img alt="Vorige" src="$!{address.images}/layout/but-prev-page-nl.gif"/></a></div> 
+			<div class="next"></div> 
+		</div> 
+ 
+	
+	</div> 
+ 
+	<div class="right"> 
+	        			<div class="rightBlock"> 
+				<img usemap="#Map" alt="" src="$!{address.images}/layout/hdr-blog.jpg"/> 
+				<map id="Map" name="Map"> 
+				<area alt="schrijf u in op onze RSS feed" href="http://glue.be/en/rss/" coords="37,94,280,136" shape="rect"/> 
+				</map> 
+			</div> 
+ 
+			<div class="rightBlock twitterblock"> 
+				<h4>Glue op Twitter</h4> 
+				<img src="$!{address.images}/layout/icn-twitter.gif" alt="" style="float:left"/> 
+				<p> way past office hours, but hey, you can't hear us complaining :) </p> 
+				<a style="margin-left: 69px; display:block" title="Volg ons op Twitter" href="http://twitter.com/gluewebdesign">
+                <img alt="Volg ons op Twitter" src="$!{address.images}/layout/but-twitter-nl.gif"/></a> 
+			</div> 
+ 
+			<div class="rightBlock"> 
+				<h4>Glue op Facebook</h4>
+				<!--
+                <iframe src="http://www.facebook.com/plugins/likebox.php?id=44445434577&amp;stream=false&amp;header=false&amp;width=300&amp;height=270&amp;connections=10&amp;" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:270px;" allowtransparency="true"></iframe>
+				-->
+			</div> 
+ 
+			<div id="tag_cloud-2" class="widget widget_tag_cloud rightBlock"><h3 class="widgettitle">Tags</h3><div><a href='http://glue.be/blog/tag/actionscript/' class='tag-link-40' title='2 topics' style='font-size: 8pt;'>actionscript</a> 
+<a href='http://glue.be/blog/tag/adobe/' class='tag-link-3' title='7 topics' style='font-size: 16.166666666667pt;'>Adobe</a> 
+<a href='http://glue.be/blog/tag/air/' class='tag-link-4' title='11 topics' style='font-size: 19.666666666667pt;'>AIR</a> 
+<a href='http://glue.be/blog/tag/air-applicatie/' class='tag-link-46' title='2 topics' style='font-size: 8pt;'>air applicatie</a> 
+<a href='http://glue.be/blog/tag/api/' class='tag-link-399' title='3 topics' style='font-size: 10.333333333333pt;'>api</a> 
+<a href='http://glue.be/blog/tag/apple/' class='tag-link-6' title='6 topics' style='font-size: 15.194444444444pt;'>Apple</a> 
+<a href='http://glue.be/blog/tag/blogs/' class='tag-link-74' title='2 topics' style='font-size: 8pt;'>blogs</a> 
+<a href='http://glue.be/blog/tag/browsers/' class='tag-link-8' title='4 topics' style='font-size: 12.277777777778pt;'>Browsers</a> 
+<a href='http://glue.be/blog/tag/cartersville/' class='tag-link-81' title='2 topics' style='font-size: 8pt;'>Cartersville</a> 
+<a href='http://glue.be/blog/tag/css/' class='tag-link-99' title='3 topics' style='font-size: 10.333333333333pt;'>css</a> 
+<a href='http://glue.be/blog/tag/design/' class='tag-link-10' title='4 topics' style='font-size: 12.277777777778pt;'>Design</a> 
+<a href='http://glue.be/blog/tag/designer/' class='tag-link-105' title='3 topics' style='font-size: 10.333333333333pt;'>designer</a> 
+<a href='http://glue.be/blog/tag/ecoplan/' class='tag-link-409' title='4 topics' style='font-size: 12.277777777778pt;'>ecoplan</a> 
+<a href='http://glue.be/blog/tag/event/' class='tag-link-126' title='4 topics' style='font-size: 12.277777777778pt;'>event</a> 
+<a href='http://glue.be/blog/tag/expression-engine/' class='tag-link-128' title='4 topics' style='font-size: 12.277777777778pt;'>expression engine</a> 
+<a href='http://glue.be/blog/tag/expressionengine/' class='tag-link-14' title='6 topics' style='font-size: 15.194444444444pt;'>ExpressionEngine</a> 
+<a href='http://glue.be/blog/tag/facebook/' class='tag-link-129' title='4 topics' style='font-size: 12.277777777778pt;'>Facebook</a> 
+<a href='http://glue.be/blog/tag/firefox/' class='tag-link-135' title='5 topics' style='font-size: 13.833333333333pt;'>firefox</a> 
+<a href='http://glue.be/blog/tag/flash/' class='tag-link-16' title='15 topics' style='font-size: 22pt;'>Flash</a> 
+<a href='http://glue.be/blog/tag/flex/' class='tag-link-17' title='5 topics' style='font-size: 13.833333333333pt;'>Flex</a> 
+<a href='http://glue.be/blog/tag/glue/' class='tag-link-160' title='4 topics' style='font-size: 12.277777777778pt;'>Glue</a> 
+<a href='http://glue.be/blog/tag/google/' class='tag-link-19' title='15 topics' style='font-size: 22pt;'>Google</a> 
+<a href='http://glue.be/blog/tag/google-analytics/' class='tag-link-164' title='6 topics' style='font-size: 15.194444444444pt;'>google analytics</a> 
+<a href='http://glue.be/blog/tag/google-maps/' class='tag-link-168' title='4 topics' style='font-size: 12.277777777778pt;'>Google Maps</a> 
+<a href='http://glue.be/blog/tag/internet/' class='tag-link-184' title='3 topics' style='font-size: 10.333333333333pt;'>internet</a> 
+<a href='http://glue.be/blog/tag/iphone/' class='tag-link-187' title='7 topics' style='font-size: 16.166666666667pt;'>iPhone</a> 
+<a href='http://glue.be/blog/tag/lastfm/' class='tag-link-396' title='3 topics' style='font-size: 10.333333333333pt;'>last.fm</a> 
+<a href='http://glue.be/blog/tag/pixel-bender/' class='tag-link-255' title='2 topics' style='font-size: 8pt;'>pixel bender</a> 
+<a href='http://glue.be/blog/tag/powerpoint/' class='tag-link-258' title='2 topics' style='font-size: 8pt;'>powerpoint</a> 
+<a href='http://glue.be/blog/tag/presentaties/' class='tag-link-23' title='2 topics' style='font-size: 8pt;'>Presentaties</a> 
+<a href='http://glue.be/blog/tag/search-engine/' class='tag-link-420' title='3 topics' style='font-size: 10.333333333333pt;'>search engine</a> 
+<a href='http://glue.be/blog/tag/search-engine-optimization/' class='tag-link-272' title='4 topics' style='font-size: 12.277777777778pt;'>search engine optimization</a> 
+<a href='http://glue.be/blog/tag/seo/' class='tag-link-24' title='10 topics' style='font-size: 18.888888888889pt;'>SEO</a> 
+<a href='http://glue.be/blog/tag/sites-we-like/' class='tag-link-25' title='2 topics' style='font-size: 8pt;'>Sites We Like</a> 
+<a href='http://glue.be/blog/tag/social-media/' class='tag-link-352' title='4 topics' style='font-size: 12.277777777778pt;'>Social Media</a> 
+<a href='http://glue.be/blog/tag/social-networks/' class='tag-link-285' title='2 topics' style='font-size: 8pt;'>social networks</a> 
+<a href='http://glue.be/blog/tag/software/' class='tag-link-286' title='2 topics' style='font-size: 8pt;'>software</a> 
+<a href='http://glue.be/blog/tag/tips/' class='tag-link-307' title='2 topics' style='font-size: 8pt;'>tips</a> 
+<a href='http://glue.be/blog/tag/tool/' class='tag-link-310' title='4 topics' style='font-size: 12.277777777778pt;'>tool</a> 
+<a href='http://glue.be/blog/tag/twitter/' class='tag-link-312' title='8 topics' style='font-size: 17.138888888889pt;'>twitter</a> 
+<a href='http://glue.be/blog/tag/usability/' class='tag-link-27' title='5 topics' style='font-size: 13.833333333333pt;'>Usability</a> 
+<a href='http://glue.be/blog/tag/video/' class='tag-link-28' title='4 topics' style='font-size: 12.277777777778pt;'>Video</a> 
+<a href='http://glue.be/blog/tag/viral/' class='tag-link-321' title='2 topics' style='font-size: 8pt;'>viral</a> 
+<a href='http://glue.be/blog/tag/webdesign/' class='tag-link-30' title='13 topics' style='font-size: 21.027777777778pt;'>Webdesign</a> 
+<a href='http://glue.be/blog/tag/windows/' class='tag-link-337' title='3 topics' style='font-size: 10.333333333333pt;'>windows</a></div> 
+</div><div id="archives-2" class="widget widget_archive rightBlock"><h3 class="widgettitle">Archief</h3>		<ul> 
+			<li><a href='http://glue.be/blog/2010/05/' title='May 2010'>May 2010</a></li> 
+	<li><a href='http://glue.be/blog/2010/04/' title='April 2010'>April 2010</a></li> 
+	<li><a href='http://glue.be/blog/2010/03/' title='March 2010'>March 2010</a></li> 
+	<li><a href='http://glue.be/blog/2010/01/' title='January 2010'>January 2010</a></li> 
+	<li><a href='http://glue.be/blog/2009/12/' title='December 2009'>December 2009</a></li> 
+	<li><a href='http://glue.be/blog/2009/11/' title='November 2009'>November 2009</a></li> 
+	<li><a href='http://glue.be/blog/2009/10/' title='October 2009'>October 2009</a></li> 
+	<li><a href='http://glue.be/blog/2009/08/' title='August 2009'>August 2009</a></li> 
+	<li><a href='http://glue.be/blog/2009/07/' title='July 2009'>July 2009</a></li> 
+	<li><a href='http://glue.be/blog/2009/06/' title='June 2009'>June 2009</a></li> 
+	<li><a href='http://glue.be/blog/2009/05/' title='May 2009'>May 2009</a></li> 
+	<li><a href='http://glue.be/blog/2009/04/' title='April 2009'>April 2009</a></li> 
+	<li><a href='http://glue.be/blog/2009/03/' title='March 2009'>March 2009</a></li> 
+	<li><a href='http://glue.be/blog/2009/02/' title='February 2009'>February 2009</a></li> 
+	<li><a href='http://glue.be/blog/2009/01/' title='January 2009'>January 2009</a></li> 
+	<li><a href='http://glue.be/blog/2008/12/' title='December 2008'>December 2008</a></li> 
+	<li><a href='http://glue.be/blog/2008/11/' title='November 2008'>November 2008</a></li> 
+	<li><a href='http://glue.be/blog/2008/10/' title='October 2008'>October 2008</a></li> 
+	<li><a href='http://glue.be/blog/2008/09/' title='September 2008'>September 2008</a></li> 
+	<li><a href='http://glue.be/blog/2008/08/' title='August 2008'>August 2008</a></li> 
+	<li><a href='http://glue.be/blog/2008/07/' title='July 2008'>July 2008</a></li> 
+	<li><a href='http://glue.be/blog/2008/06/' title='June 2008'>June 2008</a></li> 
+	<li><a href='http://glue.be/blog/2008/05/' title='May 2008'>May 2008</a></li> 
+	<li><a href='http://glue.be/blog/2008/04/' title='April 2008'>April 2008</a></li> 
+	<li><a href='http://glue.be/blog/2008/03/' title='March 2008'>March 2008</a></li> 
+	<li><a href='http://glue.be/blog/2008/02/' title='February 2008'>February 2008</a></li> 
+	<li><a href='http://glue.be/blog/2008/01/' title='January 2008'>January 2008</a></li> 
+	<li><a href='http://glue.be/blog/2007/12/' title='December 2007'>December 2007</a></li> 
+	<li><a href='http://glue.be/blog/2007/08/' title='August 2007'>August 2007</a></li> 
+	<li><a href='http://glue.be/blog/2007/07/' title='July 2007'>July 2007</a></li> 
+	<li><a href='http://glue.be/blog/2007/06/' title='June 2007'>June 2007</a></li> 
+	<li><a href='http://glue.be/blog/2007/05/' title='May 2007'>May 2007</a></li> 
+	<li><a href='http://glue.be/blog/2007/04/' title='April 2007'>April 2007</a></li> 
+		</ul> 
+</div><div id="categories-333156211" class="widget widget_categories rightBlock"><h3 class="widgettitle">Categorieën</h3>		<ul> 
+	<li class="cat-item cat-item-3"><a href="http://glue.be/blog/category/adobe/" title="View all posts filed under Adobe">Adobe</a> 
+</li> 
+	<li class="cat-item cat-item-4"><a href="http://glue.be/blog/category/air/" title="View all posts filed under AIR">AIR</a> 
+</li> 
+	<li class="cat-item cat-item-5"><a href="http://glue.be/blog/category/algemeen/" title="View all posts filed under Algemeen">Algemeen</a> 
+</li> 
+	<li class="cat-item cat-item-6"><a href="http://glue.be/blog/category/apple/" title="View all posts filed under Apple">Apple</a> 
+</li> 
+	<li class="cat-item cat-item-7"><a href="http://glue.be/blog/category/banner-campaigns/" title="View all posts filed under Banner Campaigns">Banner Campaigns</a> 
+</li> 
+	<li class="cat-item cat-item-8"><a href="http://glue.be/blog/category/browsers/" title="View all posts filed under Browsers">Browsers</a> 
+</li> 
+	<li class="cat-item cat-item-9"><a href="http://glue.be/blog/category/cms/" title="View all posts filed under CMS">CMS</a> 
+</li> 
+	<li class="cat-item cat-item-10"><a href="http://glue.be/blog/category/design/" title="View all posts filed under Design">Design</a> 
+</li> 
+	<li class="cat-item cat-item-11"><a href="http://glue.be/blog/category/e-learning/" title="View all posts filed under E-learning">E-learning</a> 
+</li> 
+	<li class="cat-item cat-item-13"><a href="http://glue.be/blog/category/events/" title="View all posts filed under Events">Events</a> 
+</li> 
+	<li class="cat-item cat-item-14"><a href="http://glue.be/blog/category/expressionengine/" title="View all posts filed under ExpressionEngine">ExpressionEngine</a> 
+</li> 
+	<li class="cat-item cat-item-15"><a href="http://glue.be/blog/category/favoriete-weblinks/" title="View all posts filed under Favoriete Weblinks">Favoriete Weblinks</a> 
+</li> 
+	<li class="cat-item cat-item-16"><a href="http://glue.be/blog/category/flash/" title="View all posts filed under Flash">Flash</a> 
+</li> 
+	<li class="cat-item cat-item-17"><a href="http://glue.be/blog/category/flex/" title="View all posts filed under Flex">Flex</a> 
+</li> 
+	<li class="cat-item cat-item-18"><a href="http://glue.be/blog/category/fresh-glue/" title="View all posts filed under Fresh Glue">Fresh Glue</a> 
+</li> 
+	<li class="cat-item cat-item-19"><a href="http://glue.be/blog/category/google/" title="View all posts filed under Google">Google</a> 
+</li> 
+	<li class="cat-item cat-item-164"><a href="http://glue.be/blog/category/google-analytics/" title="View all posts filed under google analytics">google analytics</a> 
+</li> 
+	<li class="cat-item cat-item-20"><a href="http://glue.be/blog/category/jquery/" title="View all posts filed under jQuery">jQuery</a> 
+</li> 
+	<li class="cat-item cat-item-21"><a href="http://glue.be/blog/category/just-for-fun/" title="View all posts filed under Just For Fun">Just For Fun</a> 
+</li> 
+	<li class="cat-item cat-item-22"><a href="http://glue.be/blog/category/online-copywriting/" title="View all posts filed under Online Copywriting">Online Copywriting</a> 
+</li> 
+	<li class="cat-item cat-item-23"><a href="http://glue.be/blog/category/presentaties/" title="View all posts filed under Presentaties">Presentaties</a> 
+</li> 
+	<li class="cat-item cat-item-362"><a href="http://glue.be/blog/category/security/" title="View all posts filed under security">security</a> 
+</li> 
+	<li class="cat-item cat-item-24"><a href="http://glue.be/blog/category/seo/" title="View all posts filed under SEO">SEO</a> 
+</li> 
+	<li class="cat-item cat-item-25"><a href="http://glue.be/blog/category/sites-we-like/" title="View all posts filed under Sites We Like">Sites We Like</a> 
+</li> 
+	<li class="cat-item cat-item-352"><a href="http://glue.be/blog/category/social-media/" title="View all posts filed under Social Media">Social Media</a> 
+</li> 
+	<li class="cat-item cat-item-452"><a href="http://glue.be/blog/category/tipstricks/" title="View all posts filed under Tips&amp;Tricks">Tips&amp;Tricks</a> 
+</li> 
+	<li class="cat-item cat-item-26"><a href="http://glue.be/blog/category/tools-we-like/" title="View all posts filed under Tools We Like">Tools We Like</a> 
+</li> 
+	<li class="cat-item cat-item-1"><a href="http://glue.be/blog/category/uncategorized/" title="View all posts filed under Uncategorized">Uncategorized</a> 
+</li> 
+	<li class="cat-item cat-item-27"><a href="http://glue.be/blog/category/usability/" title="View all posts filed under Usability">Usability</a> 
+</li> 
+	<li class="cat-item cat-item-28"><a href="http://glue.be/blog/category/video/" title="View all posts filed under Video">Video</a> 
+</li> 
+	<li class="cat-item cat-item-29"><a href="http://glue.be/blog/category/virale-marketing/" title="View all posts filed under Virale Marketing">Virale Marketing</a> 
+</li> 
+	<li class="cat-item cat-item-30"><a href="http://glue.be/blog/category/webdesign/" title="View all posts filed under Webdesign">Webdesign</a> 
+</li> 
+	<li class="cat-item cat-item-31"><a href="http://glue.be/blog/category/website-development/" title="View all posts filed under Website Development">Website Development</a> 
+</li> 
+	<li class="cat-item cat-item-32"><a href="http://glue.be/blog/category/webstandaarden/" title="View all posts filed under Webstandaarden">Webstandaarden</a> 
+</li> 
+	<li class="cat-item cat-item-33"><a href="http://glue.be/blog/category/zoekmachine-optimalisatie/" title="View all posts filed under Zoekmachine Optimalisatie">Zoekmachine Optimalisatie</a> 
+</li> 
+		</ul> 
+</div> 
+	</div> 
+ 
+ 
+</div></div></div> 
+ 
+ 
+<div id="footer"> 
+	<div class="firstFooter"> 
+ 
+		<div class="positioner"> 
+			
+			<div class="box news"> 
+				<h2><a href="http://glue.be/en/rss/#fresh" title="Fresh Glue">Fresh Glue: our latest news</a></h2> 
+				<ul> 
+					<li><a href='http://glue.be/en/freshglue/#cook-truly-green-with-beka' title='Cook truly green with BEKA'>Cook truly green with BEKA</a></li><li><a href='http://glue.be/en/freshglue/#new-website-for-q-int' title='New website for Q-int'>New website for Q-int</a></li><li><a href='http://glue.be/en/freshglue/#launched-flandersbios-new-website' title='Launched FlandersBio's new website'>Launched FlandersBio's new website</a></li><li><a href='http://glue.be/en/freshglue/#fresh-website-for-hoaxland' title='Fresh website for Hoaxland'>Fresh website for Hoaxland</a></li>				</ul> 
+				<p class="serviceLink"><a href="http://glue.be/en/freshglue/" title="read more news">read more news</a></p> 
+ 
+			</div> 
+				
+			<div class="box news"> 
+				<h2><a href="http://glue.be/en/rss/#blog" title="Glue Blog">Glue Blog (Sorry, Dutch only)</a></h2> 
+		
+				<ul> 
+					<li><a href='http://feedproxy.google.com/~r/glue/~3/tCysWMzA2cg/' title='Het belang van een goede homepage.'>Het belang van een goede homepage.</a></li><li><a href='http://feedproxy.google.com/~r/glue/~3/t-6Xnjwc5WA/' title='Mag je scrollen op een website? Realiteit én mythe'>Mag je scrollen op een website? Realiteit én mythe</a></li><li><a href='http://feedproxy.google.com/~r/glue/~3/njy6SfPJLBE/' title='Betere zoekresultaten in Google met deze handige tips'>Betere zoekresultaten in Google met deze handige tips</a></li><li><a href='http://feedproxy.google.com/~r/glue/~3/vhRDCku5kA0/' title='Observeer in real time het surfgedrag op je website: Micro Analytics'>Observeer in real time het surfgedrag op je website: Micro Analytics</a></li>				</ul> 
+ 
+				<p class="serviceLink"><a href="http://glue.be/blog" title="read our glue blog">read our glue blog</a></p> 
+			</div> 
+				
+			<div class="box news"> 
+				<h2><a href="http://glue.be/en/rss/#currently" title="Currently we&acute;re working on...">Currently we&acute;re working on...</a></h2> 
+					 <p>... a new website with the ExpressionEngine CMS for Nicorette.be (McNeil, Johnson &amp; Johnson)</p><div class="imageHolder"><img src="$!{address.images}/uploads/clients/logo-nicorette.gif" alt="" /></div> 
+				<p class="serviceLink"><a href="http://glue.be/en/portfolio/" title="view our portfolio">view our portfolio</a></p> 
+			</div> 
+			
+			<div class="clearer"></div> 
+		
+		</div> 
+	</div> 
+ 
+	
+	<div class="secondFooter"> 
+		<div class="content"> 
+		
+			<a href="http://glue.be/en/" class="siteBy"><span>Glue | interactive media</span></a> 
+			<p>&copy; 2008  -  All rights reserved.</p> 
+			<div class="footerRight"> 
+				<div class="validators"> 
+					<a href="http://validator.w3.org/check?uri=referer" class="valhtml"><span>validate html</span></a> 
+ 
+					<a href="http://jigsaw.w3.org/css-validator/check?uri=referer" class="valcss"><span>validate css</span></a> 
+				</div> 
+				<p class="ee">powered by expression engine</p> 
+				<a class="feed" href="http://glue.be/en/rss/">subscribe to our feeds</a> 
+			</div> 
+		</div> 
+	</div> 
+	
+ 
+</div>	
+	</div> 
+ <!--
+<script type="text/javascript"> 
+	$(document).ready(function(){
+		if($.browser.msie && $.browser.version.substr(0,1) == "6"){
+			//niets doen
+		}else{
+            FLIR.init({ path: '/js/flir/'});
+		    FLIR.auto([ 'h1', 'h2', 'h3', 'h4' ]);
+		}
+	});
+</script> 
+-->
+<!--
+<script type='text/javascript' src='http://track2.mybloglog.com/js/jsserv.php?mblID=2007062207420675'></script> 
+-->
+<!--
+<script type="text/javascript"> 
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script> 
+<script type="text/javascript"> 
+try {
+var pageTracker = _gat._getTracker("UA-301153-13");
+pageTracker._trackPageview();
+} catch(err) {}</script> 
+<script type="text/javascript"> 
+FBConnect.init('e6e8a4551870de33a925628904bda5a2', 'http://glue.be/blog/wp-content/plugins/wp-facebookconnect/', '80942699481', 'http://glue.be/blog', 0, FBConnect.appconfig_reload);
+ 
+</script>
+-->
+</body> 
+</html>

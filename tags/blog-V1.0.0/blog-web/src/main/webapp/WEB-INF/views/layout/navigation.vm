@@ -1,0 +1,80 @@
+<div id="navigation">
+    <div class="content">
+        <div class="logo">
+            <h1>
+                <a title="glue | interactive media" href="$!{address.server}/home/index.htm">
+                    <span>glue | interactive media</span>
+                </a>
+            </h1>
+        </div>
+        <ol id="sitelinks">
+            <li class="services">
+                <a href="$!{address.server}/services/index.htm" title="Services">
+                    <span>Services</span>
+                    <em>what we offer you</em>
+                </a>
+            </li>
+            <li class="portfolio">
+                <a href="$!{address.server}/portfolio/index.htm" title="Portfolio">
+                    <span>Portfolio</span>
+                    <em>the stuff we did</em>
+                </a>
+            </li>
+            <li class="clients">
+                <a href="$!{address.server}/clients/index.htm" title="Clients">
+                    <span>Clients</span>
+                    <em>you can join them</em>
+                </a>
+            </li>
+            <li class="blog">
+                <a href="$!{address.server}/blog/index.htm" title="Blog">
+                    <span>Blog</span>
+                    <em>sorry, Dutch only</em>
+                </a>
+            </li>
+            <li class="aboutme">
+                <a href="$!{address.server}/about/index.htm" title="About me">
+                    <span>About me</span>
+                    <em>get to know me</em>
+                </a>
+            </li>
+            <li class="contactme">
+                <a href="$!{address.server}/contact/index.htm" title="Contact me">
+                    <span>Contact me</span>
+                    <em>let’s stick together</em>
+                </a>
+            </li>
+        </ol>
+        <script type="text/javascript"> 
+            jQuery(document).ready(function(){
+            var now = "en";
+            var def_lang = "nl";
+            //cookie START
+            var cookie_name = 'language';
+            jQuery.cookie(cookie_name, now, {path: '/', expires: 365});
+            //cookie END
+            jQuery("a.lang").click(function(){
+            var chosen = $(this).attr("id");
+            //Controle of je niet op de huidige taalkeuze klikt
+            if(chosen != now){
+            var url = location.href.split('/');
+            //keuze == default  => DELETE taal
+            if(chosen == def_lang){
+            url.splice(3,1);
+            }
+            //huidige taal != default  => REPLACE taal
+            else if(now != def_lang){
+            url[3] = chosen;
+            }
+            //huidige taal == default  => ADD taal
+            else if(now == def_lang){
+            url.splice(3, 0, chosen);
+            }
+            location.href = url.join('/');
+            }
+            return false;
+            })
+            });
+        </script>
+    </div>
+</div>
