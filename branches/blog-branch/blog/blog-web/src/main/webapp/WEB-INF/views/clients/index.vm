@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head >
+        <title>Rolyer&#39;s Blog</title>
+        <!-- beging contxt -->
+        #parse("layout/context.vm")
+        <!-- end contxt -->
+    </head>
+    <body class="clients">
+        <div id="container">
+            <div id="wrapper">
+                <!--begin navigation -->
+                #parse("layout/navigation.vm")
+                <!-- end navigation -->
+                <!-- beging PrimaryContent -->
+                <div id="primaryContent">
+                    <div class="content">
+                        <div class="pageTop">
+                            <div class="pageTitle">
+                                <h1 class=" flir-replaced">Clients</h1>
+                            </div>
+                            <div class="breadCrumbs">
+                                You are here: <a href="$!{address.server}/blog/index.htm" title="Home">Home</a>
+                                »&nbsp;<span class="active">Clients</span>
+                            </div>
+                            <div class="clearer"></div>
+                        </div>
+                        <!-- beging Content -->
+                        <div class="left">
+                            <p class="intro-text"></p>
+                            <p class="intro-text">Glue has been working for a variety of superb clients who have helped us to become a respected interactive agency. The last few years we have also been hired as a subcontractor on a regular basis for several advertising agencies and interactive companies who need to outsource creative and technical work.<br>
+                                    <br> Read our <a href="/en/about/customer-testimonials/" mce_href="/en/about/customer-testimonials/">customer testimonials</a>
+                                        to find out why they keep returning to Glue for their projects.</p>
+                                        <p></p>
+                                        <div class="caseDisplay">
+                                            <div class="caseHolder">
+                                                <img src="$!{address.images}/uploads/clients/samsonite.jpg" alt="AJD">
+                                                    <p>Samsonite</p>
+</div>
+<div class="caseHolder">
+    <img src="$!{address.images}/uploads/clients/ajd-logo.jpg" alt="AJD">
+        <p>AJD</p>
+</div>
+<div class="caseHolder">
+    <img src="$!{address.images}/uploads/clients/vdv.jpg" alt="AJD">
+        <p>Q-int</p>
+</div>
+<div class="clearer"></div>
+<div class="caseHolder">
+    <img src="$!{address.images}/uploads/clients/samsonite.jpg" alt="AJD">
+        <p>Samsonite</p>
+</div>
+<div class="caseHolder">
+    <img src="$!{address.images}/uploads/clients/ajd-logo.jpg" alt="AJD">
+        <p>AJD</p>
+</div>
+<div class="caseHolder">
+    <img src="$!{address.images}/uploads/clients/vdv.jpg" alt="AJD">
+        <p>Q-int</p>
+</div>
+<div class="clearer"></div>
+</div>
+</div>
+<div class="right">
+    <div class="rightBlock">
+        <h4>A word from our clients</h4>
+        <p>
+            <img src="$!{address.images}/layout/icn-testimonial.gif" alt="" style="float:left">Read our customer testimonials to find out why our clients keep returning to Glue for their projects. <a href="http://glue.be/en/about/customer-testimonials/" title="customer testimonials" style="margin-left:69px">
+                    <img src="$!{address.images}/layout/but-testimonial-en.gif" title="customer testimonials" alt="customer testimonials"></a>
+</p>
+</div>
+<div class="rightBlock">
+    <h4>The stuff we did</h4>
+    <p>
+        <img src="$!{address.images}/layout/icn-portfolio.gif" alt="" style="float:left">Take a look at a selection of our projects in our portfolio section. <a href="http://glue.be/en/portfolio/" title="to the portfolio" style="margin-left:69px">
+                <img src="$!{address.images}/layout/but-portfolio-en.gif" title="to the portfolio" alt="to the portfolio"></a>
+</p>
+</div>
+<div class="rightBlock">
+    <h3>Our clients</h3>
+    <ul>
+        <li>Abscis Architecten</li>
+    </ul>
+</div>
+</div>
+</div>
+</div>
+<!-- end Content -->
+    </div>
+</div>
+<!-- end Primary Content -->
+<!--begin footer -->
+#parse("layout/footer.vm")
+<!-- end footer --> 
+</div>
+</div>
+</body>
+</html>

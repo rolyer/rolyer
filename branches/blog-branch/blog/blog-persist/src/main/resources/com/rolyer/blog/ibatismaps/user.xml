@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+	PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+	"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+	
+<sqlMap namespace="sqlMapUser">
+	<typeAlias alias="user" type="com.rolyer.blog.domain.blog.UserDO"/>
+	
+	<resultMap class="user" id="userFullResult">
+		<result property="id" column="id" />
+		<result property="account" column="account" />
+		<result property="password" column="password" />
+		<result property="gmtCreated" column="gmt_created" />
+		<result property="gmtModified" column="gmt_modified" />
+	</resultMap>
+	
+	<insert id="insertOneUser" parameterClass="user">
+		insert into user
+	            (account,
+	             password,
+	             gmt_created,
+	             gmt_modified)
+		values (#account#,
+		        #password#,
+		        #gmtCreated#,
+		        #gmtModified#);
+        <selectKey resultClass="java.lang.Integer" keyProperty="id" >
+      		select last_insert_id()
+   		</selectKey>
+	</insert>
+</sqlMap>

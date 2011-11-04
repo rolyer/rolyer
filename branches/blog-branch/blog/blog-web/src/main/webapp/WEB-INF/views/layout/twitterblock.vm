@@ -1,0 +1,7 @@
+<div class="rightBlock twitterblock">
+    <h4>Follow me on Twitter</h4>
+    <img src="$!{address.images}/layout/icn-twitter.gif" alt="" style="float:left">
+        <p>way past office hours, but hey, you can't hear us complaining :)</p>
+            <a href="http://twitter.com/rolyer" target="_blank" title="Follow me on Twitter" style="margin-left:69px">
+                <img src="$!{address.images}/layout/but-twitter-en.gif" alt="Follow me on Twitter"></a>
+</div>
