@@ -1,3 +1,0 @@
-mvn install:install-file -DgroupId=net.spy -DartifactId=memcached -Dversion=2.5rc1 -Dpackaging=jar -Dfile=C:\Rolyer\Projects\blog\document\lib\memcached-2.5rc1.jar
-
-mvn install:install-file -DgroupId=org.apache.velocity -DartifactId=velocity-tools -Dversion=1.4 -Dpackaging=jar -Dfile=C:\Rolyer\Projects\blog\document\lib\velocity-tools-1.4.jar

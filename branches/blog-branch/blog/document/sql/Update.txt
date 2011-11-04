@@ -1,1 +1,0 @@
-ALTER TABLE `blog`.`article` ADD COLUMN `category_id` INT(20) NULL DEFAULT NULL COMMENT '类别编号'  AFTER `gmt_modified` , ADD COLUMN `comments_number` INT(20) NULL DEFAULT NULL COMMENT '评论编号'  AFTER `category_id` , ADD COLUMN `show_max_length` INT(20) NULL DEFAULT NULL COMMENT '文章显示长度'  AFTER `comments_number` ;
