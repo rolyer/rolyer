@@ -1,1 +1,69 @@
-$!{msg}
+#set($layout = "layout/blank.vm")
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>iBlog Manager System</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <!-- styles -->
+        <link href="$!{address.css}/bootstrap.css" rel="stylesheet" />
+        <link rel="shortcut icon" href="$!{address.images}/ico/favicon.ico" />
+        <style type="text/css">
+            body {
+                padding-top: 60px;
+                padding-bottom: 40px;
+            }
+            .sidebar-nav {
+				padding: 9px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- topbar =======================================================-->
+        #parse("/layout/navtopbar.vm")
+        <!-- topbar =======================================================-->
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span3">
+                    <!-- sidebar =======================================================-->
+                    #parse("/layout/navsidebar.vm")
+                    <!-- sidebar =======================================================-->
+                    <!--
+                    <form class="well form-search">
+                        <input type="text" class="input-medium search-query">
+                        <button type="submit" class="btn">Search</button>
+                    </form>
+                    -->
+                </div>
+                <!--/span3-->
+                <div class="span9">
+                    <!--breadcrumb =======================================================-->
+                    #parse("/layout/breadcrumb.vm")
+                    <!--breadcrumb =======================================================-->
+                    <iframe id="iframe" src="${address.server}/demo/home.htm" marginwidth="0" marginheight="0" frameborder="0" scrolling="auto" height="550px" width="100%"></iframe>
+                </div>
+                <!--/span9-->
+            </div>
+            <!--/row-fluid -->
+            <hr>
+                <footer>
+                    <p>&copy; Copyright 2012 iBlog | Powered by <a href="#">Rolyer</a>
+                        | <a href="#">Top</a>
+                    </p>
+                </footer>
+            </div>
+            <!--/.fluid-container-->
+            <!-- Le javascript ================================================== -->
+            <!-- Placed at the end of the document so the pages load faster -->
+            <script type="text/javascript" src="$!{address.js}/jquery-1.7.2.min.js"></script>
+            <script type="text/javascript" src="$!{address.js}/bootstrap/bootstrap.min.js"></script>
+            <script>
+                $(function () {
+                	$('.typeahead').typeahead();
+                })
+            </script>
+</body>
+</html>

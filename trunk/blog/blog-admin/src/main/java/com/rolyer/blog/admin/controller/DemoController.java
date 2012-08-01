@@ -21,4 +21,12 @@ public class DemoController extends BaseController {
 	public void index(Map<String, Object> model){
 		model.put("msg", "Successful：这是一个测试。");
 	}
+	
+	@RequestMapping
+	public void home(Map<String, Object> model){
+		model.put("msg", "Successful：这是一个测试。");
+	}
+	
+	@RequestMapping
+	public void music(){}
 }
