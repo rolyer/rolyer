@@ -8,6 +8,13 @@
             </h1>
         </div>
         <ol id="sitelinks">
+			<li class="home">
+                <a href="$!{address.server}/home/index.htm" title="Services">
+                    <span>Home</span>
+                    <em>Welcome!</em>
+                </a>
+            </li>
+			<!--
             <li class="services">
                 <a href="$!{address.server}/services/index.htm" title="Services">
                     <span>Services</span>
@@ -26,6 +33,7 @@
                     <em>you can join them</em>
                 </a>
             </li>
+			-->
             <li class="blog">
                 <a href="$!{address.server}/blog/index.htm" title="Blog">
                     <span>Blog</span>
