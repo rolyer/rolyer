@@ -18,7 +18,14 @@
                 <div id="primaryContent">
                     <div class="content">
                         <div class="pageTop">
-                          
+							<div class="pageTitle">
+                                <h1 class=" flir-replaced">Blog</h1>
+                            </div>
+                            <div class="breadCrumbs">
+                                You are here: <a href="$!{address.server}/home/index.htm" title="Home">Home</a>
+                                »&nbsp;<span class="active">Blog</span>
+                            </div>
+                            <div class="clearer"></div>
                         </div>
                         <!-- beging Content -->
 						<div class="left">

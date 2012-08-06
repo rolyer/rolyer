@@ -13,13 +13,16 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.rolyer.blog.domain.blog.CategoryDO;
+import com.rolyer.blog.domain.blog.CommentsDO;
 import com.rolyer.blog.domain.blog.LabelsDO;
 import com.rolyer.blog.dto.ArticleDTO;
 import com.rolyer.blog.dto.PageDto;
 import com.rolyer.blog.page.PageDetails;
 import com.rolyer.blog.service.blog.ArticleService;
 import com.rolyer.blog.service.blog.CategoryService;
+import com.rolyer.blog.service.blog.CommentService;
 import com.rolyer.blog.service.blog.LabelsService;
+import com.rolyer.blog.util.MD5Util;
 import com.rolyer.blog.util.StringUtils;
 
 /**
@@ -37,6 +40,9 @@ public class BlogController extends BaseController {
 	
 	@Autowired
 	private CategoryService categoryService;
+	
+	@Autowired
+	private CommentService commentService;
 	
 	@RequestMapping
 	public void index(Map<String, Object> out,ArticleDTO articleDTO,String p){
@@ -79,8 +85,19 @@ public class BlogController extends BaseController {
 	}
 	
 	@RequestMapping
-	public void view(Map<String, Object> out){
-		out.put("welcome","Welcome,this is Rolyer's blog!");
+	public void view(Map<String, Object> out, String id){
+		out.put("MD5", new MD5Util());
+		if(StringUtils.isNotEmpty(id) && StringUtils.isNumber(id)){
+			//Get article detail
+			Integer _id = Integer.valueOf(id);
+			ArticleDTO article =  articleService.queryArticleById(_id);
+			out.put("article", article.getArticle());
+			
+			//Get comment
+			List<CommentsDO> list = commentService.queryCommentByObjectId(_id);
+			out.put("comments", list);
+			out.put("count", list != null && list.size() >0 ? list.size() : 0);
+		}
 	}
 	
 	@RequestMapping
