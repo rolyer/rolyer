@@ -23,6 +23,7 @@ public class CommentsDO implements java.io.Serializable {
 	private Integer id;//编号
 	private String name;//姓名昵称
 	private String email;//邮箱
+	private String url;//网址
 	private String ip;//地址
 	private String content;//内容
 	private String type;//评论类型
@@ -64,6 +65,12 @@ public class CommentsDO implements java.io.Serializable {
 	 */
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	public String getUrl() {
+		return url;
+	}
+	public void setUrl(String url) {
+		this.url = url;
 	}
 	/**
 	 * @return the ip

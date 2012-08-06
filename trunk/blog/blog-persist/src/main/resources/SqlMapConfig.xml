@@ -16,5 +16,6 @@
 	<sqlMap resource="${sqlMap.root}/category.xml" />
 	<sqlMap resource="${sqlMap.root}/labels.xml" />
 	<sqlMap resource="${sqlMap.root}/information.xml" />
+	<sqlMap resource="${sqlMap.root}/comment.xml" />
 	 
 </sqlMapConfig>

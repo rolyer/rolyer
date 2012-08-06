@@ -32,7 +32,7 @@ public class PageDto implements Serializable{
 	private Integer pageSize;  							//分页大小
 	private Integer totalPages;        					//总页数，通过计算获得，不能直接赋值
 
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings("rawtypes")
 	private List records;
 
 	public PageDto() {
@@ -136,6 +136,7 @@ public class PageDto implements Serializable{
 	/**
 	 * @return the records
 	 */
+	@SuppressWarnings("rawtypes")
 	public List getRecords() {
 		return records;
 	}
@@ -143,6 +144,7 @@ public class PageDto implements Serializable{
 	/**
 	 * @param records the records to set
 	 */
+	@SuppressWarnings("rawtypes")
 	public void setRecords(List records) {
 		this.records = records;
 	}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE sqlMap
+	PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+	"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+	
+<sqlMap namespace="sqlMapComment">
+	<typeAlias alias="commentsDO" type="com.rolyer.blog.domain.blog.CommentsDO"/>
+	
+	<resultMap class="commentsDO" id="commentsDOFullResult">
+		<result property="id" column="id"/>
+		<result property="name" column="name"/>
+		<result property="email" column="email"/>
+		<result property="url" column="url"/>
+		<result property="ip" column="ip"/>
+		<result property="content" column="content"/>
+		<result property="type" column="type"/>
+		<result property="objectId" column="object_id"/>
+		<result property="gmtCreated" column="gmt_created"/>
+	</resultMap>
+	
+	<insert id="insertComment" parameterClass="commentsDO">
+		INSERT INTO comments
+            (name,
+             email,
+             url,
+             ip,
+             content,
+             type,
+             object_id,
+             gmt_created)
+		VALUES (#name#,
+		        #email#,
+		        #url#,
+		        #ip#,
+		        #content#,
+		        #type#,
+		        #objectId#,
+		        NOW())
+		 <selectKey resultClass="java.lang.Integer" keyProperty="id" >
+      		SELECT LAST_INSERT_ID()
+   		</selectKey>
+	</insert>
+	
+	<delete id="deleteCommentById" parameterClass="java.lang.Integer">
+		DELETE FROM comments 
+	    WHERE id=#value#;
+  	</delete>
+  	
+  	<update id="upadteCommentContentById" parameterClass="java.util.Map">
+	   UPDATE comments
+		SET
+		  content = #content#
+		WHERE id = #id#;
+  	</update>
+  	
+  	<select id="queryCommentByObjectId" resultMap="commentsDOFullResult" parameterClass="java.lang.Integer">
+  		SELECT
+		  c.id,
+		  c.name,
+		  c.email,
+		  c.url,
+		  c.ip,
+		  c.content,
+		  c.type,
+		  c.object_id,
+		  c.gmt_created
+		FROM comments c
+		WHERE c.object_id =#value#
+  	</select>
+	
+</sqlMap>
