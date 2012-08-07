@@ -174,12 +174,10 @@
 <ol class="commentlist">
 	#foreach($comment in $comments)
 		 <li class="alt" id="comment-$!{comment.id}">
-			
 				#if(!${comment.email})
 					<img alt="" src="$!{address.images}/head.jpg" class="avatar avatar-32 photo" height="32" width="32">
 				#else
-					MD5.md5Hex(${comment.email})
-					<img alt="" src="http://www.gravatar.com/avatar/$!{comment.email}?d=http%3A%2F%2Fexample.com%2Fimages%2Favatar.jpg&s=200&r=pg" class="avatar avatar-32 photo" height="32" width="32">
+					<img alt="" src="http://www.gravatar.com/avatar/$!MD5.md5Hex(${comment.email})?d=mm" class="avatar avatar-32 photo" height="32" width="32">
 				#end
                     <div class="comment-meta-div">
                         <small class="commentmetadata">$!date.format('yyyy-MM-dd HH:mm:ss ',$!{comment.gmtCreated}) </small>
@@ -190,7 +188,6 @@
 								#else
 									$!{comment.name}
 								#end
-								
                             </cite>
 							说:
         </div>
@@ -229,11 +226,11 @@
 -->
 </ol>
 <h3 id="respond" class=" flir-replaced">发表评论</h3>
-<form action="#" method="post" id="commentform" class="contactForm">
+<form action="$!{address.server}/blog/addComment.htm" method="post" id="commentform" class="contactForm">
     <p>
-        <label for="author">姓名/昵称:</small>
+        <label for="name">姓名/昵称:</small>
         </label>
-        <input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required="true">
+        <input type="text" name="name" id="name" value="" size="22" tabindex="1" aria-required="true">
     </p>
     <p>
         <label for="email">电子邮箱：</small>
@@ -246,12 +243,13 @@
 </p>
 
 <p>
-    <label for="comment">评论内容：</label>
-    <textarea name="comment" id="comment" rows="10" cols="40" tabindex="4"></textarea>
+    <label for="content">评论内容：</label>
+    <textarea name="content" id="content" rows="10" cols="40" tabindex="4"></textarea>
 </p>
 <p>
     <input type="image" class="verzend" id="send-button" tabindex="5" value="Submit Comment" name="submit" src="$!{address.images}/but-send-message-nl.gif">
-        <input type="hidden" name="comment_post_ID" value="1654">
+    <input type="hidden" name="objectId" value="$!{article.id}">
+	<input type="hidden" name="type" value="0">
 </p>
 </form>
 <hr>
