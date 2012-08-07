@@ -5,12 +5,15 @@
  */
 package com.rolyer.blog.web.controller;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.rolyer.blog.domain.blog.CategoryDO;
 import com.rolyer.blog.domain.blog.CommentsDO;
@@ -132,5 +135,9 @@ public class BlogController extends BaseController {
 		out.put("details", details);
 	}
 	
-	
+	@RequestMapping(method = RequestMethod.POST)
+	public ModelAndView addComment(CommentsDO comment, Map<String, Object> out) throws IOException {
+		commentService.insertComment(comment);
+		return printJs("alert('成功')", out);
+	}
 }
