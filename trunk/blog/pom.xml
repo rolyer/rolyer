@@ -266,12 +266,6 @@
 		</dependencies>
 	</dependencyManagement>
 
-	<!-- <repositories> <repository> <id>zz91_repository</id> <name>zz91 local 
-		artifactory</name> <url>http://192.168.2.2:8081/artifactory/repo</url> </repository> 
-		</repositories> <pluginRepositories> <pluginRepository> <id>zz91_pluginRepository</id> 
-		<name>zz91 local artifactory</name> <url>http://192.168.2.2:8081/artifactory/plugins-releases</url> 
-		<snapshots> <enabled>false</enabled> </snapshots> </pluginRepository> </pluginRepositories> -->
-
 	<build>
 		<plugins>
 			<plugin>
