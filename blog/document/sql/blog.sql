@@ -2,7 +2,7 @@
 SQLyog 企业版 - MySQL GUI v8.14 
 MySQL - 5.1.40-community : Database - blog
 *********************************************************************
-*/
+*/
 
 /*!40101 SET NAMES utf8 */;
 
@@ -27,6 +27,9 @@ CREATE TABLE `article` (
   `views` int(20) DEFAULT NULL COMMENT '浏览次数',
   `gmt_created` datetime DEFAULT NULL COMMENT '创建时间',
   `gmt_modified` datetime DEFAULT NULL COMMENT '修改时间',
+  `category_id` int(20) DEFAULT NULL COMMENT '类别编号',
+  `comments_number` int(20) DEFAULT NULL COMMENT '评论编号',
+  `show_max_length` int(20) DEFAULT NULL COMMENT '文章显示长度',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='文章';
 
@@ -41,7 +44,7 @@ CREATE TABLE `article_category` (
   `article_id` int(20) DEFAULT NULL COMMENT '文章ID',
   `category_id` int(20) DEFAULT NULL COMMENT '类别ID',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='文章类别';
 
 /*Data for the table `article_category` */
 
@@ -54,7 +57,7 @@ CREATE TABLE `article_label` (
   `article_id` int(20) DEFAULT NULL COMMENT '文章ID',
   `label_id` int(20) DEFAULT NULL COMMENT '标签ID',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='文章标签';
 
 /*Data for the table `article_label` */
 
@@ -100,6 +103,21 @@ CREATE TABLE `labels` (
 
 /*Data for the table `labels` */
 
+/*Table structure for table `information` */
+
+DROP TABLE IF EXISTS `information`;
+
+CREATE TABLE `information` (
+  `id` int(20) NOT NULL AUTO_INCREMENT,
+  `about_me` text COMMENT '关于我',
+  `contact_me` text COMMENT '联系我',
+  `gmt_created` datetime DEFAULT NULL COMMENT '创建时间',
+  `gmt_modified` datetime DEFAULT NULL COMMENT '修改时间',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='基本信息';
+
+/*Data for the table `information` */
+
 /*Table structure for table `message` */
 
 DROP TABLE IF EXISTS `message`;
@@ -126,8 +144,8 @@ CREATE TABLE `user` (
   `id` int(20) NOT NULL AUTO_INCREMENT COMMENT '编号',
   `account` varchar(20) DEFAULT NULL COMMENT '账号',
   `password` varchar(100) DEFAULT NULL COMMENT '密码',
-  `gmt_lastlogin` datetime DEFAULT NULL,
-  `gmt_created` datetime DEFAULT NULL,
+  `gmt_lastlogin` datetime DEFAULT NULL COMMENT '最近登录时间',
+  `gmt_created` datetime DEFAULT NULL COMMENT '创建时间',
   `gmt_modified` datetime DEFAULT NULL COMMENT '修改时间',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='用户表';
