@@ -22,28 +22,6 @@
 		</property>
 	</bean>
 	
-	<!--
-	<bean id="myService" >
-		<property name="externalUserDao" ref="aaaa">
-		
-		</property>
-	</bean>
-	
-	<bean id="aaa" class="BeanReferenceFactoryBean" >
-		<property name="beanFactoy" ref="externalSpringCtx" ></property>
-		<property name="targetBeanname" value="statisUserDao" ></property>
-	</bean>
-	
-    <bean id="externalSpringCtx" class="ClassPathXmlApplicationContext" >
-    	<constructor-arg index="0">
-    		<list>
-    			<value>classpath:/a.xml</value>
-    			<value>classpath:/b.xml</value>
-    			<value>classpath:/c.xml</value>
-    		</list>
-    	</constructor-arg>
-    </bean>-->
-
 	<!-- message loader -->
 	<bean id="messageSource"
 		class="org.springframework.context.support.ResourceBundleMessageSource">
