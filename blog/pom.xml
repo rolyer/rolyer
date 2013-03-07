@@ -15,12 +15,12 @@
 		<encoding>UTF-8</encoding>
 		<project.version>1.0.0-SNAPSHOT</project.version>
 		<project.prefix>blog</project.prefix>
-		<!-- Windows开发环境 
+		<!-- Windows Environment
 		<package.environment>
 			devwin
 		</package.environment> 
 		-->
-		<!-- Linux开发环境 -->
+		<!-- Linux Environment -->
 		<package.environment>dev</package.environment>
 
 		<jdbc.location>classpath:persist.properties</jdbc.location>
@@ -29,7 +29,7 @@
 	<developers>
 		<developer>
 			<id>rolyer</id>
-			<name>rolyer</name>
+			<name>Rolyer Luo</name>
 			<email>rolyer.live@gmail.com</email>
 		</developer>
 	</developers>
