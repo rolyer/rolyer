@@ -1,6 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-	<!--顶级父pom.xml文件-->
+	<!--顶级父pom.xml文件 -->
 	<parent>
 		<artifactId>blog-parent</artifactId>
 		<groupId>com.rolyer</groupId>
@@ -13,7 +13,7 @@
 	<name>blog-web</name>
 	<packaging>war</packaging>
 	<version>1.0.0-SNAPSHOT</version>
-	<!--配置依赖关系-->
+	<!--配置依赖关系 -->
 	<dependencies>
 		<dependency>
 			<groupId>com.rolyer</groupId>
@@ -23,7 +23,7 @@
 			<groupId>com.rolyer</groupId>
 			<artifactId>blog-common</artifactId>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -106,27 +106,28 @@
 			<artifactId>jxl</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>net.spy</groupId>
-			<artifactId>memcached</artifactId>
+			<groupId>spy</groupId>
+			<artifactId>spymemcached</artifactId>
 		</dependency>
-		<dependency> 
-			<groupId>org.tuckey</groupId> 
-			<artifactId>urlrewritefilter</artifactId> 
+		<dependency>
+			<groupId>org.tuckey</groupId>
+			<artifactId>urlrewritefilter</artifactId>
 		</dependency>
 	</dependencies>
-	
-	<build>
-        <plugins>
-	        <plugin>
-	            <groupId>org.codehaus.mojo</groupId>
-	            <artifactId>tomcat-maven-plugin</artifactId>
-	            <configuration>
-	            	<port>8080</port>
-	                <path>/web</path>
-	            </configuration>
-	        </plugin>
 
-        </plugins>
-    </build>
-    
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+			    <artifactId>tomcat-maven-plugin</artifactId>
+			    <version>1.1</version>
+				<configuration>
+					<port>8080</port>
+					<path>/web</path>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+
 </project>
