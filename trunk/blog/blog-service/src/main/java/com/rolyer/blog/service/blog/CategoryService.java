@@ -7,7 +7,7 @@ package com.rolyer.blog.service.blog;
 
 import java.util.List;
 
-import com.rolyer.blog.domain.CategoryDO;
+import com.rolyer.blog.domain.blog.CategoryDO;
 
 /**
  * @author Rolyer (rolyer.live@gmail.com)

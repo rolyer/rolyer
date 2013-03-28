@@ -7,7 +7,7 @@ package com.rolyer.blog.persist.blog;
 
 import java.util.List;
 
-import com.rolyer.blog.domain.CategoryDO;
+import com.rolyer.blog.domain.blog.CategoryDO;
 
 /**
  * 文章类别接口

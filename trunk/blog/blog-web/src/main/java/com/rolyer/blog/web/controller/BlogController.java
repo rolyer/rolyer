@@ -15,9 +15,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.rolyer.blog.domain.CategoryDO;
-import com.rolyer.blog.domain.CommentsDO;
-import com.rolyer.blog.domain.LabelsDO;
+import com.rolyer.blog.domain.blog.CategoryDO;
+import com.rolyer.blog.domain.blog.CommentsDO;
+import com.rolyer.blog.domain.blog.LabelsDO;
 import com.rolyer.blog.dto.ArticleDTO;
 import com.rolyer.blog.dto.PageDto;
 import com.rolyer.blog.page.PageDetails;

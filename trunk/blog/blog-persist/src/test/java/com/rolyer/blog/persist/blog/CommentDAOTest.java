@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.rolyer.blog.domain.CommentsDO;
+import com.rolyer.blog.domain.blog.CommentsDO;
 import com.rolyer.blog.persist.BaseDaoTestCase;
 
 public class CommentDAOTest extends BaseDaoTestCase {

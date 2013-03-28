@@ -3,7 +3,7 @@
  * All right reserved.
  * Created on 2010-5-2
  */
-package com.rolyer.blog.domain;
+package com.rolyer.blog.domain.blog;
 
 import java.util.Date;
 

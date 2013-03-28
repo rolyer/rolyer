@@ -8,7 +8,7 @@ package com.rolyer.blog.service.blog.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.rolyer.blog.domain.UserDO;
+import com.rolyer.blog.domain.blog.UserDO;
 import com.rolyer.blog.persist.blog.UserDAO;
 import com.rolyer.blog.service.blog.UserService;
 

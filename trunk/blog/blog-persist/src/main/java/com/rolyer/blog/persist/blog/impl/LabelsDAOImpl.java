@@ -11,7 +11,7 @@ import org.springframework.orm.ibatis.support.SqlMapClientDaoSupport;
 import org.springframework.stereotype.Component;
 import org.springframework.util.Assert;
 
-import com.rolyer.blog.domain.LabelsDO;
+import com.rolyer.blog.domain.blog.LabelsDO;
 import com.rolyer.blog.persist.blog.LabelsDAO;
 
 /**

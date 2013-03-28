@@ -7,7 +7,7 @@ package com.rolyer.blog.persist.blog;
 
 import java.util.List;
 
-import com.rolyer.blog.domain.LabelsDO;
+import com.rolyer.blog.domain.blog.LabelsDO;
 
 
 /**

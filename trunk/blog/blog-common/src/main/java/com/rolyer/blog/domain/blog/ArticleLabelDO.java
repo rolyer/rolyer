@@ -3,22 +3,23 @@
  * All right reserved.
  * Created on 2010-5-2
  */
-package com.rolyer.blog.domain;
+package com.rolyer.blog.domain.blog;
+
 
 /**
  * @author Rolyer (rolyer.live@gmail.com)
  *
  */
-public class ArticleCategoryDO implements java.io.Serializable {
-	
+public class ArticleLabelDO implements java.io.Serializable {
+
 	/**
-	 * 
+	 * 序列化
 	 */
 	private static final long serialVersionUID = 1L;
 	
 	private Integer id;					//编号
 	private Integer articleId;			//文章ID
-	private Integer categoryId;			//类别ID
+	private Integer labelId;			//标签ID
 	
 	/**
 	 * @return the id
@@ -45,15 +46,15 @@ public class ArticleCategoryDO implements java.io.Serializable {
 		this.articleId = articleId;
 	}
 	/**
-	 * @return the categoryId
+	 * @return the labelId
 	 */
-	public Integer getCategoryId() {
-		return categoryId;
+	public Integer getLabelId() {
+		return labelId;
 	}
 	/**
-	 * @param categoryId the categoryId to set
+	 * @param labelId the labelId to set
 	 */
-	public void setCategoryId(Integer categoryId) {
-		this.categoryId = categoryId;
+	public void setLabelId(Integer labelId) {
+		this.labelId = labelId;
 	}
 }

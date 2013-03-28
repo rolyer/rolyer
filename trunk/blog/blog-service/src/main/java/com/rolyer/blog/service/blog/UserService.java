@@ -5,7 +5,7 @@
  */
 package com.rolyer.blog.service.blog;
 
-import com.rolyer.blog.domain.UserDO;
+import com.rolyer.blog.domain.blog.UserDO;
 
 /**
  * 用户服务接口
