@@ -3,14 +3,14 @@
  * All right reserved.
  * Created on 2010-5-2
  */
-package com.rolyer.blog.domain.blog;
+package com.rolyer.blog.domain;
 
 /**
- * 文章标签实体类
+ * 文章类别实体类
  * @author Rolyer (rolyer.live@gmail.com)
  *
  */
-public class LabelsDO implements java.io.Serializable {
+public class CategoryDO implements java.io.Serializable {
 
 	/**
 	 * 序列化
@@ -18,7 +18,7 @@ public class LabelsDO implements java.io.Serializable {
 	private static final long serialVersionUID = 1L;
 
 	private Integer id;				//编号
-	private String name;			//标签名称
+	private String name;			//类别名称
 	
 	/**
 	 * @return the id

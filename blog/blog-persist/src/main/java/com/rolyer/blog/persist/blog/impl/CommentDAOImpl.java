@@ -7,7 +7,7 @@ import java.util.Map;
 import org.springframework.orm.ibatis.support.SqlMapClientDaoSupport;
 import org.springframework.stereotype.Component;
 
-import com.rolyer.blog.domain.blog.CommentsDO;
+import com.rolyer.blog.domain.CommentsDO;
 import com.rolyer.blog.persist.blog.CommentDAO;
 
 @Component("commentDAO")

@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.rolyer.blog.domain.blog.CommentsDO;
+import com.rolyer.blog.domain.CommentsDO;
 import com.rolyer.blog.persist.blog.CommentDAO;
 import com.rolyer.blog.service.blog.CommentService;
 

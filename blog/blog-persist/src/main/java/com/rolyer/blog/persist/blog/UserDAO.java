@@ -7,7 +7,7 @@ package com.rolyer.blog.persist.blog;
 
 import java.util.Map;
 
-import com.rolyer.blog.domain.blog.UserDO;
+import com.rolyer.blog.domain.UserDO;
 
 /**
  * 用户接口

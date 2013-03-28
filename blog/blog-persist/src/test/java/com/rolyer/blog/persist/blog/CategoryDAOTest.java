@@ -10,7 +10,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.rolyer.blog.domain.blog.CategoryDO;
+import com.rolyer.blog.domain.CategoryDO;
 import com.rolyer.blog.persist.BaseDaoTestCase;
 
 

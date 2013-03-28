@@ -5,7 +5,7 @@
  */
 package com.rolyer.blog.service.blog;
 
-import com.rolyer.blog.domain.blog.InformationDO;
+import com.rolyer.blog.domain.InformationDO;
 
 /**
  * 我的信息接口
