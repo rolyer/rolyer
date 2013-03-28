@@ -7,7 +7,7 @@ package com.rolyer.blog.service.blog;
 
 import java.util.List;
 
-import com.rolyer.blog.domain.blog.LabelsDO;
+import com.rolyer.blog.domain.LabelsDO;
 
 /**
  * @author Rolyer (rolyer.live@gmail.com)

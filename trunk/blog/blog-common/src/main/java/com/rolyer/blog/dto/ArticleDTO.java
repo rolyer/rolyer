@@ -5,9 +5,9 @@
  */
 package com.rolyer.blog.dto;
 
-import com.rolyer.blog.domain.blog.ArticleDO;
-import com.rolyer.blog.domain.blog.CategoryDO;
-import com.rolyer.blog.domain.blog.LabelsDO;
+import com.rolyer.blog.domain.ArticleDO;
+import com.rolyer.blog.domain.CategoryDO;
+import com.rolyer.blog.domain.LabelsDO;
 
 /**
  * @author Rolyer (rolyer.live@gmail.com)

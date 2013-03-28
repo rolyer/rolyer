@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.util.Assert;
 
-import com.rolyer.blog.domain.blog.CategoryDO;
+import com.rolyer.blog.domain.CategoryDO;
 import com.rolyer.blog.persist.blog.CategoryDAO;
 import com.rolyer.blog.service.blog.CategoryService;
 

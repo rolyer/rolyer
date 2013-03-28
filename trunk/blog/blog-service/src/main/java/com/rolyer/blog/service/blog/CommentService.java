@@ -2,7 +2,7 @@ package com.rolyer.blog.service.blog;
 
 import java.util.List;
 
-import com.rolyer.blog.domain.blog.CommentsDO;
+import com.rolyer.blog.domain.CommentsDO;
 
 public interface CommentService {
 	public Integer insertComment(CommentsDO comment);

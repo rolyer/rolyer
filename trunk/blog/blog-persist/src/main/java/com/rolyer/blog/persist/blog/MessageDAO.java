@@ -5,7 +5,7 @@
  */
 package com.rolyer.blog.persist.blog;
 
-import com.rolyer.blog.domain.blog.MessageDO;
+import com.rolyer.blog.domain.MessageDO;
 
 /**
  * @author Rolyer (rolyer.live@gmail.com)

@@ -2,7 +2,7 @@ package com.rolyer.blog.persist.blog;
 
 import java.util.List;
 
-import com.rolyer.blog.domain.blog.CommentsDO;;
+import com.rolyer.blog.domain.CommentsDO;
 
 public interface CommentDAO {
 	public Integer insertComment(CommentsDO comment);

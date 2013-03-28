@@ -7,7 +7,7 @@ package com.rolyer.blog.service.blog;
 
 import java.util.List;
 
-import com.rolyer.blog.domain.blog.ArticleDO;
+import com.rolyer.blog.domain.ArticleDO;
 import com.rolyer.blog.dto.ArticleDTO;
 
 /**
