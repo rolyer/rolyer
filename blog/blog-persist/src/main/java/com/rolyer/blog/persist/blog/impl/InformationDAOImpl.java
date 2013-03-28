@@ -9,7 +9,7 @@ import org.springframework.orm.ibatis.support.SqlMapClientDaoSupport;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.Assert;
 
-import com.rolyer.blog.domain.InformationDO;
+import com.rolyer.blog.domain.blog.InformationDO;
 import com.rolyer.blog.persist.blog.InformationDAO;
 
 /**

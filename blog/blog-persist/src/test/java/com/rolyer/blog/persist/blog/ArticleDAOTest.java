@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.rolyer.blog.domain.ArticleDO;
+import com.rolyer.blog.domain.blog.ArticleDO;
 import com.rolyer.blog.dto.ArticleDTO;
 import com.rolyer.blog.persist.BaseDaoTestCase;
 

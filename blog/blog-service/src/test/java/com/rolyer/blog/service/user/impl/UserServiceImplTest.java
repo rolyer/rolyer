@@ -10,7 +10,7 @@ import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.rolyer.blog.domain.UserDO;
+import com.rolyer.blog.domain.blog.UserDO;
 import com.rolyer.blog.service.BaseServiceTestCase;
 import com.rolyer.blog.service.blog.UserService;
 
