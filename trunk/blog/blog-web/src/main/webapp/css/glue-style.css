@@ -1070,9 +1070,9 @@ a.siteBy {
 }
 
 /* blog */
-.blog .left{width:600px}
+.blog .left{width:640px}
 .blog .left p{text-align:justify; width:550px;padding-bottom:5px; }
-.blog .right{width:340px}
+.blog .right{width:300px}
 .blog .alignleft{float:left; margin-right: 10px}
 .blog p.postInfo{
 color: #898989;

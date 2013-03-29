@@ -1,137 +1,149 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head >
-        <title>Blog | Rolyer&#39;s Blog</title>
-		<meta name="Keywords" content="">
-		<meta name="Description" content="">
-        <!-- beging contxt -->
-        #parse("layout/context.vm")
-        <!-- end contxt -->
-    </head>
-    <body class="blog">
-        <div id="container">
-            <div id="wrapper">
-                <!--begin navigation -->
-                #parse("layout/navigation.vm")
-                <!-- end navigation -->
-                <!-- beging PrimaryContent -->
-                <div id="primaryContent">
-                    <div class="content">
-                        <div class="pageTop">
-							<div class="pageTitle">
-                                <h1 class=" flir-replaced">Blog</h1>
-                            </div>
-                            <div class="breadCrumbs">
-                                You are here: <a href="$!{address.server}/home/index.htm" title="Home">Home</a>
-                                »&nbsp;<span class="active">Blog</span>
-                            </div>
-                            <div class="clearer"></div>
-                        </div>
-                        <!-- beging Content -->
-						<div class="left">
-	
-    #foreach($list in $results)
-        <div class="post" id="post-$!{list.article.id}">
-            <h2>
-                <a href="${address.server}/blog/view.htm?id=$!{list.article.id}" rel="bookmark" title="$!{list.article.title}">$!{list.article.title}</a>
-            </h2>
-            <p class="postInfo">发布时间：$!date.format('yyyy-MM-dd HH:mm:ss ',$!{list.article.gmtModified}) 类别:$!{list.labels.name}</p>
-            <div class="entry">
-				<p>
-                #set($content = $!{list.article.content})
-                #set($contentShort = $content)
-                #if($contentShort.length()>$!{list.article.showMaxLength})
-					#set($lees = " <a href='http://glue.be/blog/2010/05/het-belang-van-een-goede-homepage/#more-1695' class='more-link'>Lees het volledig artikel &raquo;</a>")
-                    #set($contentShort = $contentShort.substring(0,$!{list.article.showMaxLength})+$lees)
-                #end
-                $contentShort
-				</p>
-            </div>
-            <div class="blogTags">Tags: <a href="http://glue.be/blog/tag/homepage/" rel="tag">homepage</a>
-                , <a href="http://glue.be/blog/tag/usability/" rel="tag">Usability</a>
-                , <a href="http://glue.be/blog/tag/webdesign/" rel="tag">Webdesign</a>
-            </div>
-            <div class="postFooter">
-                <div class="sociable">
-                    <div class="sociable_tagline">
-                        <strong>Share and Enjoy:</strong>
-                    </div>
-                    #share(${list.article.title})
-                </div>
-                <div class="commentIndic">
-                    <a href="http://glue.be/blog/2010/05/het-belang-van-een-goede-homepage/#respond" title="Comment on Het belang van een goede homepage.">评论($!{list.article.commentsNumber})&nbsp;&#187; </a>
-                </div>
-                <div class="clearer" ></div>
-            </div>
-        </div>
-    #end
-		<div class="manu">
-			#pagination($totalPage $currentPage "?")
-        </div>
-            
-        </div>
-        <div class="right">
-            <div class="rightBlock">
-                <img usemap="#Map" alt="" src="$!{address.images}/layout/hdr-blog.jpg"/>
-                <map id="Map" name="Map">
-                    <area alt="schrijf u in op onze RSS feed" href="http://glue.be/en/rss/" coords="37,94,280,136" shape="rect"/>
-                </map>
-            </div>
-            <div class="rightBlock twitterblock">
-                <h4>Glue op Twitter</h4>
-                <img src="$!{address.images}/layout/icn-twitter.gif" alt="" style="float:left"/>
-                <p> way past office hours, but hey, you can't hear us complaining :) </p>
-                    <a style="margin-left: 69px; display:block" title="Volg ons op Twitter" href="http://twitter.com/gluewebdesign">
-                        <img alt="Volg ons op Twitter" src="$!{address.images}/layout/but-twitter-nl.gif"/>
-                    </a>
-</div>
-<div class="rightBlock">
-    <h4>Glue op Facebook</h4>
-</div>
-<div id="tag_cloud-2" class="widget widget_tag_cloud rightBlock">
-    <h3 class="widgettitle">Tags</h3>
-    <div>
-        #foreach($ll in $labelsList)
-            <a href='http://glue.be/blog/tag/$!{ll.name}/$!{cl.id}' class='tag-link-40' title='2 topics' style='font-size: 11.2777777777777777pt;'>$!{ll.name}</a>
-        #end
-    </div>
-</div>
-<div id="archives-2" class="widget widget_archive rightBlock">
-    <h3 class="widgettitle">Archief</h3>
-    <ul>
-        <li>
-            <a href='http://glue.be/blog/2010/05/' title='May 2010'>May 2010</a>
-        </li>
-        <li>
-            <a href='http://glue.be/blog/2009/12/' title='December 2009'>December 2009</a>
-        </li>
-        <li>
-            <a href='http://glue.be/blog/2008/12/' title='December 2008'>December 2008</a>
-        </li>
-        <li>
-            <a href='http://glue.be/blog/2007/12/' title='December 2007'>December 2007</a>
-        </li>
-    </ul>
-</div>
-<div id="categories-333156211" class="widget widget_categories rightBlock">
-    <h3 class="widgettitle">Categories</h3>
-    <ul>
-        #foreach($cl in $categoryList)
-            <li class="cat-item cat-item-3">
-                <a href="http://glue.be/blog/category/$!{cl.name}/$!{cl.id}" title="View all posts filed under $!{cl.name}">$!{cl.name}</a>
-            </li>
-        #end
-    </ul>
-</div>
-</div>
-                        <!-- end Content -->
-                    </div>
-                </div>
-                <!-- end Primary Content -->
-                <!--begin footer -->
-                #parse("layout/footer.vm")
-                <!-- end footer --> 
-            </div>
-        </div>
-    </body>
+<head>
+<title>Blog | Rolyer&#39;s Blog</title>
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<!-- beging contxt -->
+#parse("layout/context.vm")
+<!-- end contxt -->
+</head>
+<body class="blog">
+	<div id="container">
+		<div id="wrapper">
+			<!--begin navigation -->
+			#parse("layout/navigation.vm")
+			<!-- end navigation -->
+			<!-- beging PrimaryContent -->
+			<div id="primaryContent">
+				<div class="content">
+					<div class="pageTop">
+						<div class="pageTitle">
+							<h1 class=" flir-replaced">Blog</h1>
+						</div>
+						<div class="breadCrumbs">
+							You are here: <a href="$!{address.server}/home/index.htm"
+								title="Home">Home</a> »&nbsp;<span class="active">Blog</span>
+						</div>
+						<div class="clearer"></div>
+					</div>
+					<!-- beging Content -->
+					<div class="left">
+
+						#foreach($list in $results)
+						<div class="post" id="post-$!{list.article.id}">
+							<h2>
+								<a href="${address.server}/blog/view.htm?id=$!{list.article.id}"
+									rel="bookmark" title="$!{list.article.title}">$!{list.article.title}</a>
+							</h2>
+							<p class="postInfo">发布时间：$!date.format('yyyy-MM-dd HH:mm:ss
+								',$!{list.article.gmtModified}) 类别:$!{list.labels.name}</p>
+							<div class="entry">
+								<p>
+									#set($content = $!{list.article.content}) #set($contentShort =
+									$content)
+									#if($contentShort.length()>$!{list.article.showMaxLength})
+									#set($lees = " <a
+										href='http://glue.be/blog/2010/05/het-belang-van-een-goede-homepage/#more-1695'
+										class='more-link'>Lees het volledig artikel &raquo;</a>")
+									#set($contentShort =
+									$contentShort.substring(0,$!{list.article.showMaxLength})+$lees)
+									#end $contentShort
+								</p>
+							</div>
+							<div class="blogTags">
+								Tags: <a href="http://glue.be/blog/tag/homepage/" rel="tag">homepage</a>
+								, <a href="http://glue.be/blog/tag/usability/" rel="tag">Usability</a>
+								, <a href="http://glue.be/blog/tag/webdesign/" rel="tag">Webdesign</a>
+							</div>
+							<div class="postFooter">
+								<div class="sociable">
+									<div class="sociable_tagline">
+										<strong>Share and Enjoy:</strong>
+									</div>
+									#share(${list.article.title})
+								</div>
+								<div class="commentIndic">
+									<a
+										href="http://glue.be/blog/2010/05/het-belang-van-een-goede-homepage/#respond"
+										title="Comment on Het belang van een goede homepage.">评论($!{list.article.commentsNumber})&nbsp;&#187;
+									</a>
+								</div>
+								<div class="clearer"></div>
+							</div>
+						</div>
+						#end
+						<div class="manu">#pagination($totalPage $currentPage "?")</div>
+
+					</div>
+					<div class="right">
+						<div class="rightBlock">
+							<img usemap="#Map" alt=""
+								src="$!{address.images}/layout/hdr-blog.jpg" />
+							<map id="Map" name="Map">
+								<area alt="schrijf u in op onze RSS feed"
+									href="http://glue.be/en/rss/" coords="37,94,280,136"
+									shape="rect" />
+							</map>
+						</div>
+						<div class="rightBlock twitterblock">
+							<h4>Glue op Twitter</h4>
+							<img src="$!{address.images}/layout/icn-twitter.gif" alt=""
+								style="float: left" />
+							<p>way past office hours, but hey, you can't hear us
+								complaining :)</p>
+							<a style="margin-left: 69px; display: block"
+								title="Volg ons op Twitter"
+								href="http://twitter.com/gluewebdesign"> <img
+								alt="Volg ons op Twitter"
+								src="$!{address.images}/layout/but-twitter-nl.gif" />
+							</a>
+						</div>
+						<div class="rightBlock">
+							<h4>Glue op Facebook</h4>
+						</div>
+						<div id="tag_cloud-2" class="widget widget_tag_cloud rightBlock">
+							<h3 class="widgettitle">Tags</h3>
+							<div>
+								#foreach($ll in $labelsList) <a
+									href='http://glue.be/blog/tag/$!{ll.name}/$!{cl.id}'
+									class='tag-link-40' title='2 topics'
+									style='font-size: 11.2777777777777777pt;'>$!{ll.name}</a> #end
+							</div>
+						</div>
+						<div id="archives-2" class="widget widget_archive rightBlock">
+							<h3 class="widgettitle">Archief</h3>
+							<ul>
+								<li><a href='http://glue.be/blog/2010/05/' title='May 2010'>May
+										2010</a></li>
+								<li><a href='http://glue.be/blog/2009/12/'
+									title='December 2009'>December 2009</a></li>
+								<li><a href='http://glue.be/blog/2008/12/'
+									title='December 2008'>December 2008</a></li>
+								<li><a href='http://glue.be/blog/2007/12/'
+									title='December 2007'>December 2007</a></li>
+							</ul>
+						</div>
+						<div id="categories-333156211"
+							class="widget widget_categories rightBlock">
+							<h3 class="widgettitle">Categories</h3>
+							<ul>
+								#foreach($cl in $categoryList)
+								<li class="cat-item cat-item-3"><a
+									href="http://glue.be/blog/category/$!{cl.name}/$!{cl.id}"
+									title="View all posts filed under $!{cl.name}">$!{cl.name}</a>
+								</li> #end
+							</ul>
+						</div>
+					</div>
+					<!-- end Content -->
+				</div>
+			</div>
+			<!-- end Primary Content -->
+			<!--begin footer -->
+			#parse("layout/footer.vm")
+			<!-- end footer -->
+		</div>
+	</div>
+</body>
 </html>
