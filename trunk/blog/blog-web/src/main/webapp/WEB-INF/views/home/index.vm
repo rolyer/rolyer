@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>About me | Rolyer&#39;s Blog</title>
+<title>Home | Rolyer&#39;s Blog</title>
 <meta name="Keywords" content="">
 <meta name="Description" content="">
 <!-- beging contxt -->
@@ -18,7 +18,7 @@
 			<div id="primaryContent">
 				<div class="content">
 					<div class="pageTop">
-						
+						<div class="clearer"></div>
 					</div>
 					<!-- beging Content -->
 					<div class="left" style="height:540px">
